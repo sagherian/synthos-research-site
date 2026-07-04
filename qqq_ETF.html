@@ -1,0 +1,285 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nasdaq-100 (QQQ) ETF Deep Dive — Synthos</title><style>body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#12263a,#0c121c 60%);color:#eef4fb;font:16px/1.62 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 22px 90px}a{color:#22d3ee;text-decoration:none}
+h1{font-size:2rem}h2{font-size:1.3rem;margin:1.8em 0 .5em;padding-left:.5em;border-left:4px solid #22d3ee}
+h3{font-size:1.05rem;margin:1.2em 0 .4em}code{background:#0a1420;border:1px solid #243447;border-radius:5px;padding:.05em .34em;font:.8em Consolas,monospace;color:#5eead4}
+strong{color:#fff}em{color:#cfe0f0}hr{border:0;border-top:1px solid #243447;margin:1.5em 0}
+.tw{overflow-x:auto;border:1px solid #243447;border-radius:10px;margin:.8em 0}table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{padding:.5em .7em;text-align:left;border-bottom:1px solid #243447}thead th{background:#16212f;color:#5eead4;font-size:.78rem;text-transform:uppercase}
+.banner{background:linear-gradient(90deg,rgba(34,211,238,.16),rgba(94,234,212,.05));border:1px solid #243447;border-radius:12px;padding:9px 16px;margin-bottom:18px;color:#5eead4;font-size:.84rem}
+.badge{display:inline-block;padding:.12em .55em;border-radius:6px;font-weight:700;font-size:.82rem}
+.core{background:#34d399;color:#06231a}.tac{background:#22d3ee;color:#06222b}.watch{background:#fbbf24;color:#3a2c00}.hold{background:#7d93a8;color:#0a1420}.avoid{background:#fb7185;color:#3a0a12}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0}.filters button{background:transparent;border:1px solid #243447;color:#a4b5c8;padding:.35em .8em;border-radius:8px;font:inherit;font-size:.85rem;cursor:pointer}
+.filters button.on{background:#22d3ee;color:#06222b;border-color:#22d3ee;font-weight:700}
+.grid{overflow-x:auto;border:1px solid #243447;border-radius:12px}table.dash{border-collapse:collapse;width:100%;font-size:.9rem}
+table.dash th,table.dash td{padding:.55em .7em;border-bottom:1px solid #1a2634;text-align:left;vertical-align:top}
+table.dash thead th{background:#16212f;color:#5eead4;font-size:.74rem;text-transform:uppercase;position:sticky;top:0}
+.sc{display:inline-block;min-width:1.5em;text-align:center;font-weight:700;border-radius:5px;padding:.05em .3em;font-size:.82rem;background:#0f1a26;border:1px solid #243447}
+td.blurb{color:#a4b5c8;font-size:.82rem;max-width:440px}.tk{font-weight:800;color:#fff}.co{color:#a4b5c8;font-size:.8rem}
+.stat{display:inline-block;margin-right:22px}.stat b{color:#fff;font-size:1.5rem}.stat span{color:#a4b5c8;font-size:.85rem}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.bcard{background:linear-gradient(180deg,#121c2a,#0e1622);border:1px solid #243447;border-radius:12px;padding:14px 16px;text-align:center}
+.bv{font-size:1.9rem;font-weight:800;color:#22d3ee}.bl{color:#cfe0f0;font-size:.85rem;margin-top:3px}.bh{color:#7d93a8;font-size:.75rem;margin-top:2px}
+.ichart{background:linear-gradient(180deg,#121c2a,#0e1622);border:1px solid #243447;border-radius:14px;padding:16px 18px;margin:16px 0}
+.ic-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.ic-price{font-size:1.55rem;font-weight:800;color:#fff}.ic-chg{font-size:.9rem;margin-top:2px;font-weight:600}.ic-chg.up{color:#34d399}.ic-chg.down{color:#fb7185}
+.ic-range{display:flex;gap:4px;flex-wrap:wrap}.ic-range button{background:transparent;border:1px solid #243447;color:#a4b5c8;padding:.32em .72em;border-radius:8px;font:inherit;font-size:.82rem;cursor:pointer}
+.ic-range button:hover{color:#eef4fb;border-color:#a4b5c8}.ic-range button.on{background:#22d3ee;color:#06222b;border-color:#22d3ee;font-weight:700}
+.ic-wrap{position:relative}#icSvg{width:100%;height:auto;display:block;cursor:crosshair}
+.ic-tip{position:absolute;pointer-events:none;background:#0a1420;border:1px solid #243447;border-radius:8px;padding:5px 9px;font-size:.78rem;color:#eef4fb;transform:translate(-50%,-125%);white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.55);z-index:5}
+.ic-tip b{color:#fff}.ic-cross{stroke:#7d93a8;stroke-width:1;stroke-dasharray:3 3}.ic-dot{fill:#22d3ee;stroke:#06222b;stroke-width:2}
+</style></head><body><div class="wrap">
+<div class="banner">Synthos Research · independent, AI-native research · educational only — not investment advice · no live performance track record yet · <a href="qqq.html">← back to all 101 names</a></div>
+
+<h1>Nasdaq-100 (QQQ) — ETF Deep Dive</h1>
+
+<p><em>Synthos Research · Broad US large-cap growth index · Prepared 2026-07-03</em></p>
+<p><em>A one-stop-shop read on the whole index, built bottom-up from Synthos&#x27;s own per-company verdicts and 0–10 scores on 99 of the ~100 constituents. About half the names carry no Synthos expert-panel coverage — those calls are fundamentals- and quant-driven, and we say so explicitly wherever it matters.</em></p>
+
+<hr/>
+
+<h2>At a glance</h2>
+
+<div class="tw"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>What it is</strong></td><td>Invesco QQQ Trust — the 100 largest non-financial companies on the Nasdaq, market-cap weighted. Heavily tech, heavily AI, top-heavy.</td></tr>
+<tr><td><strong>Synthos verdict</strong></td><td><strong>Own it as a core holding — but understand you are buying a concentrated bet on the AI-infrastructure cycle at a full price, with most of the fresh upside living in a handful of mega-caps.</strong></td></tr>
+<tr><td><strong>Constituents scored</strong></td><td><strong>99 of ~100</strong> (each with a Buy/Watch/Avoid verdict and three 0–10 scores)</td></tr>
+<tr><td><strong>Verdict split</strong></td><td><strong>34 Buys</strong> (7 Core + 27 Satellite) · <strong>64 Watch</strong> · <strong>1 Avoid</strong> — i.e. <strong>~two-thirds of the index is rated Watch on price, not conviction</strong></td></tr>
+<tr><td><strong>Score means (0–10)</strong></td><td>Downside Risk <strong>5.8</strong> (moderate) · Growth Quality <strong>6.4</strong> (good) · Exponential Potential <strong>4.3</strong> (modest)</td></tr>
+<tr><td><strong>The 7 Core Buys</strong></td><td>NVDA, MSFT, META, GOOGL, GOOG, AMZN, ASML — the mega-cap compounders where quality + price + (mostly) deep expert coverage all line up</td></tr>
+<tr><td><strong>Highest Exponential Potential</strong></td><td>NBIS (9), then NVDA / ALAB / PLTR / AMD / LITE / MRVL / RKLB / CRWV (8) — but 5 of those top-9 are <strong>Watch or Avoid</strong> on valuation</td></tr>
+<tr><td><strong>Aggregate valuation</strong></td><td><strong>Rich.</strong> The median constituent is a Watch <em>specifically because the price already discounts the good outcome</em> — great businesses, demanding multiples</td></tr>
+<tr><td><strong>Biggest concentration risk</strong></td><td>The index&#x27;s forward return is dominated by ~7 names; a hyperscaler AI-capex pause hits the top of the fund hardest</td></tr>
+<tr><td><strong>KB coverage caveat</strong></td><td><strong>51/99 names have expert-panel claims; 48 have zero</strong> — those 48 verdicts are fundamentals/quant-driven, honestly flagged</td></tr>
+<tr><td><strong>Single biggest risk</strong></td><td>The whole index is levered to one macro bet: that the AI-infrastructure capex up-cycle keeps running</td></tr>
+</tbody></table></div>
+
+<p><strong>One-line thesis.</strong> QQQ is the best single-ticket way to own the companies actually building and monetizing the AI era — and its top holdings are, by our own scoring, genuinely high-quality (7 mega-caps clear our Core bar). But the <em>breadth</em> of the index tells the honest story: <strong>64 of 99 constituents are rated Watch, almost always because the price already reflects the quality, not because the business is bad.</strong> So the call is: <strong>own QQQ as a core sleeve, size for the concentration and the cyclicality, and don&#x27;t mistake &quot;great companies&quot; for &quot;cheap index.&quot;</strong></p>
+
+<h2>In plain English</h2>
+
+<p>QQQ is a basket of the 100 biggest companies on the Nasdaq stock exchange (banks excluded). Because it weights companies by size, a handful of giant technology names — Nvidia, Microsoft, Apple, the two Alphabet share classes, Amazon, Meta, Broadcom — make up a huge slice of it. When you buy QQQ, you are mostly buying <strong>those</strong> companies, plus a long tail of smaller ones for diversification.</p>
+
+<p>We scored 99 of them one by one. Here is what we found, in plain terms:</p>
+
+<ul>
+<li><strong>The businesses are good.</strong> The average &quot;Growth Quality&quot; score is 6.4 out of 10, and the very biggest holdings score highest. These are, by and large, some of the most profitable, cash-rich companies on Earth.</li>
+<li><strong>But the prices are full.</strong> Two out of every three names got a &quot;Watch&quot; rating — and almost always for the <em>same reason</em>: the stock is a wonderful business trading at a price that already assumes everything goes right. Watch does not mean &quot;bad company.&quot; It means &quot;great company, wrong price, wait for a better entry.&quot;</li>
+<li><strong>Only 34 of 99 are outright Buys</strong>, and just <strong>7</strong> of those are high-conviction &quot;Core&quot; buys (the mega-caps where quality, price, and our expert panel all agree). One single name — Sandisk (SNDK) — is a flat-out <strong>Avoid</strong>.</li>
+<li><strong>The whole thing rides on one bet:</strong> artificial-intelligence spending. The companies driving the index up are the ones building AI chips, data centers, and cloud capacity. If that spending keeps growing, QQQ does well. If it pauses, the top of the fund — which is most of the fund — takes the hit first.</li>
+</ul>
+
+<p><strong>What to actually do (educational, not advice):</strong> QQQ is a legitimate core holding for a growth-tilted investor who wants one-ticket exposure to the AI economy. But go in clear-eyed: you are concentrated (a lot of your money is in ~7 stocks), you are paying a full price, and you are making a macro bet on AI capex. Own it, but size it so a 30% drawdown in the top names would not break your plan — and don&#x27;t expect the whole basket to be &quot;cheap,&quot; because by our own count, most of it isn&#x27;t.</p>
+
+<p><strong>Honest coverage note:</strong> about <strong>half</strong> the 100 names (48 of them) have <strong>no Synthos expert-panel coverage</strong> at all. For those, our verdict comes from the fundamentals and the quant screens, not from a panel of analysts we track. We flag that everywhere it matters — it is the single most important caveat in this report.</p>
+
+<hr/>
+
+<h2>1. What QQQ is, and how to read this note</h2>
+
+<p><strong>The index.</strong> QQQ tracks the Nasdaq-100: the 100 largest non-financial companies listed on the Nasdaq, weighted by market capitalization and reconstituted annually (with quarterly rebalancing caps). It is <em>not</em> a diversified market index — it is a <strong>large-cap growth</strong> index with a structural tilt toward technology and, increasingly, toward the AI-infrastructure complex. Because it is cap-weighted, a handful of the largest names dominate its return and its risk.</p>
+
+<p><strong>How we built this note.</strong> Synthos ran a full per-company deep dive on <strong>99 of the ~100 constituents</strong>, each producing (a) a verdict — <strong>Buy — Core</strong>, <strong>Buy — Tactical</strong>, <strong>Watch</strong>, or <strong>Avoid</strong> — and (b) three 0–10 scores: <strong>Downside Risk</strong> (lower = safer), <strong>Growth Quality</strong>, and <strong>Exponential Potential</strong>. This ETF note is the honest aggregate of those 99 bottom-up calls. Where a name has Synthos expert-panel coverage we lean on it; where it does not, the call is fundamentals- and quant-driven, and we say so.</p>
+
+<p><strong>The honesty rule.</strong> In Synthos house style, <strong>&quot;Watch&quot; is not &quot;sell&quot; and it is not &quot;bad.&quot;</strong> The overwhelming majority of our Watch verdicts on this index are <em>valuation</em> calls: a genuinely excellent business trading at a price that already discounts the good outcome, leaving no margin of safety for fresh money. Read the two-thirds-Watch headline as <em>&quot;most of this index is priced for perfection,&quot;</em> not <em>&quot;most of this index is junk.&quot;</em></p>
+
+<h2>2. The overall read on the index</h2>
+
+<p>The distribution tells a coherent story:</p>
+
+<ul>
+<li><strong>34 Buys, 64 Watch, 1 Avoid.</strong> Roughly one-third of the index clears our fresh-money bar; two-thirds are quality-at-a-full-price; one name (SNDK) is an outright Avoid.</li>
+<li><strong>The Buys are concentrated at the top and in two flavors.</strong> The 7 <strong>Core</strong> buys are all mega-caps (NVDA, MSFT, META, GOOGL, GOOG, AMZN, ASML). The 27 <strong>Satellite</strong> buys are a mix of (a) contrarian value-in-quality names that de-rated hard (INTU, ADBE, ADSK, ROP, TMUS, PYPL, WDAY-adjacent), (b) high-octane AI-cycle names owned small for the volatility (AMD, MRVL, MU, NBIS, RKLB, CEG), and (c) reasonably-priced compounders (VRTX, REGN, ALNY, MELI, DXCM, WMT, NFLX, BKNG).</li>
+<li><strong>The Watch bucket is where the &quot;priced for perfection&quot; reality lives.</strong> It includes some of the highest-<em>quality</em> businesses in the whole index — COST, IDXX, ISRG, KLAC, LRCX, CDNS, AXON, PANW, CRWD, PLTR — every one rated Watch on price, not on the business.</li>
+</ul>
+
+<p><strong>Net read:</strong> QQQ is a high-quality index at a rich price, whose forward return is dominated by a small set of mega-caps and levered to a single macro theme (AI capex). That is a perfectly ownable proposition — as a <strong>core sleeve, sized for concentration and cyclicality</strong> — but it is emphatically not a &quot;cheap index&quot; and should not be owned as if it were.</p>
+
+<h2>3. The distribution of the three scores</h2>
+
+<p>All three 0–10 score distributions across the 99 scored constituents (each row is a score bucket; the bar is the count of companies):</p>
+
+<p><strong>Downside Risk — mean 5.8, median 6</strong> <em>(lower = safer)</em></p>
+
+<div class="tw"><table><thead><tr><th>Score</th><th>Count</th><th></th></tr></thead><tbody>
+<tr><td>3</td><td>1</td><td>▏</td></tr>
+<tr><td>4</td><td>23</td><td>███████████████████████</td></tr>
+<tr><td>5</td><td>24</td><td>████████████████████████</td></tr>
+<tr><td>6</td><td>24</td><td>████████████████████████</td></tr>
+<tr><td>7</td><td>8</td><td>████████</td></tr>
+<tr><td>8</td><td>14</td><td>██████████████</td></tr>
+<tr><td>9</td><td>5</td><td>█████</td></tr>
+</tbody></table></div>
+
+<p><em>Read:</em> the bulk of the index (71 of 99) sits at moderate risk (4–6). But there is a heavy right tail — <strong>19 names score 8–9 (elevated-to-high risk)</strong>, and they are exactly the ones you&#x27;d expect: high-beta AI-cycle and speculative names (ARM, CRWV, MSTR, SNDK, TSLA, ALAB, AMD, AXON, CRWD, DDOG, INTC, LITE, NBIS, PLTR, RKLB, SHOP, STX, WBD, WDC). The index&#x27;s <em>average</em> risk is moderate, but its <em>tail</em> is fat — a reminder that cap-weighting puts real money into some very volatile stories.</p>
+
+<p><strong>Growth Quality — mean 6.4, median 6</strong></p>
+
+<div class="tw"><table><thead><tr><th>Score</th><th>Count</th><th></th></tr></thead><tbody>
+<tr><td>3</td><td>4</td><td>████</td></tr>
+<tr><td>4</td><td>9</td><td>█████████</td></tr>
+<tr><td>5</td><td>20</td><td>████████████████████</td></tr>
+<tr><td>6</td><td>17</td><td>█████████████████</td></tr>
+<tr><td>7</td><td>20</td><td>████████████████████</td></tr>
+<tr><td>8</td><td>22</td><td>██████████████████████</td></tr>
+<tr><td>9</td><td>6</td><td>██████</td></tr>
+<tr><td>10</td><td>1</td><td>▏</td></tr>
+</tbody></table></div>
+
+<p><em>Read:</em> this is the index&#x27;s strongest suit. <strong>29 names score 8+ on Growth Quality</strong> and only 13 score below 5. This is what &quot;quality index&quot; means quantitatively — the constituent set really is unusually profitable and durable. The lone 10 is NVDA; the 9s are GOOGL, META, AVGO, APP, ALAB, PLTR. The 3s and 4s are the melting-ice-cube names (KHC, WBD, MSTR, FANG, TSLA, EA, CMCSA, MDLZ, PCAR, AEP, EXC, INTC).</p>
+
+<p><strong>Exponential Potential — mean 4.3, median 4</strong></p>
+
+<div class="tw"><table><thead><tr><th>Score</th><th>Count</th><th></th></tr></thead><tbody>
+<tr><td>1</td><td>1</td><td>▏</td></tr>
+<tr><td>2</td><td>16</td><td>████████████████</td></tr>
+<tr><td>3</td><td>24</td><td>████████████████████████</td></tr>
+<tr><td>4</td><td>21</td><td>█████████████████████</td></tr>
+<tr><td>5</td><td>9</td><td>█████████</td></tr>
+<tr><td>6</td><td>12</td><td>████████████</td></tr>
+<tr><td>7</td><td>7</td><td>███████</td></tr>
+<tr><td>8</td><td>8</td><td>████████</td></tr>
+<tr><td>9</td><td>1</td><td>▏</td></tr>
+</tbody></table></div>
+
+<p><em>Read:</em> this is the honest counterweight to the growth-quality strength. <strong>The median Exponential Potential is just 4</strong> — most of the index is made of <em>compounders</em> (durable, high-return, but mature) rather than <em>exponentials</em> (accelerating multi-baggers-from-here). Only <strong>16 names score 7+</strong>, and — critically — <strong>more than half of those top-exponential names are rated Watch or Avoid on valuation</strong> (see §5). The index has plenty of quality; genuine, <em>reasonably-priced</em> explosive growth is scarce.</p>
+
+<p><strong>The one-glance synthesis of the three distributions:</strong> QQQ is <strong>high-quality (growth 6.4), moderate-risk-with-a-fat-tail (risk 5.8), and only modestly exponential (4.3)</strong> — a basket of excellent mature compounders plus a smaller set of high-risk AI-cycle exponentials, most of which are already richly priced.</p>
+
+<h2>4. The strongest Buys — high Growth Quality, low Downside Risk</h2>
+
+<p>The names that best combine business quality with balance-sheet-and-valuation safety (highest Growth Quality minus Downside Risk, among Buy-rated constituents):</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Company</th><th>Verdict</th><th>Risk</th><th>Growth</th><th>Exp</th><th>Why it clears the bar</th></tr></thead><tbody>
+<tr><td><strong>GOOGL</strong></td><td>Alphabet (A)</td><td><strong>Buy — Core</strong></td><td>4</td><td>9</td><td>6</td><td>The rare mega-cap still cheap-ish (~25× fwd, PEG ~0.6) <em>and</em> re-accelerating on Cloud + Gemini; net-cash fortress. Deepest-covered value-and-growth combo in the index.</td></tr>
+<tr><td><strong>META</strong></td><td>Meta Platforms</td><td><strong>Buy — Core</strong></td><td>4</td><td>9</td><td>6</td><td>De-rated ~19% <em>while</em> fundamentals accelerated (rev +22% to $201B, 82% GM); ~18× fwd. Broadest expert coverage in the whole file (204 claims).</td></tr>
+<tr><td><strong>AMZN</strong></td><td>Amazon</td><td><strong>Buy — Core</strong></td><td>4</td><td>8</td><td>6</td><td>Cloud-plus-ads compounder in a retail costume; ~24× FY27E for 22% EPS CAGR that is accelerating on AWS/AI. A mega-cap that has <em>lagged</em> the index despite strong fundamentals.</td></tr>
+<tr><td><strong>MSFT</strong></td><td>Microsoft</td><td><strong>Buy — Core</strong></td><td>4</td><td>8</td><td>4</td><td>Proven ~20% compounder handed to you at ~20× FY27E after a 28% drawdown; $1.3T backlog, fortress sheet. The debate is capex-vs-Azure, not the franchise.</td></tr>
+<tr><td><strong>NVDA</strong></td><td>NVIDIA</td><td><strong>Buy — Core</strong></td><td>6</td><td>10</td><td>8</td><td>The defining AI-infra chipmaker at a <em>surprisingly reasonable</em> ~22× fwd; only 10/10 Growth Quality in the index. Risk 6 (not lower) reflects the capex-cycle dependence.</td></tr>
+<tr><td><strong>ASML</strong></td><td>ASML</td><td><strong>Buy — Core</strong></td><td>5</td><td>8</td><td>6</td><td>A literal EUV-lithography monopoly re-accelerating off the 2024–25 trough. Own the chokepoint; size for China/cyclical swings.</td></tr>
+<tr><td><strong>VRTX</strong></td><td>Vertex Pharma</td><td><strong>Buy — Tactical</strong></td><td>4</td><td>7</td><td>5</td><td>86%-GM net-cash cystic-fibrosis monopoly with real non-CF optionality (Journavx, Casgevy); the safest healthcare Buy — buy on weakness (RSI 90 at a high).</td></tr>
+<tr><td><strong>ALNY</strong></td><td>Alnylam</td><td><strong>Buy — Tactical</strong></td><td>5</td><td>8</td><td>7</td><td>RNAi platform at its profitability inflection (rev +65%, first annual profit, +96% YoY Q1); satellite only because 42× fwd + no expert coverage.</td></tr>
+<tr><td><strong>INTU</strong></td><td>Intuit</td><td><strong>Buy — Tactical</strong></td><td>5</td><td>8</td><td>4</td><td>Elite software (81% GM, $6B FCF) repriced from ~$800 to $275 on AI-disruption fear; ~10× fwd, 10% FCF yield — contrarian value/quality.</td></tr>
+<tr><td><strong>AVGO</strong></td><td>Broadcom</td><td><strong>Buy — Tactical</strong></td><td>6</td><td>9</td><td>6</td><td>Elite AI-infra compounder (custom accelerators + networking + VMware), ~$27B FCF; satellite because 31× fwd + hyperscaler concentration.</td></tr>
+</tbody></table></div>
+
+<p><strong>The clearest safe-quality Buys</strong> are the six mega-cap Cores plus VRTX — every one scores Downside Risk ≤ 5 <em>and</em> Growth Quality ≥ 7. If an investor wanted to <em>tilt</em> QQQ toward its best risk-adjusted quality rather than own it flat, this is where the weight belongs. Note the standout: <strong>the three cheapest-relative-to-quality names in the whole index (GOOGL, META, AMZN) are all Buy — Core</strong> — the market has, oddly, left the <em>most-covered mega-caps</em> as the best value.</p>
+
+<h2>5. The highest Exponential Potential names — and the valuation trap</h2>
+
+<p>The names with the most genuine accelerate-from-here potential (Exponential Potential 7+), with the honest verdict attached:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Company</th><th>Exp</th><th>Growth</th><th>Risk</th><th>Verdict</th><th>The catch</th></tr></thead><tbody>
+<tr><td><strong>NBIS</strong></td><td>Nebius Group</td><td><strong>9</strong></td><td>8</td><td>8</td><td>Buy — Tactical</td><td>Pure-play AI-neocloud, rev +351% FY25 into a $1T TAM — but cash-burning (−$3.7B FCF), 59× sales. Own <strong>small</strong>. No expert coverage.</td></tr>
+<tr><td><strong>NVDA</strong></td><td>NVIDIA</td><td>8</td><td>10</td><td>6</td><td><strong>Buy — Core</strong></td><td>The one place exponential potential <em>and</em> a Buy <em>and</em> deep coverage all coincide. The index&#x27;s anchor.</td></tr>
+<tr><td><strong>ALAB</strong></td><td>Astera Labs</td><td>8</td><td>9</td><td>8</td><td><strong>Watch</strong></td><td>Elite young AI-connectivity semi (rev +115%) but 255× trailing and ~46% above the Street&#x27;s own fair value. Great company, wrong price.</td></tr>
+<tr><td><strong>PLTR</strong></td><td>Palantir</td><td>8</td><td>9</td><td>8</td><td><strong>Watch</strong></td><td>Accelerating AI-software (rev +56%, Q1 +85%) but 89× FY26E EPS already prices years of flawless execution.</td></tr>
+<tr><td><strong>AMD</strong></td><td>Adv. Micro Devices</td><td>8</td><td>8</td><td>8</td><td>Buy — Tactical</td><td>The clear #2 in AI compute with <em>accelerating</em> growth, but priced for perfection (69× fwd). Satellite, not anchor.</td></tr>
+<tr><td><strong>LITE</strong></td><td>Lumentum</td><td>8</td><td>7</td><td>8</td><td><strong>Watch</strong></td><td>Real AI-optical winner (~67% fwd rev CAGR) but +700% in 12 months to 89× FY26E. Right story, wrong price.</td></tr>
+<tr><td><strong>MRVL</strong></td><td>Marvell</td><td>8</td><td>7</td><td>7</td><td>Buy — Tactical</td><td>Genuine AI-interconnect exponential, but 83× trailing + China/customer concentration. Buy small.</td></tr>
+<tr><td><strong>RKLB</strong></td><td>Rocket Lab</td><td>8</td><td>7</td><td>8</td><td>Buy — Tactical</td><td>Only listed vertically-integrated space co besides SpaceX; loss-making at 84× sales, priced on an un-flown rocket. Tiny satellite.</td></tr>
+<tr><td><strong>CRWV</strong></td><td>CoreWeave</td><td>8</td><td>5</td><td>9</td><td><strong>Watch</strong></td><td>Genuine ~73% rev-CAGR AI-cloud exponential but built on a mountain of debt (net-debt/EBITDA 10.5×, beta 7.1); top-skill voice bearish.</td></tr>
+<tr><td><strong>APP</strong></td><td>AppLovin</td><td>7</td><td>9</td><td>7</td><td>Buy — Tactical</td><td>Elite-margin ad engine ($3.9B FCF) but 45× trailing, beta 2.46, no coverage.</td></tr>
+<tr><td><strong>MELI</strong></td><td>MercadoLibre</td><td>7</td><td>8</td><td>6</td><td>Buy — Tactical</td><td>Entrenched LatAm commerce+fintech flywheel, <em>re-accelerating</em> and down ~30% — the best-priced exponential in the group.</td></tr>
+<tr><td><strong>ARM</strong></td><td>Arm Holdings</td><td>7</td><td>8</td><td>9</td><td><strong>Watch</strong></td><td>Near-monopoly chip-IP but 375× trailing, beta 3.8 — perfection priced in.</td></tr>
+<tr><td><strong>MU</strong></td><td>Micron</td><td>7</td><td>6</td><td>7</td><td>Buy — Tactical</td><td>Purest liquid HBM-supercycle play, statistically cheap on peak EPS — the classic memory trap. Sized cyclical satellite.</td></tr>
+<tr><td><strong>TSLA</strong></td><td>Tesla</td><td>7</td><td>4</td><td>9</td><td><strong>Watch</strong></td><td>A <em>shrinking</em> carmaker at 327× earnings priced entirely on a robotaxi/Optimus option not yet in the numbers.</td></tr>
+</tbody></table></div>
+
+<p><strong>The single most important pattern in this whole report:</strong> of the 14 highest-exponential names, <strong>only NVDA combines top-tier exponential potential with a Buy — Core verdict and deep expert coverage.</strong> The rest split into (a) <em>un-covered high-octane satellites you own small for the volatility</em> (NBIS, AMD, MRVL, RKLB, APP, MELI, MU) and (b) <em>Watch/Avoid names where the exponential is real but the price already captured it</em> (ALAB, PLTR, LITE, CRWV, ARM, TSLA). <strong>The lesson for a QQQ owner: the index gives you the exponential exposure automatically — but most of it is richly priced, so the exponential upside comes bundled with real drawdown risk.</strong></p>
+
+<h2>6. Notable Watch and Avoid names — and why</h2>
+
+<p><strong>The one Avoid — SNDK (Sandisk).</strong> The only outright Avoid in the index. A competent NAND-flash operator riding a real AI-memory up-cycle, but the stock is up <strong>~38× in 12 months</strong>, priced on peak-cycle EPS, beta <strong>4.88</strong>, with officers selling into strength; our through-cycle base fair value (~$984) implies <strong>−44%</strong>, and the sole KB voice is bearish. This is a fundamentals/quant-driven Avoid — a genuine cyclical priced as if the cycle never ends.</p>
+
+<p><strong>The highest-conviction Watch names (great business, wrong price):</strong></p>
+<ul>
+<li><strong>PLTR, ALAB, ARM, CRWD, DDOG, SHOP, AXON</strong> — every one is an elite or fast-growing franchise (Growth Quality 8+) rated Watch purely on extreme valuation. Owning QQQ means owning all of these at today&#x27;s multiples whether you&#x27;d choose to or not.</li>
+<li><strong>COST, IDXX, ISRG, KLAC, LRCX, CDNS, FTNT, PANW</strong> — wonderful, wide-moat compounders (razor-and-blade or duopoly economics) trading at prices that already embed the quality. These are the &quot;wait for a pullback&quot; names.</li>
+<li><strong>AAPL</strong> — worth singling out: the index&#x27;s second-largest holding is a <strong>Watch</strong>, at 32× forward for ~10% growth (PEG ~3.7), with even the top-skill expert voice cautionary on long-run AI durability. A rich-multiple mega-cap is a meaningful <em>drag on the case for buying QQQ at today&#x27;s level</em>.</li>
+</ul>
+
+<p><strong>The riskiest Watch names (speculative, own only with eyes open):</strong></p>
+<ul>
+<li><strong>MSTR</strong> — a leveraged Bitcoin proxy, not a business, now trading <em>below</em> its own reported BTC NAV; its highest-skill panelist warned of exactly this discount. QQQ owners hold a Bitcoin-beta sleeve here whether they want it or not.</li>
+<li><strong>CRWV, TSLA, INTC</strong> — respectively a debt-laden AI-cloud (beta 7.1), a shrinking carmaker on a robotaxi option, and a cash-burning turnaround that already re-rated +427% above the Street target. All high-risk, all Watch.</li>
+</ul>
+
+<p><strong>The melting-ice-cube Watches (cheap, but shrinking):</strong> KHC, WBD, CMCSA, FANG, EA, MDLZ, PCAR — statistically cheap but with flat-to-declining revenue and structural erosion. Cheap for a reason; possible value traps. These are the index&#x27;s low-Growth-Quality (3–4) tail.</p>
+
+<h2>7. Sector and theme tilts</h2>
+
+<p><strong>Sector distribution of the 99 scored names:</strong></p>
+
+<div class="tw"><table><thead><tr><th>Sector</th><th>Count</th><th>Share</th></tr></thead><tbody>
+<tr><td>Technology</td><td>43</td><td>43%</td></tr>
+<tr><td>Industrials</td><td>12</td><td>12%</td></tr>
+<tr><td>Consumer Cyclical</td><td>10</td><td>10%</td></tr>
+<tr><td>Healthcare</td><td>9</td><td>9%</td></tr>
+<tr><td>Communication Services</td><td>9</td><td>9%</td></tr>
+<tr><td>Consumer Defensive</td><td>8</td><td>8%</td></tr>
+<tr><td>Utilities</td><td>4</td><td>4%</td></tr>
+<tr><td>Energy</td><td>2</td><td>2%</td></tr>
+<tr><td>Basic Materials</td><td>1</td><td>1%</td></tr>
+<tr><td>Financial Services</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+
+<p><strong>By count</strong>, Technology is 43% of the index — but <strong>by weight</strong> (cap-weighted, which is how you actually own it) the tech-plus-AI tilt is far heavier, because the largest holdings (NVDA, MSFT, AVGO, plus the Communication-Services mega-caps GOOGL/GOOG/META and Consumer-Cyclical AMZN) are all effectively AI-economy plays. The &quot;Communication Services&quot; and &quot;Consumer Cyclical&quot; buckets are misleading labels: Alphabet, Meta, and Amazon are three of the most important AI companies in the world.</p>
+
+<p><strong>The real theme tilts</strong> (which cut across the GICS sectors):</p>
+<ul>
+<li><strong>AI infrastructure — the dominant theme, and the dominant risk.</strong> Chips (NVDA, AMD, AVGO, MRVL, ARM, ALAB, MU, ADI, TXN, KLAC, LRCX, AMAT), equipment (ASML), memory/storage (MU, WDC, STX, SNDK), neoclouds (NBIS, CRWV), and the hyperscalers who buy it all (MSFT, GOOGL, AMZN, META). <strong>This one theme drives the majority of the index&#x27;s weight and nearly all of its recent return.</strong></li>
+<li><strong>Power for AI.</strong> A quiet but real sub-tilt: utilities and power names (CEG, AEP, XEL, EXC) riding the data-center electricity-demand story. CEG is the only Buy of the four.</li>
+<li><strong>Software-at-a-crossroads.</strong> A large cluster (ADBE, INTU, ADSK, WDAY, CRWD, PANW, FTNT, DDOG, SHOP, CDNS, SNPS, ROP) split between <em>contrarian value-in-quality Buys</em> (the de-rated ones) and <em>priced-for-perfection Watches</em> (the momentum ones) — the whole group shadowed by the &quot;does generative AI expand or erode software moats?&quot; debate.</li>
+<li><strong>Defensive ballast (small).</strong> Consumer Defensive + Utilities + a few staples-like industrials (COST, PEP, KDP, MDLZ, MNST, CCEP, WMT, the utilities) provide modest low-beta ballast — but it is a <em>thin</em> cushion in a fund this growth-tilted.</li>
+</ul>
+
+<p><strong>The honest tilt summary:</strong> QQQ is, functionally, <strong>an AI-infrastructure-and-mega-cap-software index with a light defensive tail.</strong> Its diversification across ten GICS sectors is largely cosmetic; its true factor exposure is <em>long AI capex, long US large-cap growth, long a handful of names.</em></p>
+
+<h2>8. Aggregate valuation richness</h2>
+
+<p>We did not compute a single index-level P/E here, but the <strong>distribution of our own verdicts is the cleanest valuation signal available</strong>, and it is unambiguous:</p>
+
+<ul>
+<li><strong>64 of 99 names (65%) are Watch — and in this index, Watch overwhelmingly means &quot;quality at a full price with no margin of safety.&quot;</strong> When two-thirds of a basket earns that verdict, the basket is richly valued. Full stop.</li>
+<li><strong>The quality/price divergence is stark.</strong> 29 names score Growth Quality 8+ (elite businesses), yet only a minority of <em>those</em> are Buys — the rest are Watch <strong>specifically on valuation</strong> (COST, IDXX, ISRG, KLAC, LRCX, CDNS, AXON, PLTR, ALAB, ARM, CRWD, DDOG, SHOP, PANW). Elite business + rich price = Watch is the modal outcome in QQQ today.</li>
+<li><strong>Where value <em>does</em> exist, it clusters in three pockets:</strong> (a) the de-rated mega-caps the market oddly left cheap (GOOGL ~25× fwd/PEG 0.6, META ~18× fwd, AMZN ~24× FY27E, MSFT ~20× FY27E), (b) contrarian AI-fear casualties (INTU ~10× fwd, ADBE ~9× fwd, PYPL 8.5× EPS, WDAY ~12× fwd, TMUS ~17× fwd), and (c) statistically-cheap-but-shrinking value traps (KHC, WBD, CMCSA, PDD). Pocket (a) is where the real risk-adjusted value lives.</li>
+<li><strong>The cyclical semis carry the most dangerous &quot;cheapness.&quot;</strong> Names like MU, STX, WDC, SNDK look cheap on <em>peak-cycle</em> earnings — the classic memory/storage trap where a low trailing P/E is a warning, not a bargain. We rate them cyclical satellites (MU) or Avoid (SNDK) accordingly.</li>
+</ul>
+
+<p><strong>Aggregate read: the index is expensive, and honestly so.</strong> You are not being offered a cheap basket of great companies; you are being offered a great basket of companies at a price that already assumes the AI cycle keeps running. The margin of safety at the index level is thin, which is exactly why our top-level call is &quot;own it as a core, but size for the risk and tilt toward the cheaper mega-caps&quot; rather than &quot;back up the truck.&quot;</p>
+
+<h2>9. Honest caveats</h2>
+
+<ul>
+<li><strong>~Half the index has no Synthos expert coverage — the single biggest caveat.</strong> <strong>48 of 99 constituents have zero expert-panel claims</strong>; their verdicts are <strong>fundamentals- and quant-driven only.</strong> That includes some meaningful calls (ADSK, ALNY, DASH, CEG, NBIS, GILD, GOOG-share-class, TMUS, WMT among the Buys; and most of the defensive/industrial tail). We are transparent about this per-name: a fundamentals/quant Watch on, say, XEL or MDLZ carries less analytical conviction than a 200-claim, panel-backed call on META. <strong>Do not read the un-covered verdicts as carrying the same weight as the deeply-covered ones.</strong></li>
+<li><strong>Expert coverage is wildly concentrated.</strong> Of 1,203 total claims, the top two names (NVDA 402, META 204) account for <strong>~half</strong>. Coverage skews to the mega-cap AI winners; the long tail is thin. This mirrors — and may amplify — the same concentration that defines the index itself.</li>
+<li><strong>The scores are point-in-time and analyst-assigned.</strong> The three 0–10 scores are Synthos judgments anchored to real metrics, not agency ratings or probabilities we can calibrate. They will move with each earnings print and price change. This note is a <strong>2026-07-03 snapshot.</strong></li>
+<li><strong>Cap-weighting means you don&#x27;t own the average — you own the top.</strong> Every distribution in this note is <em>equal-weighted by company</em> for analytical clarity. But QQQ is <em>cap-weighted</em>, so your actual exposure is far more concentrated in the mega-caps than the count-based stats suggest. The index&#x27;s fate is the top ~7 names&#x27; fate.</li>
+<li><strong>One macro bet underlies almost everything.</strong> The dominant theme (AI infrastructure), the dominant risk (a hyperscaler capex pause), and the dominant return driver (the mega-cap chip/cloud complex) are the <em>same bet</em>. QQQ is far less diversified than its 100-name count implies.</li>
+<li><strong>Not investment advice.</strong> Independent research, educational and informational only, never personalized. Forward figures are analyst consensus, labeled as estimates. Verdicts and scores are tracked Synthos calls as of 2026-07-03; prior versions are available via the version dropdown.</li>
+</ul>
+
+<h2>10. Verdict, positioning &amp; monitoring</h2>
+
+<p><strong>Own QQQ as a core growth sleeve — but own it knowingly.</strong> By our own bottom-up scoring, the Nasdaq-100 is a <strong>high-quality (Growth Quality 6.4), moderate-risk-with-a-fat-tail (Risk 5.8), only-modestly-exponential (4.3)</strong> index whose forward return is dominated by ~7 mega-caps and levered to the AI-infrastructure capex cycle. Its best risk-adjusted value sits, unusually, in its <em>most-covered</em> mega-caps (GOOGL, META, AMZN, MSFT, NVDA, ASML) — the seven Core Buys are the reason the index is ownable. But <strong>two-thirds of the constituents are Watch on price</strong>, the aggregate valuation is rich, and the true diversification is thinner than the name count suggests.</p>
+
+<ul>
+<li><strong>Positioning (educational, not advice):</strong> QQQ is a legitimate <strong>core</strong> holding for a growth-tilted portfolio. An investor wanting to improve the risk/reward could <strong>tilt toward the seven Core Buys</strong> (or a cheaper-mega-cap overlay) and <strong>trim exposure to the priced-for-perfection tail</strong> — but the single-ticket index is a defensible default. Size it so a 30%+ drawdown in the top holdings would not break the plan, because that is the shape of the tail risk.</li>
+<li><strong>The one thing to watch above all else:</strong> the <strong>AI-infrastructure capex cycle.</strong> Hyperscaler capex guidance (MSFT/GOOGL/AMZN/META), Nvidia&#x27;s demand commentary, and the memory/equipment cycle are the index&#x27;s real fundamentals. A sustained capex pause is the scenario that hits QQQ hardest, top-first.</li>
+<li><strong>Monitoring:</strong> re-score constituents each earnings season; re-underwrite the index read when the Buy/Watch ratio, the mega-cap valuations, or the AI-capex trajectory shift materially. This ETF read is a tracked Synthos call as of <strong>2026-07-03</strong>.</li>
+<li><strong>Single biggest risk:</strong> the entire index is, at its core, one bet — that AI capex keeps compounding. Everything else is second-order.</li>
+</ul>
+
+<hr/>
+
+<h2>Provenance &amp; disclosures</h2>
+
+<ul>
+<li><strong>Built from:</strong> 99 Synthos per-company deep dives (each with a verdict + three 0–10 scores), aggregated bottom-up. Distributions in this note are equal-weighted by company; the actual fund is cap-weighted.</li>
+<li><strong>Coverage honesty:</strong> 51/99 constituents carry Synthos expert-panel claims (1,203 total, ~half in NVDA + META alone); <strong>48/99 are fundamentals/quant-driven with no panel coverage</strong> — flagged throughout.</li>
+<li><strong>Data as-of:</strong> constituent verdicts and scores current to 2026-07-03; underlying fundamentals, estimates, and prices per each company deep dive.</li>
+<li><strong>Not investment advice.</strong> Independent research, educational and informational only, never personalized. Hypothetical/forward figures are labeled; the only performance numbers Synthos will headline are the live, real-money Flagship&#x27;s.</li>
+<li><strong>Version:</strong> 2026-07-03. Prior versions available via the deep-dive version dropdown (&quot;based on the info at the time&quot;).</li>
+</ul>
+</div></body></html>
