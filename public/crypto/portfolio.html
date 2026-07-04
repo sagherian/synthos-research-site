@@ -1,0 +1,477 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Flagship Crypto Portfolio — Synthos Research</title><style>
+/* ================================================================
+   SYNTHOS RESEARCH · MACRO CHAPTER TEMPLATE — same token family
+   as the hub. This page is what a macro chapter card opens.
+   ================================================================ */
+:root{
+  --bg0:#0c121c;
+  --bg-hero:#12263a;
+  --panel:#0f1a26;
+  --panel2:#111a26;
+  --panel3:#14202e;
+  --line:#243447;
+  --line-soft:#1b2a3c;
+  --text:#eef4fb;
+  --muted:#a4b5c8;
+  --dim:#7d93a8;
+  --accent:#22d3ee;
+  --teal:#5eead4;
+  --r:14px;
+  --r-sm:10px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+/* Reading scale — one notch larger than the hub: 18px base, 21px large */
+html{font-size:112.5%;}
+html.lg{font-size:128%;}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:radial-gradient(1200px 600px at 50% -200px,var(--bg-hero),var(--bg0) 60%) fixed var(--bg0);
+  color:var(--text);
+  font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:1rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px;}
+::selection{background:#155e75;color:#fff;}
+a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px;}
+a:hover{color:var(--text);}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.skip{
+  position:absolute;left:1rem;top:-4rem;z-index:100;
+  background:var(--accent);color:#04222b;font-weight:700;
+  padding:.7rem 1.1rem;border-radius:8px;transition:top .15s var(--ease);
+}
+.skip:focus{top:1rem;}
+
+/* ============ header ============ */
+.site-head{border-bottom:1px solid var(--line-soft);}
+.head-in{
+  max-width:1120px;margin:0 auto;padding:1rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+.back{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-weight:700;font-size:.95rem;text-decoration:none;color:var(--teal);
+  border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;
+  transition:border-color .12s var(--ease);
+}
+.back:hover{border-color:var(--teal);color:var(--teal);}
+.brand{display:flex;align-items:baseline;gap:.55rem;text-decoration:none;}
+.brand .mark{width:.95rem;height:.95rem;border-radius:3px;align-self:center;background:linear-gradient(135deg,var(--accent),var(--teal));}
+.brand b{font-size:.98rem;letter-spacing:.18em;font-weight:800;color:var(--text);}
+.brand span{font-size:.88rem;color:var(--muted);}
+.type-toggle{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--panel2);color:var(--text);
+  border:1px solid var(--line);border-radius:999px;
+  padding:.4rem .95rem;font-size:.88rem;font-weight:600;cursor:pointer;font-family:inherit;
+}
+.type-toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);}
+.type-toggle:hover{background:var(--panel3);}
+.type-toggle .aa{font-weight:800;}
+.type-toggle .aa b{font-size:1.2em;}
+
+/* ============ article layout ============ */
+main{max-width:47rem;margin:0 auto;padding:2.75rem 1.5rem 4rem;}
+
+.kicker{
+  font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:.8rem;
+}
+h1{
+  font-size:2.15rem;line-height:1.18;letter-spacing:-.018em;font-weight:800;
+  margin-bottom:.9rem;max-width:24ch;
+}
+h1 em{font-style:normal;color:var(--teal);}
+.dek{font-size:1.12rem;color:var(--muted);max-width:58ch;margin-bottom:1.1rem;}
+.meta{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;
+  font-size:.88rem;color:var(--muted);
+  border-bottom:1px solid var(--line-soft);
+  padding-bottom:1.4rem;margin-bottom:1.6rem;
+}
+.meta b{color:var(--text);font-weight:700;}
+
+/* On this page */
+.toc{
+  background:var(--panel2);border:1px solid var(--line-soft);border-radius:var(--r);
+  padding:1.1rem 1.4rem;margin-bottom:2.2rem;
+}
+.toc h2{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;}
+.toc ol{list-style:none;counter-reset:toc;}
+.toc li{counter-increment:toc;}
+.toc a{
+  display:flex;gap:.7rem;align-items:baseline;
+  padding:.32rem 0;text-decoration:none;font-weight:600;font-size:.98rem;
+}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-size:.78rem;font-weight:800;color:var(--dim);font-variant-numeric:tabular-nums;}
+.toc a:hover{color:var(--teal);}
+
+/* body rhythm */
+article h2{
+  font-size:1.45rem;letter-spacing:-.012em;line-height:1.25;
+  margin:2.6rem 0 .9rem;scroll-margin-top:2rem;
+}
+article h2 .no{color:var(--dim);font-size:.85em;margin-right:.5rem;font-variant-numeric:tabular-nums;}
+article p{margin-bottom:1.05rem;max-width:68ch;}
+article p strong{font-variant-numeric:tabular-nums;}
+article ul{margin:0 0 1.05rem 1.3rem;max-width:66ch;}
+article li{margin-bottom:.45rem;}
+article li::marker{color:var(--accent);}
+
+/* key stats */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.7rem;
+  margin:1.4rem 0 1.8rem;
+}
+.stat{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1rem;}
+.stat dt{font-size:.8rem;color:var(--muted);font-weight:700;}
+.stat dd{font-size:1.45rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.25;}
+.stat dd span{display:block;font-size:.8rem;color:var(--muted);font-weight:600;}
+
+/* pull quote */
+.pull{
+  border-left:3px solid var(--teal);
+  margin:1.8rem 0;padding:.4rem 0 .4rem 1.4rem;
+  font-size:1.45rem;line-height:1.35;font-weight:700;letter-spacing:-.01em;color:var(--teal);
+  max-width:24ch;
+}
+
+/* so-what panel */
+.sowhat{
+  background:rgba(34,211,238,.06);
+  border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:0 var(--r) var(--r) 0;
+  padding:1.3rem 1.5rem;margin:1.6rem 0 1.8rem;
+}
+.sowhat h3{
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:.55rem;
+}
+.sowhat ul{margin:.3rem 0 0 1.3rem;}
+
+/* regime tags */
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0;}
+.chip{
+  display:inline-flex;align-items:center;
+  border:1px solid var(--line);border-radius:999px;
+  background:rgba(255,255,255,.02);
+  padding:.28rem .85rem;font-size:.86rem;font-weight:600;color:var(--text);white-space:nowrap;
+}
+
+/* prev / next */
+.pager{
+  display:grid;grid-template-columns:1fr 1fr;gap:.8rem;
+  margin-top:3rem;padding-top:1.8rem;border-top:1px solid var(--line-soft);
+}
+@media (max-width:600px){.pager{grid-template-columns:1fr;}}
+.pager a{
+  display:block;text-decoration:none;color:var(--text);
+  background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border:1px solid var(--line);border-radius:var(--r);
+  padding:1rem 1.25rem;
+  transition:border-color .15s var(--ease),transform .15s var(--ease);
+}
+.pager a:hover{border-color:var(--accent);transform:translateY(-2px);}
+.pager .dir{display:block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:.25rem;}
+.pager .ttl{font-weight:700;font-size:1.02rem;}
+.pager .next{text-align:right;}
+
+/* footer */
+.site-foot{border-top:1px solid var(--line-soft);padding:1.6rem 1.5rem 2.4rem;}
+.site-foot p{max-width:1120px;margin:0 auto;font-size:.86rem;color:var(--muted);}
+.site-foot b{color:var(--text);}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;}
+  .pager a:hover{transform:none;}
+}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-sm);margin:1.2rem 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:.5rem .7rem;border-bottom:1px solid var(--line-soft);text-align:left;font-variant-numeric:tabular-nums}
+thead th{background:#16212f;color:var(--teal);font-weight:700}tbody td:first-child,tbody th{font-weight:700}
+code{background:#0b1220;border:1px solid var(--line-soft);border-radius:5px;padding:.05em .35em;font-size:.85em;color:var(--muted)}
+h1{font-size:2rem}article h2{font-size:1.4rem;color:#eaf2fb;border-top:1px solid var(--line-soft);padding-top:1.1rem;margin-top:2rem}
+article h3{font-size:1.12rem;color:var(--teal);margin:1.3rem 0 .3rem}blockquote{border-left:3px solid var(--teal);padding-left:1rem;color:var(--muted);margin:1rem 0}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="head-in">
+<a class="back" href="index.html"><span aria-hidden="true">←</span> Crypto tracker</a>
+<a class="brand" href="../research.html"><span class="mark"></span><b>SYNTHOS</b><span>Research</span></a>
+<button class="type-toggle" id="typeToggle" aria-pressed="false"><span class="aa">A<b>A</b></span> Larger type</button></div></header>
+<main id="main"><article>
+<p class="kicker">Flagship series · Crypto</p>
+<h1>Synthos Flagship Crypto Portfolio</h1>
+<p class="dek">A conviction, sector-weighted crypto portfolio built from the live four-pillar composite scores, the Synthos valuation framework, and the current macro-liquidity regime. Cited, rational, risk-taking — and honest about what it can't forecast.</p>
+<div class="meta"><span>Updated <b>July 4, 2026</b></span><span>Synthos Portfolio Engine</span><span><a href="index.html">Sector tracker →</a></span></div>
+
+
+<p><strong>Synthos Research — Flagship Series</strong></p>
+<p><strong>Date: 2026-07-04 | Author: Fable, portfolio architect</strong></p>
+<p><strong>Sources of truth: <code>results/crypto/scored.json</code> (73-token scored universe), <code>docs/crypto_framework_fable.md</code> (sector/valuation framework), <code>results/macro/regime_2026-07-04.md</code> (macro regime).</strong></p>
+
+<p><em>Not investment advice. This is a research construct expressing the Synthos framework&#x27;s current view. See Section 6.</em></p>
+
+
+<h2>1. THESIS &amp; RISK POSTURE</h2>
+
+<h3>The one-paragraph thesis</h3>
+
+<p>The macro engine says we are in <strong>Reflation tipping toward Inflation under fiscal dominance</strong>, with the single highest-conviction forward vector being a <strong>policy-forced liquidity injection inside 6–18 months</strong> (empty RRP, bank reserves −4.8% YoY, M2 already +5.6% — the mechanical QT-stop trigger is close; Visser sizes the injection at $6–8T). Crypto is the <strong>purest expression of the liquidity cycle</strong> — the regime gate does more work here than in any equity sector. Meanwhile the tape is nowhere near euphoria: <strong>BTC sits at $63,245, −49.8% from its October 2025 ATH of $126,080</strong>; ETH is −63.6% from ATH; SOL −71.9%; the median token in our universe is down 80–95% from its high and down 40–70% over one year. That combination — <strong>a forward liquidity turn into a market that has already been cut in half</strong> — is the asymmetry this portfolio is built to own. We accumulate <em>ahead of</em> the injection, not after it, exactly as the macro report instructs (&quot;position ahead of the injection, not after it&quot;).</p>
+
+<h3>Risk posture: constructive, front-footed, but tranche-disciplined</h3>
+
+<ul>
+<li><strong>Constructive</strong> because the liquidity turn is the forward base case and prices are deep in drawdown (this is early-cycle <em>pricing</em> inside a late-cycle <em>macro</em> — the fat pitch in crypto historically).</li>
+<li><strong>Tranche-disciplined</strong> because the regime is &quot;constructive-but-late&quot;: inflation is re-accelerating (CPI 4.3%, core PCE 3.4%), the Fed put is dead, and the injection&#x27;s <em>timing</em> is not forecastable even though its <em>direction</em> is. We therefore buy in tranches on weakness rather than all-at-once, and we let the regime gate (Section 5) scale gross exposure.</li>
+<li><strong>Concentrated by design.</strong> This is a conviction portfolio: 20 positions, top 5 = 58% of the book. The composite scores pick the names; the framework&#x27;s quality hierarchy sets the sector weights.</li>
+</ul>
+
+<h3>The scope caveat (say it plainly)</h3>
+
+<p><strong>This portfolio is 100% within crypto.</strong> It answers &quot;given a crypto allocation, how should it be built?&quot; — it does NOT answer &quot;how much crypto should you own?&quot; Sizing crypto against the rest of a book is the investor&#x27;s decision and depends on their liabilities, horizon, and stomach. The macro regime (debasement, fiscal dominance) argues for <em>some</em> hard-money allocation; the number is yours.</p>
+
+
+<h2>2. TARGET SECTOR ALLOCATION</h2>
+
+<h3>The rationality test, stated up front</h3>
+
+<p>Sector weights are set by three things, in order: <strong>(1) durability of value capture</strong> (does the token own real cash flows or a monetary premium?), <strong>(2) score evidence</strong> (where the Attractive-tier names actually live in <code>scored.json</code>), and <strong>(3) regime fit</strong> (what the liquidity/debasement regime pays for). Not equal-weight, not mcap-weight, not vibes.</p>
+
+<p>The Layer-1-versus-meme case, concretely: <strong>L1s get 25%, Meme gets 3% — an 8-to-1 ratio.</strong> L1s are fee-generating digital economies with the strongest network moats in the asset class (SOL composite 65.3 / Attractive with adoption pillar sA 90.9; ETH moat pillar sM 90.6 with a fee-burn mechanism and 100% float). Memes are, per our own framework, &quot;attention assets — momentum only, fundamental value: none, expected long-run value: zero for most.&quot; A sane model can still own memes <em>small</em> — the meme sleeve is the sentiment thermometer of the liquidity cycle and SPX6900 is literally the highest composite in the universe (78.6) on pure momentum — but only at a size where a 100% loss costs 3% of the book. That is what &quot;weighs them accordingly&quot; means.</p>
+
+<h3>Allocation table (11 sectors, sums to 100%)</h3>
+
+<div class="tw"><table><thead><tr><th>#</th><th>Sector</th><th>Weight</th><th>One-line rationale</th></tr></thead><tbody>
+<tr><td>1</td><td>Store of Value (BTC)</td><td><strong>30%</strong></td><td>The purest debasement/liquidity-cycle asset (macro §5: &quot;own the numerator&quot;); −49.8% from ATH into a forward liquidity turn is the core asymmetry.</td></tr>
+<tr><td>2</td><td>Layer 1</td><td><strong>25%</strong></td><td>The nation-states of crypto; every other sector rents land from them. Home of SOL (65.3, Attractive) and the deepest moats (ETH sM 90.6).</td></tr>
+<tr><td>3</td><td>DeFi — Exchanges (DEX)</td><td><strong>12%</strong></td><td>The highest-quality cash flows in crypto — daily-visible trading fees; AERO 64.9 with DIRECT ve-fee capture at 10.3x revenue.</td></tr>
+<tr><td>4</td><td>DeFi — Credit</td><td><strong>8%</strong></td><td>Crypto&#x27;s banking system; AAVE is Attractive (66.3) with DIRECT buybacks at 2.9x fees; SKY is the cheapest real-revenue asset in the universe (8.8x revenue).</td></tr>
+<tr><td>5</td><td>Infrastructure &amp; Oracles</td><td><strong>7%</strong></td><td>Highest cost-to-turn-off per dollar of mcap (LINK sM 76.0); the toll-road option on all of DeFi reawakening with liquidity.</td></tr>
+<tr><td>6</td><td>Layer 2</td><td><strong>6%</strong></td><td>One genuinely Attractive name (TIA 69.9) but the sector is structurally governance-only with unlock overhangs — tokenomics caps the weight.</td></tr>
+<tr><td>7</td><td>Liquid Staking</td><td><strong>5%</strong></td><td>Fee-on-AUM businesses, priceable like asset managers; ETHFI is Attractive (65.2) at 12.0x revenue and it is a leveraged ETH-restaking recovery play.</td></tr>
+<tr><td>8</td><td>AI × Crypto</td><td><strong>4%</strong></td><td>Venture sleeve on the AI-capex supercycle; real but early demand (GRASS adoption pillar sA 90.4); sized as venture, not as a cash-flow sector.</td></tr>
+<tr><td>9</td><td>Meme / Attention</td><td><strong>3%</strong></td><td>Momentum-only sleeve, hard-labeled; owns the cycle&#x27;s froth signal (SPX 78.6, the top composite in the universe) at loss-absorbable size.</td></tr>
+<tr><td>10</td><td>DePIN</td><td><strong>0%</strong></td><td><strong>Justified zero — see below.</strong></td></tr>
+<tr><td>11</td><td>Exchange Tokens &amp; Payments</td><td><strong>0%</strong></td><td><strong>Justified zero — see below.</strong></td></tr>
+<tr><td></td><td><strong>TOTAL</strong></td><td><strong>100%</strong></td><td></td></tr>
+</tbody></table></div>
+
+<h3>The two zeros, justified in writing</h3>
+
+<p><strong>DePIN — 0%.</strong> The framework&#x27;s own honesty ratio condemns the sector today: demand/emissions coverage &lt; 1 is the norm — these are &quot;machines that convert token dilution into hardware deployment while real demand catches up (or doesn&#x27;t).&quot; The scores agree: the sector&#x27;s best composite is AR at 56.5 (Neutral), followed by IOTX 51.0, FIL 49.8, GEOD 47.5, HNT 45.2 — <strong>zero Attractive-tier names</strong>, and three of five constituents (IOTX $28.5M, HNT $45.5M, GMX-style sub-floor sizes) carry <code>sub-$100M</code> flags, i.e. they fail our own universe floor. HNT is −99.5% from ATH with a −56.4% 30-day move — that is a value trap profile, not a value profile. The genuinely DePIN-shaped demand story we <em>do</em> believe in (paid compute/bandwidth) is already owned through the AI sleeve — GRASS and AKT are physically DePIN, economically AI-demand, and classified accordingly. <strong>What changes this:</strong> any DePIN name printing demand/emissions coverage trending through ~0.7 toward 1.0 (Helium data-credit burn, GEODNET subscription burn) re-opens the sector at 2–3%.</p>
+
+<p><strong>Exchange Tokens &amp; Payments — 0%.</strong> Two industries, two disqualifiers. <em>Exchange tokens</em> carry single-company regulatory annihilation risk — the framework&#x27;s own words: &quot;one enforcement action is the whole thesis&quot; — and the scores don&#x27;t pay us for it: OKB 56.5, CRO 51.2, BNB 48.5, all Neutral, none Attractive. BNB&#x27;s composite is dragged by a 22.3 adoption pillar (sA) — the burn is real but the growth isn&#x27;t. <em>Payments</em> (XRP 45.5, XLM 48.3) fail the value-capture test: enormous float versus measured settlement revenue, XRP still −67.6% from ATH with 38% of supply yet to circulate (float ratio 0.623) and a standing 1B/month escrow-release overhang — deterministic sell pressure, our most forecastable negative signal. Regime logic doesn&#x27;t rescue them: in a liquidity upturn these are <em>lower-beta</em> expressions than L1s with none of the moat. <strong>What changes this:</strong> a hard revenue link (e.g., a fee-share/burn tied to measured settlement volume) or an Attractive-tier composite; BNB re-enters first if its adoption pillar recovers above ~50.</p>
+
+<h3>Why the top of the table is the top</h3>
+
+<ul>
+<li><strong>SoV 30% &gt; everything:</strong> BTC is the only asset in the universe whose <em>entire</em> thesis is the regime call itself (fiscal dominance → debasement → non-sovereign scarcity). It has no dilution (float 1.0, 20.05M of 21M mined), no value-capture ambiguity, and the deepest liquidity. When correlations collapse — and Section 6 says they will — BTC falls least and recovers first. Note its composite of 50.0 is the <em>sector anchor by construction</em> (all four pillars = 50.0 in <code>scored.json</code> — it is the benchmark other SoV names would score against), not a mediocrity signal.</li>
+<li><strong>L1 25% &gt; DeFi 20% combined:</strong> L1s own the moat (Metcalfe residuals, economic-value-secured) <em>and</em> the optionality on every app sector; DeFi owns better current cash flows but rents its land. We pay up for sovereignty, but we pay DeFi real weight because that is where the Attractive-tier cash-flow names actually are (AAVE 66.3, ETHFI 65.2, AERO 64.9).</li>
+<li><strong>L2 6% despite TIA at 69.9:</strong> the tokenomics pillar dominates L2 scoring for a reason — governance-only tokens with large unlock overhangs (ARB, OP, STRK are the framework&#x27;s canonical case studies). We own the two exceptions (TIA&#x27;s modular-DA story, POL&#x27;s fully-diluted 1.0 float with sT 84.5) and refuse the rest.</li>
+</ul>
+
+
+<h2>3. HOLDINGS — 20 POSITIONS</h2>
+
+<p>Concentration note: top 5 positions = 58% of the book. Every pick cites its composite / tier / decisive pillar and value-capture flag from <code>scored.json</code>.</p>
+
+<h3>Sleeve A — Monetary core (30%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>BTC</strong></td><td><strong>30.0%</strong></td><td>50.0 / Neutral (sector anchor — all pillars 50 by construction)</td><td>Value capture: monetary. Float 1.00, zero meaningful future issuance (20.05M/21M). The debasement trade itself: macro report names it explicitly (&quot;long gold/silver/Bitcoin, short bonds&quot;). At $63,245, −49.8% from the $126,080 ATH, with the liquidity turn ahead — the entire portfolio&#x27;s spine.</td></tr>
+</tbody></table></div>
+
+<h3>Sleeve B — Layer 1 platforms (25%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>SOL</strong></td><td><strong>10.0%</strong></td><td>65.3 / <strong>Attractive</strong></td><td>The best adoption print in the entire L1 sector: <strong>sA 90.9</strong>, momentum sM 74.7, float 0.923. Fees are real ($144M annualized REV) even if the multiple is optically huge (P/REV 332x — the signal is the sector-relative rank and the acceleration, per framework §2.2). −71.9% from ATH ($293.31 → $82.55). The highest-conviction L1.</td></tr>
+<tr><td><strong>ETH</strong></td><td><strong>8.0%</strong></td><td>60.4 / Neutral</td><td>The moat: <strong>sM 90.6</strong>, the highest network-moat score in the universe. Float 1.00, fee-burn (EIP-1559) gives it the only credible L1 deflation mechanism. −63.6% from ATH ($4,946 → $1,798). The tokenomics (sT 64.5) and momentum (7d +12.1%) are turning while the market still prices it as last cycle&#x27;s loser.</td></tr>
+<tr><td><strong>KAS</strong></td><td><strong>4.0%</strong></td><td>63.3 / Neutral</td><td>The most <em>balanced</em> scorecard in the sector: sV 67.1 / sA 65.2 / sT 64.3 / sM 56.5 — no weak pillar. Pure monetary L1 (value capture: monetary), float 0.998 — no unlock overhang, ever. −85.0% from ATH. A second, higher-beta expression of the hard-money thesis.</td></tr>
+<tr><td><strong>TRX</strong></td><td><strong>3.0%</strong></td><td>57.9 / Neutral</td><td>The stablecoin-settlement chain — the direct on-chain expression of fiscal-dominance dollar demand. <strong>$315.8M annualized fees at P/REV 97.8 — the cheapest real fee stream among big L1s.</strong> Float 1.00, and only −24.5% from ATH: it barely bear-markets. Ballast within the L1 sleeve.</td></tr>
+</tbody></table></div>
+
+<p>Rejected on scores, not vibes: SUI (37.0, Weak — float 0.405, sT 8.4, P/REV 6,520x: the low-float/high-FDV archetype our tokenomics overlay exists to avoid), APT (32.0, Weak), SEI (32.9, Weak), AVAX (43.7 — P/fees 2,310x with a 32.1 value pillar).</p>
+
+<h3>Sleeve C — DeFi: Exchanges (12%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>AERO</strong></td><td><strong>4.0%</strong></td><td>64.9 / Neutral (borderline Attractive)</td><td>Value capture: <strong>DIRECT</strong> (ve-fee distribution). <strong>sA 90.2</strong> — fee/volume acceleration is the best in the sector. P/Rev 10.3 on $55.8M protocol revenue. The Base-ecosystem monopoly DEX. Caveat honestly flagged: +63.9% in 30d, so entries are staged (Section 4); float 0.498 is the one blemish.</td></tr>
+<tr><td><strong>HYPE</strong></td><td><strong>3.0%</strong></td><td>42.7 / Neutral — <strong>held AGAINST the composite; convexity-sleeve position</strong></td><td>Value capture: <strong>DIRECT</strong> (assistance-fund buyback+burn). The single best cash-flow machine in crypto: <strong>$907M annualized fees, $664M revenue, P/Rev 23.6 (mcap)</strong> — and the framework&#x27;s own words: incentive-adjusted revenue &quot;HYPE passes it famously.&quot; The composite is crushed by tokenomics (sT 18.8; float 0.233, FDV $67.4B vs mcap $15.7B) — a real overhang we size for (3%, not 6%) and manage around unlock dates rather than pretend away. Only −8.0% from ATH: this is the one position we buy on drawdown <em>only</em>.</td></tr>
+<tr><td><strong>CAKE</strong></td><td><strong>3.0%</strong></td><td>61.3 / Neutral</td><td>Value capture: <strong>DIRECT</strong> (burn). P/Rev 12.0 on $37.9M revenue, float 0.963, balanced pillars (sV 63.4 / sT 73.0). The unglamorous compounder of the sleeve.</td></tr>
+<tr><td><strong>JUP</strong></td><td><strong>2.0%</strong></td><td>55.9 / Neutral</td><td>Value capture: <strong>DIRECT</strong>. The Solana-ecosystem toll road (aggregator + perps + launchpad): $211.8M fees, $62.4M revenue, P/Rev 12.6. Float 0.484 keeps it at 2% — same overhang discipline as HYPE. A paired trade with SOL: if SOL&#x27;s sA 90.9 adoption is real, JUP collects the tolls.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: GMX (62.8 — but $62.9M mcap carries the <code>sub-$100M</code> flag and fails the universe floor), UNI (42.9 — GOVERNANCE-only; you are pricing an eternal fee-switch option at 35.1x revenue you don&#x27;t own), DYDX (30.6, Weak, P/fees 90.6).</p>
+
+<h3>Sleeve D — DeFi: Credit (8%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>AAVE</strong></td><td><strong>5.0%</strong></td><td>66.3 / <strong>Attractive</strong></td><td>Value capture: <strong>DIRECT</strong> (the 2025 buyback program). The banking franchise of DeFi: <strong>$464.9M annualized fees, $58.8M revenue → P/Fees 2.9, P/Rev 23.2</strong>, float 0.949, every pillar ≥ 55 (sV 55.0 / sA 78.9 / sT 65.7 / sM 72.6). The highest composite among all real-revenue names. In a liquidity upturn, lending volumes are the first derivative of leverage returning.</td></tr>
+<tr><td><strong>SKY</strong></td><td><strong>3.0%</strong></td><td>59.7 / Neutral</td><td>Value capture: <strong>DIRECT</strong>. The deep-value position of the book: <strong>P/Rev 8.8 — the cheapest real-revenue multiple in the entire 73-token universe</strong> ($152.4M revenue, $5.85B TVL, sV 65.4). Float 0.994. Only −42.4% from ATH (shallowest DeFi drawdown = relative-strength tell). RWA/T-bill seigniorage is a <em>direct</em> fiscal-dominance beneficiary — it earns the very yields the Treasury must keep paying. Adoption pillar is soft (sA 33.4); the price we accept for the multiple.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: ENA (27.4, Weak — P/Rev 781.8; seigniorage structurally dependent on positive funding, exactly the thing that dies in a correlation collapse), MORPHO (52.1 — GOVERNANCE-only, sT 34.6), PENDLE (48.6), COMP (45.9 — P/Rev 121.9).</p>
+
+<h3>Sleeve E — Infrastructure &amp; Oracles (7%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>LINK</strong></td><td><strong>4.0%</strong></td><td>61.2 / Neutral</td><td>The highest cost-to-turn-off asset in crypto (framework §2.5: Chainlink going dark cascades defaults through tens of billions of TVL). <strong>sM 76.0, sA 67.3</strong> — the moat <em>and</em> the adoption are working; the value pillar (sV 21.1) is the known, priced tension (monetization early/opaque). −84.6% from ATH. If DeFi TVL reflates, oracle TVS reflates first.</td></tr>
+<tr><td><strong>PYTH</strong></td><td><strong>3.0%</strong></td><td>64.5 / Neutral (top Infra composite)</td><td>The most balanced Infra scorecard: sV 59.7 / <strong>sA 78.9</strong> / sT 61.1 / sM 58.6, float 0.787. The low-latency oracle for the perps/DEX complex we&#x27;re overweight — same thesis as LINK, next-generation surface, at $304M mcap versus LINK&#x27;s $6.08B.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: GRT (58.3 — respectable, but third oracle/indexer duplicates the sleeve), ZRO (28.3, Weak — float 0.252), W (43.3, sub-$100M flag).</p>
+
+<h3>Sleeve F — Layer 2 (6%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>TIA</strong></td><td><strong>4.0%</strong></td><td>69.9 / <strong>Attractive — highest non-meme composite in the universe</strong></td><td>Modular DA — the supply chain of the entire L2 economy. <strong>sA 89.4, sM 82.2, sT 64.9</strong>, float 0.801, +16.9% in 30d while −98.0% from its bubble ATH: the post-capitulation reacceleration profile our forward-not-trailing philosophy exists to catch. The value pillar is poor (sV 26.2; fees near zero) — this is a moat/adoption position, sized accordingly.</td></tr>
+<tr><td><strong>POL</strong></td><td><strong>2.0%</strong></td><td>58.3 / Neutral</td><td>The tokenomics exception in a dilution-cursed sector: <strong>float 1.00, sT 84.5</strong> — POL is fully distributed while ARB/OP/STRK still have 35–50% of supply incoming. sV 68.8. The patient, no-overhang way to own L2 reflation.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: ARB (45.9), OP (45.3), STRK (43.8) — all GOVERNANCE-only sequencer economics the token doesn&#x27;t own, all with float ≤ 0.66; MNT (36.9, Weak).</p>
+
+<h3>Sleeve G — Liquid Staking &amp; Restaking (5%)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>ETHFI</strong></td><td><strong>5.0%</strong></td><td>65.2 / <strong>Attractive</strong></td><td>The fee-on-AUM asset manager of the restaking stack: <strong>$130.4M fees, $33.4M revenue, P/Rev 12.0</strong>, float 0.929, no pillar below 61 (sV 61.6 / sA 66.2 / sT 71.1 / sM 62.0). It is also a convex second way to own the ETH recovery (Sleeve B). Momentum is confirming hard: +28.2% 30d, +20.3% 7d.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: LDO (52.4 — massive $16.4B TVL but sA 20.1: share is eroding, the fees prove it: P/fees 0.6 yet P/Rev 9.6 on a thin 6% take), JTO (42.6 — P/Rev 92.3), EIGEN (39.7, Weak — float 0.403, sM 19.0).</p>
+
+<h3>Sleeve H — AI × Crypto (4%) — convexity sleeve</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>GRASS</strong></td><td><strong>3.0%</strong></td><td>62.0 / Neutral (top AI composite)</td><td>Value capture: INDIRECT. <strong>sA 90.4 — the strongest adoption acceleration in the AI sector</strong> (+46.6% 30d confirms), real paid bandwidth/data demand (the demand-side DePIN test the rest of the sector fails). Float 0.632. −85.6% from ATH. The venture bet on AI-data demand meeting the macro AI-capex supercycle (Pal: &quot;largest capex supercycle in history&quot;).</td></tr>
+<tr><td><strong>AKT</strong></td><td><strong>1.0%</strong></td><td>56.6 / Neutral</td><td>Real GPU-lease demand, float 0.989 (no overhang), sT 73.1, sV 59.1. The small, honest way to own decentralized compute without paying a story premium (TAO: composite 44.8, float 0.457, sV 10.7 — the story premium we won&#x27;t pay).</td></tr>
+</tbody></table></div>
+
+<h3>Sleeve I — Meme / Attention (3%) — convexity sleeve, hard-labeled</h3>
+
+<p><strong>Label shipped verbatim per framework: &quot;attention assets — momentum only, fundamental value: none, expected long-run value: zero for most, position accordingly.&quot;</strong> These are momentum instruments and regime sensors, not investments. Sized so a 100% loss costs 3%.</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Port %</th><th>Composite / Tier</th><th>Why it&#x27;s here</th></tr></thead><tbody>
+<tr><td><strong>SPX</strong></td><td><strong>2.0%</strong></td><td>78.6 / <strong>Attractive — the single highest composite in the 73-token universe</strong></td><td><strong>sA 96.3</strong> — the strongest momentum print anywhere in the data (+23.2% 7d, +33.7% 30d), float 1.00, sT 58.4. In a liquidity upturn the meme sleeve is the highest-beta expression that exists; SPX is its current leader. Momentum rules only (Section 4).</td></tr>
+<tr><td><strong>BONK</strong></td><td><strong>1.0%</strong></td><td>52.7 / Neutral</td><td>The Solana-ecosystem attention proxy (pairs with SOL/JUP), float 1.00, turnover 0.162 (liquidity is real), +16.6% 7d. Second meme so the sleeve isn&#x27;t single-name event risk.</td></tr>
+</tbody></table></div>
+
+<p>Rejected: DOGE (48.0 — sM 90.5 brand moat but sA 33.0: the attention is elsewhere this cycle), TRUMP (36.2, Weak — float 0.237, <strong>sT 1.0, the worst tokenomics score in the universe</strong>; unlock cliffs into a meme is the exact combination the overlay forbids), PEPE/SHIB/WIF/FLOKI/PENGU (44–53, no edge over the two chosen).</p>
+
+<h3>Aggregate convexity sleeve (clearly labeled)</h3>
+
+<p><strong>HYPE 3% + GRASS 3% + SPX 2% + AKT 1% + BONK 1% = 10% high-risk/high-upside.</strong> Each position either fights one pillar deliberately (HYPE vs tokenomics) or has no fundamental floor (memes). Expected outcome distribution is barbell: several may go to ~zero; the sleeve exists because in the projected regime its upside is a multiple, not a percentage. Total portfolio survives the sleeve going to zero with 90% intact.</p>
+
+
+<h2>4. PER-POSITION PLAYBOOK</h2>
+
+<p>Three management styles, matched to asset nature — BTC is not a memecoin and is not traded like one:</p>
+
+<ul>
+<li><strong>CORE HOLD + DCA:</strong> systematic accumulation on schedule regardless of price; add extra on defined drawdowns; no selling below prior ATH. For monetary/moat assets.</li>
+<li><strong>ACCUMULATE-ON-DIPS:</strong> build in 3 tranches on weakness toward defined support logic; trim only on extreme extension. For quality fundamentals in drawdown.</li>
+<li><strong>TRADE-AROUND-CORE:</strong> hold a half-size core; add the rest on pullbacks; take profits into strength; momentum/stop rules active. For extended, low-float, or attention-driven names.</li>
+</ul>
+
+<p>Entry framing uses each token&#x27;s live <code>price</code> and ATH distance from <code>scored.json</code>. Exact moving-average levels are layered in at render time; the <em>logic</em> is specified here.</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Style</th><th>Entry logic</th><th>Profit/exit logic</th></tr></thead><tbody>
+<tr><td><strong>BTC</strong> ($63,245, −49.8% ATH)</td><td>CORE HOLD + DCA</td><td>DCA weekly starting now. Double tranche size on any flush of 15–20% below cost basis (toward the prior accumulation range / 200-day zone) — a −50%-from-ATH BTC ahead of a liquidity turn is the buy zone by definition, MVRV mid-range confirms neither froth nor capitulation.</td><td>No selling below the prior ATH ($126k). Above it, trim only per the regime gate (Section 5) when MVRV-z reaches prior-cycle extremes.</td></tr>
+<tr><td><strong>SOL</strong> ($82.55, −71.9% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Tranche 1 now (adoption already confirming: +13.7% 7d). Tranches 2–3 on pullbacks of 20% and 35% toward the prior range low / 200-day zone.</td><td>Trim a quarter into strength at roughly half the distance back to ATH (~$185 logic); full thesis review only if the sA adoption pillar drops below 60.</td></tr>
+<tr><td><strong>ETH</strong> ($1,798, −63.6% ATH)</td><td>CORE HOLD + DCA</td><td>DCA monthly; add extra on any retest of the drawdown low. The sM 90.6 moat doesn&#x27;t require timing.</td><td>Hold through cycle; trim per regime gate above prior ATH ($4,946).</td></tr>
+<tr><td><strong>KAS</strong> ($0.0311, −85.0% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Three equal tranches: now / −20% / −35%. Full-float token — no unlock calendar to schedule around.</td><td>Take a quarter off at 3x cost; hold rest as high-beta hard money.</td></tr>
+<tr><td><strong>TRX</strong> ($0.3257, −24.5% ATH)</td><td>CORE HOLD</td><td>Shallow-drawdown asset: buy half now, half on any 15% dip (it rarely gives more).</td><td>Hold for fee stream/ballast; exit only on stablecoin-flow migration off-chain.</td></tr>
+<tr><td><strong>AERO</strong> ($0.5999, +63.9% 30d)</td><td>TRADE-AROUND-CORE</td><td>Extended — do NOT chase. Half-position core only after a pullback of 20–25% from the recent push; remainder on a retest of the breakout zone.</td><td>Take profits into strength toward the prior high ($2.32 ATH logic, −74.3% away); recycle into dips. Watch float 0.498 emissions.</td></tr>
+<tr><td><strong>HYPE</strong> ($70.57, −8.0% ATH)</td><td>TRADE-AROUND-CORE (strictest rules in book)</td><td>Near ATH — chase nothing. Buy ONLY on drawdowns: first tranche −25% (~$53 zone logic), second −40% (~$42 zone logic). Check the unlock calendar before every add; no adds within 30 days of a &gt;1%-of-mcap unlock (float 0.233 is the whole risk).</td><td>Take profits into new-ATH strength; position cap 4% hard.</td></tr>
+<tr><td><strong>CAKE</strong> ($1.40, −96.8% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Two tranches: now and on a 20% dip. Burn mechanics do the compounding.</td><td>Trim at 2.5–3x; exit on take-rate compression (revenue/fees ratio deteriorating).</td></tr>
+<tr><td><strong>JUP</strong> ($0.2379, −88.1% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Tranche 1 now, tranche 2 on 25% pullback. Schedule all adds around the unlock calendar (float 0.484).</td><td>Trim into strength at half-way-to-ATH logic (~$1.10); thesis is SOL-coupled — review if SOL adoption breaks.</td></tr>
+<tr><td><strong>AAVE</strong> ($89.97, −86.4% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>+24.7% 30d = momentum confirming. Tranche 1 now; 2–3 on 15% / 30% pullbacks toward the pre-breakout base.</td><td>Hold while buybacks run and P/Rev &lt; ~40; trim a quarter at 2x.</td></tr>
+<tr><td><strong>SKY</strong> ($0.0574, −42.4% ATH)</td><td>ACCUMULATE-ON-DIPS (deep value, patient)</td><td>Three tranches over 8 weeks regardless of price (turnover 0.005 — illiquid, work orders slowly). It is the cheapest revenue in the universe; time is the entry edge.</td><td>Re-rate target: P/Rev toward sector median (~2x from 8.8). Exit if RWA yield-capture breaks (rate collapse).</td></tr>
+<tr><td><strong>LINK</strong> ($8.13, −84.6% ATH)</td><td>CORE HOLD + DCA</td><td>DCA monthly; add extra below $7 (prior base logic).</td><td>Cycle hold; trim per regime gate only.</td></tr>
+<tr><td><strong>PYTH</strong> ($0.0386, −96.8% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Tranches now / −20% / −35%. Float 0.787 — check unlock calendar before adds.</td><td>Trim a quarter at 3x; hold rest against the perps-DEX complex thesis.</td></tr>
+<tr><td><strong>TIA</strong> ($0.4077, −98.0% ATH)</td><td>TRADE-AROUND-CORE</td><td>Momentum re-entry after capitulation: half core now (+16.9% 30d confirms), add on 25% pullbacks that hold above the post-capitulation low.</td><td>This is an adoption/moat trade (sV 26.2 — no valuation floor): exit half at 3x, run the rest with a trailing structure stop under each higher low.</td></tr>
+<tr><td><strong>POL</strong> ($0.0744, −94.2% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Three tranches on schedule; full float means no calendar to manage.</td><td>Patient re-rate hold; exit on two consecutive quarters of L2-share loss.</td></tr>
+<tr><td><strong>ETHFI</strong> ($0.4313, +28.2% 30d)</td><td>TRADE-AROUND-CORE</td><td>Hot (+15.4% in 24h) — half core only on a 20% cool-off; remainder on a 35% pullback.</td><td>Take a quarter into each 50% leg up; core rides the ETH-recovery thesis.</td></tr>
+<tr><td><strong>GRASS</strong> ($0.5617, +46.6% 30d)</td><td>TRADE-AROUND-CORE</td><td>Extended. First tranche on 25% pullback (~$0.42 zone logic), second on 40%. Never chase a venture-sleeve name.</td><td>Venture rules: sell a third at 3x, a third at 6x, run the rest. Exit if paid-demand growth stalls two quarters.</td></tr>
+<tr><td><strong>AKT</strong> ($0.6512, −91.9% ATH)</td><td>ACCUMULATE-ON-DIPS</td><td>Two tranches: now / −25%. Full float, no calendar.</td><td>Venture rules as GRASS.</td></tr>
+<tr><td><strong>SPX</strong> ($0.4232, +33.7% 30d)</td><td>MOMENTUM RULES ONLY</td><td>Half now (momentum regime active, sA 96.3), half on the first 25–30% flush <em>that recovers within days</em> — meme dips that don&#x27;t bounce are exits, not entries.</td><td>Hard trailing stop under each major higher low; exit entirely on turnover collapse (24h volume/mcap dropping toward ~0.01) or on 30d relative strength going negative vs the meme sector. No averaging down. Ever.</td></tr>
+<tr><td><strong>BONK</strong> ($0.00000499, −91.5% ATH)</td><td>MOMENTUM RULES ONLY</td><td>Same rules as SPX; entries only while the Solana-ecosystem attention complex (SOL/JUP flows) is expanding.</td><td>Same stop/turnover discipline. No averaging down.</td></tr>
+</tbody></table></div>
+
+
+<h2>5. REBALANCING &amp; RISK RULES</h2>
+
+<h3>The regime gate (sizes crypto; the composite ranks tokens)</h3>
+
+<p>The macro engine&#x27;s liquidity posterior scales <strong>gross exposure</strong>, not picks:</p>
+
+<div class="tw"><table><thead><tr><th>Regime state</th><th>Action</th></tr></thead><tbody>
+<tr><td><strong>Liquidity expansion confirmed</strong> (QT ended / injection underway, M2 accelerating)</td><td>Full risk budget; convexity sleeve (10%) fully deployed.</td></tr>
+<tr><td><strong>Current state: turn approaching but unconfirmed</strong></td><td>Full core sleeves; convexity sleeve deployed only per pullback rules (no chasing). This is where we are today.</td></tr>
+<tr><td><strong>Liquidity drain resumes</strong> (reserves fall + M2 rolls over)</td><td>Convexity sleeve cut to ≤ 4%; proceeds to BTC. Portfolio tilts toward the BTC/ETH/TRX/SKY ballast.</td></tr>
+<tr><td><strong>Macro flip triggers</strong> (HY spreads &gt; 400–450bp, claims &gt; ~275–300k — per regime report §5)</td><td>De-risk: memes to zero, AI halved, book tilted ≥ 45% BTC. These triggers are <em>none present today</em>.</td></tr>
+</tbody></table></div>
+
+<h3>Standing rules</h3>
+
+<ol>
+<li><strong>Rebalance monthly to targets; reconstitute quarterly</strong> with the framework&#x27;s taxonomy review. All changes logged append-only.</li>
+<li><strong>Sector caps:</strong> no sector above its target +5 points between rebalances; single position cap 33% (BTC exempt to 35%).</li>
+<li><strong>Unlock-overhang discipline (the most deterministic signal we have):</strong> no adds to any position within 30 days of an unlock cliff &gt; 1% of circulating mcap; any position facing a cliff &gt; 5% is trimmed to half ahead of it (live watchlist: HYPE float 0.233, JUP 0.484, AERO 0.498, TIA 0.801-and-vesting, PYTH 0.787).</li>
+<li><strong>Tier-migration rule:</strong> any holding downgraded to Weak (&lt; 40) is halved at the next rebalance; downgraded to Avoid (&lt; 25) or hit by a security/bad-debt incident is exited immediately (framework hard override).</li>
+<li><strong>Value-capture watch:</strong> flags reviewed monthly. An upgrade (e.g., a UNI-style fee switch actually passing) can admit a new name; a downgrade (governance redirecting revenue) is a trim trigger.</li>
+<li><strong>Meme sleeve stops are mechanical</strong> (Section 4): turnover collapse or negative sector-relative momentum = exit. The meme sleeve also serves as the froth dial: if meme sector mcap share spikes to blow-off readings, that is a <em>late-cycle regime signal</em> — we take it as instruction to de-risk the whole book, not to add.</li>
+<li><strong>What would change the sector weights:</strong> DePIN demand/emissions coverage trending toward 1 (opens 2–3%); ExchPay gaining a hard revenue link (opens 2–3%); L2 fee-switches actually passing (L2 to 8–10%); the liquidity turn confirming (convexity sleeve to 12% max); the macro call flipping deflationary (everything compresses toward BTC).</li>
+</ol>
+
+
+<h2>6. HONEST RISKS</h2>
+
+<ol>
+<li><strong>Correlation collapse is the base case in any drain, not a tail.</strong> The framework says it plainly: crypto sector diversification is thinner than the taxonomy implies — in a liquidity drain, every sector is one trade. This portfolio&#x27;s &quot;diversification&quot; is really <em>relative-selection</em> within one macro bet. If liquidity turns down instead of up, everything here falls together and the 30% BTC anchor merely falls least.</li>
+<li><strong>The macro call itself is the concentrated risk.</strong> The entire construction leans on the regime report&#x27;s forward read (liquidity injection within 6–18 months). If instead sticky 4%+ inflation forces genuine tightening — or the bond market forces the &quot;capital-flight, everything-down&quot; tail Gromen flags — the accumulate-ahead-of-the-turn posture is early, and early in crypto can mean −50% before right. The tranche discipline is the mitigation, not a cure.</li>
+<li><strong>Reflexivity cuts both ways.</strong> Usage attracts price attracts usage; our adoption pillars (SOL sA 90.9, TIA 89.4, AERO 90.2) are partly measuring the reflexive tide we hope to ride. When it reverses, adoption scores will decay <em>after</em> prices do. The framework expects its own priors to decay; so should the reader.</li>
+<li><strong>Specific position risks, named:</strong> HYPE — float 0.233 with $51.7B of FDV yet to circulate; the buyback is strong but the vesting is stronger; one bad unlock cycle can dominate the cash-flow story. TIA — sV 26.2, near-zero fees; if modular DA loses to integrated L1s, there is no valuation floor. SKY — illiquid (turnover 0.005) and its seigniorage is a rates bet in disguise. GRASS/AKT — venture assets; failure is a normal outcome. SPX/BONK — expected long-run value zero; they are momentum instruments with mechanical exits.</li>
+<li><strong>Regulatory tail risk is structural and unmodelable.</strong> We sized it (0% exchange tokens, sector caps) rather than forecast it. A US securities-status shock to DeFi tokens would hit Sleeves C–G simultaneously.</li>
+<li><strong>Data is adversarial.</strong> Fees, volumes and adoption series can be wash-traded, Sybil-ed and incentive-inflated; the framework prefers burn/fee-paying series for exactly this reason, but no screen is clean. The composite can be right and the P&amp;L wrong for quarters; calibration reporting (framework §4.2) is the discipline that keeps the scorecard honest either way.</li>
+</ol>
+
+<p><strong>Disclaimer:</strong> This document is research, not investment advice, and not a solicitation. Digital assets are extremely volatile and can go to zero. Positions, weights and playbooks describe a model portfolio constructed from the Synthos scoring framework as of 2026-07-04; they do not account for any individual&#x27;s circumstances, jurisdiction, or risk tolerance. Do your own research.</p>
+
+
+<h2>APPENDIX — PORTFOLIO AT A GLANCE</h2>
+
+<p><strong>20 positions. Top 5 = 58%. Convexity sleeve = 10%, clearly labeled.</strong></p>
+
+<div class="tw"><table><thead><tr><th>Rank</th><th>Ticker</th><th>Sector</th><th>Weight</th><th>Composite / Tier</th></tr></thead><tbody>
+<tr><td>1</td><td>BTC</td><td>SoV</td><td>30.0%</td><td>50.0 anchor / Neutral</td></tr>
+<tr><td>2</td><td>SOL</td><td>L1</td><td>10.0%</td><td>65.3 / Attractive</td></tr>
+<tr><td>3</td><td>ETH</td><td>L1</td><td>8.0%</td><td>60.4 / Neutral</td></tr>
+<tr><td>4</td><td>AAVE</td><td>Credit</td><td>5.0%</td><td>66.3 / Attractive</td></tr>
+<tr><td>5</td><td>ETHFI</td><td>LST</td><td>5.0%</td><td>65.2 / Attractive</td></tr>
+<tr><td>6</td><td>KAS</td><td>L1</td><td>4.0%</td><td>63.3 / Neutral</td></tr>
+<tr><td>7</td><td>AERO</td><td>DEX</td><td>4.0%</td><td>64.9 / Neutral</td></tr>
+<tr><td>8</td><td>LINK</td><td>Infra</td><td>4.0%</td><td>61.2 / Neutral</td></tr>
+<tr><td>9</td><td>TIA</td><td>L2</td><td>4.0%</td><td>69.9 / Attractive</td></tr>
+<tr><td>10</td><td>TRX</td><td>L1</td><td>3.0%</td><td>57.9 / Neutral</td></tr>
+<tr><td>11</td><td>HYPE</td><td>DEX</td><td>3.0%</td><td>42.7 / Neutral (convexity)</td></tr>
+<tr><td>12</td><td>CAKE</td><td>DEX</td><td>3.0%</td><td>61.3 / Neutral</td></tr>
+<tr><td>13</td><td>SKY</td><td>Credit</td><td>3.0%</td><td>59.7 / Neutral</td></tr>
+<tr><td>14</td><td>PYTH</td><td>Infra</td><td>3.0%</td><td>64.5 / Neutral</td></tr>
+<tr><td>15</td><td>GRASS</td><td>AI</td><td>3.0%</td><td>62.0 / Neutral (convexity)</td></tr>
+<tr><td>16</td><td>JUP</td><td>DEX</td><td>2.0%</td><td>55.9 / Neutral</td></tr>
+<tr><td>17</td><td>POL</td><td>L2</td><td>2.0%</td><td>58.3 / Neutral</td></tr>
+<tr><td>18</td><td>SPX</td><td>Meme</td><td>2.0%</td><td>78.6 / Attractive (convexity)</td></tr>
+<tr><td>19</td><td>AKT</td><td>AI</td><td>1.0%</td><td>56.6 / Neutral (convexity)</td></tr>
+<tr><td>20</td><td>BONK</td><td>Meme</td><td>1.0%</td><td>52.7 / Neutral (convexity)</td></tr>
+</tbody></table></div>
+
+<p><em>Synthos Research — honesty is the product. The composite ranks tokens; the regime sizes crypto.</em></p>
+
+</article></main>
+<footer class="site-foot"><p><b>Synthos Research</b> · independent, AI-native research · educational only — not investment advice · no live performance track record yet.</p></footer>
+<script>(function(){var K='synthos-type',b=document.getElementById('typeToggle');function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();</script>
+</body></html>
