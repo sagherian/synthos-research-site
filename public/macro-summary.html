@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Regime summary — Macro — Synthos Research</title>
+<style>
+/* ================================================================
+   SYNTHOS RESEARCH · MACRO CHAPTER TEMPLATE — same token family
+   as the hub. This page is what a macro chapter card opens.
+   ================================================================ */
+:root{
+  --bg0:#0c121c;
+  --bg-hero:#12263a;
+  --panel:#0f1a26;
+  --panel2:#111a26;
+  --panel3:#14202e;
+  --line:#243447;
+  --line-soft:#1b2a3c;
+  --text:#eef4fb;
+  --muted:#a4b5c8;
+  --dim:#7d93a8;
+  --accent:#22d3ee;
+  --teal:#5eead4;
+  --r:14px;
+  --r-sm:10px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+/* Reading scale — one notch larger than the hub: 18px base, 21px large */
+html{font-size:112.5%;}
+html.lg{font-size:128%;}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:radial-gradient(1200px 600px at 50% -200px,var(--bg-hero),var(--bg0) 60%) fixed var(--bg0);
+  color:var(--text);
+  font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:1rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px;}
+::selection{background:#155e75;color:#fff;}
+a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px;}
+a:hover{color:var(--text);}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.skip{
+  position:absolute;left:1rem;top:-4rem;z-index:100;
+  background:var(--accent);color:#04222b;font-weight:700;
+  padding:.7rem 1.1rem;border-radius:8px;transition:top .15s var(--ease);
+}
+.skip:focus{top:1rem;}
+
+/* ============ header ============ */
+.site-head{border-bottom:1px solid var(--line-soft);}
+.head-in{
+  max-width:1120px;margin:0 auto;padding:1rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+.back{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-weight:700;font-size:.95rem;text-decoration:none;color:var(--teal);
+  border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;
+  transition:border-color .12s var(--ease);
+}
+.back:hover{border-color:var(--teal);color:var(--teal);}
+.brand{display:flex;align-items:baseline;gap:.55rem;text-decoration:none;}
+.brand .mark{width:.95rem;height:.95rem;border-radius:3px;align-self:center;background:linear-gradient(135deg,var(--accent),var(--teal));}
+.brand b{font-size:.98rem;letter-spacing:.18em;font-weight:800;color:var(--text);}
+.brand span{font-size:.88rem;color:var(--muted);}
+.type-toggle{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--panel2);color:var(--text);
+  border:1px solid var(--line);border-radius:999px;
+  padding:.4rem .95rem;font-size:.88rem;font-weight:600;cursor:pointer;font-family:inherit;
+}
+.type-toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);}
+.type-toggle:hover{background:var(--panel3);}
+.type-toggle .aa{font-weight:800;}
+.type-toggle .aa b{font-size:1.2em;}
+
+/* ============ article layout ============ */
+main{max-width:47rem;margin:0 auto;padding:2.75rem 1.5rem 4rem;}
+
+.kicker{
+  font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:.8rem;
+}
+h1{
+  font-size:2.15rem;line-height:1.18;letter-spacing:-.018em;font-weight:800;
+  margin-bottom:.9rem;max-width:24ch;
+}
+h1 em{font-style:normal;color:var(--teal);}
+.dek{font-size:1.12rem;color:var(--muted);max-width:58ch;margin-bottom:1.1rem;}
+.meta{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;
+  font-size:.88rem;color:var(--muted);
+  border-bottom:1px solid var(--line-soft);
+  padding-bottom:1.4rem;margin-bottom:1.6rem;
+}
+.meta b{color:var(--text);font-weight:700;}
+
+/* On this page */
+.toc{
+  background:var(--panel2);border:1px solid var(--line-soft);border-radius:var(--r);
+  padding:1.1rem 1.4rem;margin-bottom:2.2rem;
+}
+.toc h2{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;}
+.toc ol{list-style:none;counter-reset:toc;}
+.toc li{counter-increment:toc;}
+.toc a{
+  display:flex;gap:.7rem;align-items:baseline;
+  padding:.32rem 0;text-decoration:none;font-weight:600;font-size:.98rem;
+}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-size:.78rem;font-weight:800;color:var(--dim);font-variant-numeric:tabular-nums;}
+.toc a:hover{color:var(--teal);}
+
+/* body rhythm */
+article h2{
+  font-size:1.45rem;letter-spacing:-.012em;line-height:1.25;
+  margin:2.6rem 0 .9rem;scroll-margin-top:2rem;
+}
+article h2 .no{color:var(--dim);font-size:.85em;margin-right:.5rem;font-variant-numeric:tabular-nums;}
+article p{margin-bottom:1.05rem;max-width:68ch;}
+article p strong{font-variant-numeric:tabular-nums;}
+article ul{margin:0 0 1.05rem 1.3rem;max-width:66ch;}
+article li{margin-bottom:.45rem;}
+article li::marker{color:var(--accent);}
+
+/* key stats */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.7rem;
+  margin:1.4rem 0 1.8rem;
+}
+.stat{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1rem;}
+.stat dt{font-size:.8rem;color:var(--muted);font-weight:700;}
+.stat dd{font-size:1.45rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.25;}
+.stat dd span{display:block;font-size:.8rem;color:var(--muted);font-weight:600;}
+
+/* pull quote */
+.pull{
+  border-left:3px solid var(--teal);
+  margin:1.8rem 0;padding:.4rem 0 .4rem 1.4rem;
+  font-size:1.45rem;line-height:1.35;font-weight:700;letter-spacing:-.01em;color:var(--teal);
+  max-width:24ch;
+}
+
+/* so-what panel */
+.sowhat{
+  background:rgba(34,211,238,.06);
+  border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:0 var(--r) var(--r) 0;
+  padding:1.3rem 1.5rem;margin:1.6rem 0 1.8rem;
+}
+.sowhat h3{
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:.55rem;
+}
+.sowhat ul{margin:.3rem 0 0 1.3rem;}
+
+/* regime tags */
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0;}
+.chip{
+  display:inline-flex;align-items:center;
+  border:1px solid var(--line);border-radius:999px;
+  background:rgba(255,255,255,.02);
+  padding:.28rem .85rem;font-size:.86rem;font-weight:600;color:var(--text);white-space:nowrap;
+}
+
+/* prev / next */
+.pager{
+  display:grid;grid-template-columns:1fr 1fr;gap:.8rem;
+  margin-top:3rem;padding-top:1.8rem;border-top:1px solid var(--line-soft);
+}
+@media (max-width:600px){.pager{grid-template-columns:1fr;}}
+.pager a{
+  display:block;text-decoration:none;color:var(--text);
+  background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border:1px solid var(--line);border-radius:var(--r);
+  padding:1rem 1.25rem;
+  transition:border-color .15s var(--ease),transform .15s var(--ease);
+}
+.pager a:hover{border-color:var(--accent);transform:translateY(-2px);}
+.pager .dir{display:block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:.25rem;}
+.pager .ttl{font-weight:700;font-size:1.02rem;}
+.pager .next{text-align:right;}
+
+/* footer */
+.site-foot{border-top:1px solid var(--line-soft);padding:1.6rem 1.5rem 2.4rem;}
+.site-foot p{max-width:1120px;margin:0 auto;font-size:.86rem;color:var(--muted);}
+.site-foot b{color:var(--text);}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;}
+  .pager a:hover{transform:none;}
+}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-sm);margin:1.2rem 0;}
+table{border-collapse:collapse;width:100%;font-size:.92rem;}
+th,td{padding:.5rem .7rem;border-bottom:1px solid var(--line-soft);text-align:left;}
+thead th{background:#16212f;color:var(--teal);font-weight:700;}
+code{background:#0b1220;border:1px solid var(--line-soft);border-radius:5px;padding:.05em .35em;font-size:.85em;color:var(--muted);}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to article</a>
+<header class="site-head">
+  <div class="head-in">
+    <a class="back" href="preview.html#macro"><span aria-hidden="true">←</span> Research hub</a>
+    <a class="brand" href="preview.html" aria-label="Synthos Research home">
+      <span class="mark" aria-hidden="true"></span><b>SYNTHOS</b><span>Research</span>
+    </a>
+    <button class="type-toggle" id="typeToggle" aria-pressed="false">
+      <span class="aa" aria-hidden="true">A<b>A</b></span> Larger type
+    </button>
+  </div>
+</header>
+<main id="main">
+  <article>
+    <p class="kicker">Macro report · Regime summary</p>
+    <h1>We are in <em>Reflation</em>, tipping toward <em>Inflation</em> — under structural <em>fiscal dominance</em>.</h1>
+    <p class="dek">The headline call across all ten chapters — where the macro picture really stands.</p>
+    <div class="meta">
+      <span>Updated <b>July 4, 2026</b></span>
+      <span><b>1 min</b> read</span>
+      <span>Synthos Macro Engine</span>
+    </div>
+    <dl class="stats">
+  <div class="stat"><dt>Headline CPI</dt><dd>4.3% <span>YoY, rising</span></dd></div>
+  <div class="stat"><dt>Core PCE</dt><dd>3.4% <span>YoY, rising</span></dd></div>
+  <div class="stat"><dt>Debt / GDP</dt><dd>122.6% <span>and climbing</span></dd></div>
+  <div class="stat"><dt>Interest outlays</dt><dd>+41.5% <span>YoY</span></dd></div>
+</dl>
+    <p><strong>We are in REFLATION tipping toward INFLATION, under structural FISCAL DOMINANCE.</strong> Growth is firm-to-hot (industrial production, retail sales, and new orders all accelerating), while inflation has RE-ACCELERATED — headline CPI is back to <strong>4.3% YoY</strong> and core PCE sits at <strong>3.4%</strong>, both rising over the last six months, not falling. This is not Goldilocks: prices are sticky-and-climbing on top of a fiscal-dominant regime (122.6% debt/GDP, interest outlays +41.5% YoY) that structurally floors inflation near 3%, not 2%. And it is not cyclical noise — it sits atop a <strong>demographic debt supercycle</strong> (Section 2A) that policy-locks the inflation floor for a decade, not a quarter.</p>
+
+<p><strong>So what:</strong> The bond market is NOT your friend here. The regime favors real assets and hard-money hedges (gold, commodities, energy, Bitcoin) over duration; it favors nominal-revenue growth and pricing-power equities over long-dated Treasuries. Own the numerator, short the denominator. The forward read (Section 3) says the next 6-18 months bring a <strong>liquidity-cycle turn</strong> that reinforces — not reverses — this call.</p>
+
+<p><strong>Bottom line:</strong> Name it plainly — <strong>reflation with an inflationary bias under fiscal dominance, spined by a demographic debt supercycle.</strong> Growth is fine, inflation is re-accelerating, participation is structurally falling into rising entitlement debt, the bond market is complacent, and the government arithmetically needs inflation. The forward read points to a liquidity turn UP within 6-18 months. Own real assets and pricing power; rent the front end; don&#x27;t lend long to a borrower who is demographically compelled to debase.</p>
+    <div class="tags" role="list" aria-label="Regime tags"><span class="chip" role="listitem">Reflation → Inflation</span><span class="chip" role="listitem">Fiscal Dominance</span><span class="chip" role="listitem">Bear-steepener</span><span class="chip" role="listitem">Risk-on credit</span></div>
+    <nav class="pager" aria-label="Chapter navigation"><a href="preview.html#macro"><span class="dir">← Back</span><span class="ttl">Research hub</span></a><a class="next" href="macro-growth.html"><span class="dir">Next →</span><span class="ttl">Growth &amp; Activity</span></a></nav>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><b>Synthos Research</b> · independent, AI-native research · educational only — not investment advice · no live performance track record yet.</p>
+</footer>
+<script>
+(function(){
+  var KEY='synthos-type', btn=document.getElementById('typeToggle');
+  function apply(on){document.documentElement.classList.toggle('lg',on);btn.setAttribute('aria-pressed',on?'true':'false');}
+  var saved=false; try{saved=localStorage.getItem(KEY)==='lg';}catch(e){}
+  apply(saved);
+  btn.addEventListener('click',function(){var on=!document.documentElement.classList.contains('lg');apply(on);try{localStorage.setItem(KEY,on?'lg':'');}catch(e){}});
+})();
+</script>
+</body>
+</html>
