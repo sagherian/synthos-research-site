@@ -1,27 +1,491 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Synthos Flagship</title><style>body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#12263a,#0c121c 60%);color:#eef4fb;font:16px/1.6 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
-.wrap{max-width:1120px;margin:0 auto;padding:26px 20px 90px}a{color:#22d3ee;text-decoration:none}
-.banner{background:linear-gradient(90deg,rgba(34,211,238,.16),rgba(94,234,212,.05));border:1px solid #243447;border-radius:12px;padding:9px 16px;margin-bottom:16px;color:#5eead4;font-size:.84rem}
-h1{font-size:2.1rem;margin:.1em 0}.sub{color:#a4b5c8;margin:.2em 0 1em}
-.stat{display:inline-block;margin-right:22px}.stat b{color:#fff;font-size:1.4rem}.stat span{color:#a4b5c8;font-size:.82rem}
-.grid{overflow-x:auto;border:1px solid #243447;border-radius:12px;margin-top:12px}table{border-collapse:collapse;width:100%;font-size:.9rem}
-th,td{padding:.55em .7em;text-align:left;border-bottom:1px solid #1a2634;vertical-align:top}thead th{background:#16212f;color:#5eead4;font-size:.74rem;text-transform:uppercase}
-.co{color:#a4b5c8;font-size:.78rem}.wt{font-weight:800;color:#fff}.up{color:#34d399;font-size:.82rem}.blurb{color:#a4b5c8;font-size:.8rem;max-width:360px}
-.sc{display:inline-block;min-width:1.4em;text-align:center;font-weight:700;border-radius:5px;padding:.02em .3em;font-size:.8rem;background:#0f1a26;border:1px solid #243447}
-.badge{padding:.1em .5em;border-radius:6px;font-weight:700;font-size:.78rem}.core{background:#34d399;color:#06231a}.tac{background:#22d3ee;color:#06222b}.def{background:#fbbf24;color:#3a2c00}
-.sleeve{opacity:.85}.note{color:#7d93a8;font-size:.82rem;margin-top:14px;line-height:1.5}
-</style></head><body><div class="wrap">
-<div class="banner">Synthos Research · independent, AI-native research · educational only — not investment advice · no live performance track record yet · <a href="research.html">research hub</a></div>
-<h1>The Synthos Flagship</h1>
-<p class="sub">The 19 highest-conviction Buys from the deep-dive desk — sector-diversified, conviction-weighted, hedged. Click any ticker for its full deep dive.</p>
-<div style="margin:8px 0 4px">
-<div class="stat"><b>19</b> <span>equity holdings</span></div>
-<div class="stat"><b>8</b> <span>Buy — Core</span></div>
-<div class="stat"><b>7.4</b> <span>avg Growth Quality</span></div>
-<div class="stat"><b>4.3</b> <span>avg Exponential</span></div>
-<div class="stat"><b>4.4</b> <span>avg Risk (lower=safer)</span></div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Synthos One — Flagship Portfolio — Synthos Research</title><style>*{box-sizing:border-box;margin:0;padding:0}html{font-size:112.5%}html.lg{font-size:128%}
+body{background:radial-gradient(1200px 600px at 50% -200px,#12263a,#0c121c 60%) fixed #0c121c;color:#eef4fb;font:1rem/1.65 -apple-system,Segoe UI,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid #22d3ee;outline-offset:2px;border-radius:6px}a{color:#5eead4;text-underline-offset:3px}a:hover{color:#eef4fb}
+.skip{position:absolute;left:1rem;top:-4rem;background:#22d3ee;color:#04222b;font-weight:700;padding:.6rem 1rem;border-radius:8px}.skip:focus{top:1rem}
+.hd{border-bottom:1px solid #1b2a3c}.head-in{max-width:1120px;margin:0 auto;padding:1rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.back{font-weight:700;font-size:.9rem;color:#5eead4;border:1px solid #243447;border-radius:999px;padding:.4rem 1rem}
+.brand{display:flex;align-items:baseline;gap:.5rem;margin-left:.4rem}.brand .mark{width:.95rem;height:.95rem;border-radius:3px;align-self:center;background:linear-gradient(135deg,#22d3ee,#5eead4)}.brand b{letter-spacing:.18em}.brand span{color:#a4b5c8;font-size:.9rem}
+.tt{margin-left:auto;background:#111a26;color:#eef4fb;border:1px solid #243447;border-radius:999px;padding:.4rem .95rem;font:inherit;font-size:.85rem;font-weight:600;cursor:pointer}.tt[aria-pressed=true]{border-color:#22d3ee;color:#22d3ee}.tt .aa b{font-size:1.2em}
+.hero{max-width:1120px;margin:0 auto;padding:2.4rem 1.5rem 1.4rem}
+.kick{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5eead4;margin-bottom:.7rem}
+.hero h1{font-size:2.4rem;letter-spacing:-.02em;line-height:1.1}.hero h1 .star{color:#fbbf24}
+.dek{font-size:1.1rem;color:#a4b5c8;max-width:64ch;margin:.7rem 0 1.2rem}
+.buckets{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.1rem}
+.bk{border:1px solid #243447;border-radius:999px;padding:.35rem .9rem;font-size:.9rem;font-weight:700;background:rgba(255,255,255,.02)}
+.bk b{color:#22d3ee}.bk .p{color:#5eead4}
+.retline{border-left:3px solid #fbbf24;background:rgba(251,191,36,.07);border-radius:0 10px 10px 0;padding:.8rem 1.1rem;max-width:70ch;color:#eadfc4}
+.retline b{color:#fff}
+main{max-width:52rem;margin:0 auto;padding:1rem 1.5rem 4rem}
+main h2{font-size:1.45rem;color:#eaf2fb;border-top:1px solid #1b2a3c;padding-top:1.3rem;margin:2rem 0 .7rem}
+main h3{font-size:1.1rem;color:#5eead4;margin:1.3rem 0 .3rem}
+p{margin:.7rem 0;max-width:70ch}strong{color:#fff}em{color:#9fb4c8}code{background:#0b1220;border:1px solid #1b2a3c;border-radius:5px;padding:.05em .35em;font-size:.85em;color:#a4b5c8}
+blockquote{border-left:3px solid #5eead4;padding-left:1rem;color:#a4b5c8;margin:1rem 0}
+ul,ol{margin:.6rem 0 .6rem 1.3rem}li{margin:.3rem 0}li::marker{color:#22d3ee}
+.tw{overflow-x:auto;border:1px solid #243447;border-radius:10px;margin:1.1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.86rem}th,td{padding:.45rem .6rem;border-bottom:1px solid #1b2a3c;text-align:left;font-variant-numeric:tabular-nums;white-space:nowrap}
+thead th{background:#16212f;color:#5eead4;position:sticky;top:0}tbody tr:hover{background:#131f2c}td:first-child,th:first-child{font-weight:700}
+.ft{border-top:1px solid #1b2a3c;margin-top:2rem;padding:1.2rem 1.5rem;max-width:1120px;margin-left:auto;margin-right:auto;font-size:.82rem;color:#a4b5c8}
+@media (max-width:640px){.head-in{padding:.7rem 1rem;gap:.5rem}.brand span{display:none}.tt{font-size:0;padding:.4rem .6rem;gap:0}.tt .aa{font-size:.9rem}
+ .hero{padding:1.6rem 1rem 1rem}.hero h1{font-size:1.8rem}.dek{font-size:1rem}main{padding:1rem 1rem 3rem}main h2{font-size:1.25rem}table{font-size:.8rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="head-in">
+<a class="back" href="research.html">← Research hub</a>
+<a class="brand" href="research.html"><span class="mark"></span><b>SYNTHOS</b><span>Research</span></a>
+<button class="tt" id="tt" aria-pressed="false"><span class="aa">A<b>A</b></span> Larger type</button></div></header>
+<section class="hero">
+<p class="kick">Flagship · updated 2026-07-04</p>
+<h1><span class="star">★</span> Synthos One</h1>
+<p class="dek">Our flagship: a <b>100-position, multi-asset model portfolio</b> (stocks · ETFs · crypto) balanced across three time horizons and driven by the belief engine and the macro regime. Broadly representative, but willing to hold a sector at 0% when the regime and the experts agree.</p>
+<div class="buckets">
+<span class="bk"><b>Core</b> <span class="p">50%</span> · multi-year</span>
+<span class="bk"><b>Tactical</b> <span class="p">30%</span> · 6–18mo</span>
+<span class="bk"><b>Strategic</b> <span class="p">15%</span> · 3–5yr</span>
+<span class="bk"><b>Crypto</b> <span class="p">5%</span> · convexity</span>
 </div>
-<div class="grid"><table><thead><tr><th>Name</th><th>Tier</th><th>Sector</th><th>Weight</th><th>R / G / E</th><th>Fair value (upside)</th><th>Entry zone</th><th>Thesis</th></tr></thead>
-<tbody><tr><td><a href="NVDA.html"><b>NVDA</b></a><div class="co">NVIDIA Corporation</div></td><td><span class="badge tac">Tactical</span></td><td>Technology</td><td class="wt">6.3%</td><td><span class="sc">6</span> <span class="sc">10</span> <span class="sc">8</span></td><td>$245 <span class="up">+26%</span></td><td style="color:#34d399">$191&ndash;$195</td><td class="blurb">The most important company of the AI buildout is also, unusually, *not* priced like a bubble — FY26 revenue grew 65% to $216B, net margin is 63%, the balance sheet is net-cash, and the stock trades at</td></tr><tr><td><a href="MA.html"><b>MA</b></a><div class="co">Mastercard Incorporated</div></td><td><span class="badge core">Core</span></td><td>Financial Servic</td><td class="wt">5.7%</td><td><span class="sc">4</span> <span class="sc">9</span> <span class="sc">4</span></td><td>$610 <span class="up">+13%</span></td><td style="color:#34d399">$531&ndash;$539</td><td class="blurb">Mastercard is a rational-duopoly toll bridge on global digital payments — FY25 revenue $32.8B (+16%), 83% gross margin, 59% operating margin, net income $15.0B, and a value-added-services leg growing </td></tr><tr><td><a href="GOOGL.html"><b>GOOGL</b></a><div class="co">Alphabet Inc.</div></td><td><span class="badge tac">Tactical</span></td><td>Communication Se</td><td class="wt">5.5%</td><td><span class="sc">4</span> <span class="sc">9</span> <span class="sc">6</span></td><td>$445 <span class="up">+24%</span></td><td style="color:#34d399">$316&ndash;$360</td><td class="blurb">Alphabet is the unusual megacap where the fundamentals (FY25 revenue +15% to $403B, 60% gross margin, $132B net income, 39% ROE) *and* a broad AI-literate expert panel point the same way, *and* the st</td></tr><tr><td><a href="ADSK.html"><b>ADSK</b></a><div class="co">Autodesk, Inc.</div></td><td><span class="badge core">Core</span></td><td>Technology</td><td class="wt">5.3%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">4</span></td><td>$300 <span class="up">+45%</span></td><td style="color:#34d399">$187&ndash;$207</td><td class="blurb">Autodesk is a genuinely elite software franchise — 91% gross margin, ~$2.4B free cash flow, near-monopoly grip on the world&#x27;s CAD/design files — trading at ~16.5× forward non-GAAP earnings after a 33%</td></tr><tr><td><a href="MSFT.html"><b>MSFT</b></a><div class="co">Microsoft Corporation</div></td><td><span class="badge core">Core</span></td><td>Technology</td><td class="wt">5.3%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">4</span></td><td>$545 <span class="up">+40%</span></td><td style="color:#34d399">$351&ndash;$390</td><td class="blurb">Microsoft is the rare megacap where the fundamentals (FY25 revenue +14.9% to $282B, 68% gross margin, $102B net income, 33% ROE) and a high-skill expert panel (Azure as one of the few at-scale AI clou</td></tr><tr><td><a href="V.html"><b>V</b></a><div class="co">Visa Inc.</div></td><td><span class="badge core">Core</span></td><td>Financial Servic</td><td class="wt">5.3%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">4</span></td><td>$400 <span class="up">+10%</span></td><td style="color:#34d399">$329&ndash;$362</td><td class="blurb">Visa is the closest thing public markets have to a toll booth on global commerce — 81% gross margin, 52% net margin, 59% ROE, net-debt/EBITDA 0.4× — and the expert panel and the quant screen agree it </td></tr><tr><td><a href="VEEV.html"><b>VEEV</b></a><div class="co">Veeva Systems Inc.</div></td><td><span class="badge core">Core</span></td><td>Healthcare</td><td class="wt">5.3%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">4</span></td><td>$235 <span class="up">+22%</span></td><td style="color:#34d399">$165&ndash;$193</td><td class="blurb">Veeva is the near-monopoly cloud platform for the life-sciences industry — 75% gross margin, net-cash balance sheet, ~$3.2B revenue growing 16% — that the market has taken from a ~$310 peak down to $1</td></tr><tr><td><a href="LLY.html"><b>LLY</b></a><div class="co">Eli Lilly and Company</div></td><td><span class="badge tac">Tactical</span></td><td>Healthcare</td><td class="wt">5.2%</td><td><span class="sc">5</span> <span class="sc">9</span> <span class="sc">5</span></td><td>$1,430 <span class="up">+18%</span></td><td style="color:#34d399">$1,055&ndash;$1,214</td><td class="blurb">The rare megacap where the fundamentals (FY25 revenue +45% to $65B, 84% gross margin, net income $20.6B) and an unusually broad, high-quality expert panel point the same way — owned as a core compound</td></tr><tr><td><a href="AMZN.html"><b>AMZN</b></a><div class="co">Amazon.com, Inc.</div></td><td><span class="badge tac">Tactical</span></td><td>Consumer Cyclica</td><td class="wt">5.1%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">6</span></td><td>$300 <span class="up">+24%</span></td><td style="color:#34d399">$233&ndash;$243</td><td class="blurb">Amazon is three high-quality compounders — AWS ($129B, the profit engine), Advertising ($69B and highest-margin), and a third-party-marketplace-plus-Prime retail flywheel — stapled inside a &quot;Specialty</td></tr><tr><td><a href="BLK.html"><b>BLK</b></a><div class="co">BlackRock, Inc.</div></td><td><span class="badge core">Core</span></td><td>Financial Servic</td><td class="wt">4.9%</td><td><span class="sc">4</span> <span class="sc">7</span> <span class="sc">4</span></td><td>$1,175 <span class="up">+18%</span></td><td style="color:#34d399">$896&ndash;$996</td><td class="blurb">The world&#x27;s largest asset manager ($13.9T AUM) is quietly re-shaping itself into a private-markets and technology firm via the GIP and HPS acquisitions — trading at a below-market ~18× forward earning</td></tr><tr><td><a href="CPRT.html"><b>CPRT</b></a><div class="co">Copart, Inc.</div></td><td><span class="badge core">Core</span></td><td>Industrials</td><td class="wt">4.6%</td><td><span class="sc">3</span> <span class="sc">7</span> <span class="sc">3</span></td><td>$41 <span class="up">+37%</span></td><td style="color:#34d399">$27&ndash;$30</td><td class="blurb">Copart is a genuinely elite, net-cash, 33%-net-margin duopolist in online salvage auctions whose stock has been **cut nearly in half** (−40% over 12 months) as top-line growth collapsed from double di</td></tr><tr><td><a href="DECK.html"><b>DECK</b></a><div class="co">Deckers Outdoor Corporation</div></td><td><span class="badge core">Core</span></td><td>Consumer Cyclica</td><td class="wt">4.6%</td><td><span class="sc">4</span> <span class="sc">7</span> <span class="sc">3</span></td><td>$125 <span class="up">+19%</span></td><td style="color:#34d399">$102&ndash;$105</td><td class="blurb">Deckers is a genuinely excellent, net-cash, high-return footwear house (UGG + HOKA) trading at a reasonable ~15× earnings — but growth has decelerated hard (revenue +9.8%, EPS +11% in FY26 vs +16%/+30</td></tr><tr><td><a href="GOOG.html"><b>GOOG</b></a><div class="co">Alphabet Inc.</div></td><td><span class="badge tac">Tactical</span></td><td>Communication Se</td><td class="wt">4.5%</td><td><span class="sc">4</span> <span class="sc">8</span> <span class="sc">4</span></td><td>$400 <span class="up">+12%</span></td><td style="color:#34d399">$316&ndash;$356</td><td class="blurb">Alphabet is a cash machine (FY25 revenue $403B +15%, net income $132B, 60% gross margin, $164.7B operating cash flow) whose Search franchise funds two credible next legs — Google Cloud (+36%) and the </td></tr><tr><td><a href="VRTX.html"><b>VRTX</b></a><div class="co">Vertex Pharmaceuticals Incor</div></td><td><span class="badge tac">Tactical</span></td><td>Healthcare</td><td class="wt">4.4%</td><td><span class="sc">4</span> <span class="sc">7</span> <span class="sc">5</span></td><td>$585 <span class="up">+11%</span></td><td style="color:#34d399">$447&ndash;$528</td><td class="blurb">Vertex is the most profitable pure biotech at scale — an 86%-gross-margin, net-cash monopoly in cystic fibrosis throwing off ~$3.2B of free cash flow — now trying to prove it can diversify beyond CF (</td></tr><tr><td><a href="TPR.html"><b>TPR</b></a><div class="co">Tapestry, Inc.</div></td><td><span class="badge tac">Tactical</span></td><td>Consumer Cyclica</td><td class="wt">4.1%</td><td><span class="sc">5</span> <span class="sc">7</span> <span class="sc">4</span></td><td>$165 <span class="up">+14%</span></td><td style="color:#34d399">$142&ndash;$144</td><td class="blurb">Tapestry has quietly become one of retail&#x27;s best turnarounds — Coach is re-accelerating (+31% brand revenue in Q3 FY26), margins are expanding, free cash flow is ~$1.1B, and management just raised gui</td></tr><tr><td><a href="ADP.html"><b>ADP</b></a><div class="co">Automatic Data Processing, I</div></td><td><span class="badge tac">Tactical</span></td><td>Industrials</td><td class="wt">3.1%</td><td><span class="sc">3</span> <span class="sc">6</span> <span class="sc">2</span></td><td>$268 <span class="up">+11%</span></td><td style="color:#34d399">$240&ndash;$242</td><td class="blurb">ADP is one of the highest-quality businesses in the S&amp;P 500 — 25% ROIC, 69% ROE, a fortress balance sheet, ~30% adjusted EBIT margins and ~1.1M sticky clients — but it grows revenue only ~6% and EPS ~</td></tr><tr><td><a href="STLD.html"><b>STLD</b></a><div class="co">Steel Dynamics, Inc.</div></td><td><span class="badge tac">Tactical</span></td><td>Basic Materials</td><td class="wt">3.0%</td><td><span class="sc">6</span> <span class="sc">5</span> <span class="sc">4</span></td><td>$255 <span class="up">+16%</span></td><td style="color:#34d399">$189&ndash;$220</td><td class="blurb">A best-in-class, low-cost US steelmaker trading at ~13–14× recovering forward earnings after a 2025 cyclical trough, with a fully-funded aluminum flat-rolled expansion as free-ish optionality — attrac</td></tr><tr><td><a href="UAL.html"><b>UAL</b></a><div class="co">United Airlines Holdings, In</div></td><td><span class="badge tac">Tactical</span></td><td>Industrials</td><td class="wt">3.0%</td><td><span class="sc">6</span> <span class="sc">5</span> <span class="sc">4</span></td><td>$148 <span class="up">+11%</span></td><td style="color:#34d399">$107&ndash;$133</td><td class="blurb">United is a genuinely improving, well-run legacy airline trading at a single-digit-to-low-teens earnings multiple, with a credible self-help story (premium/loyalty mix, deleveraging toward investment </td></tr><tr><td><a href="PCG.html"><b>PCG</b></a><div class="co">PG&amp;E Corporation</div></td><td><span class="badge tac">Tactical</span></td><td>Utilities</td><td class="wt">2.7%</td><td><span class="sc">6</span> <span class="sc">5</span> <span class="sc">3</span></td><td>$19 <span class="up">+11%</span></td><td style="color:#34d399">$17&ndash;$17</td><td class="blurb">PG&amp;E is a large California regulated electric-and-gas utility, freshly out of bankruptcy and rebuilding trust, trading at a deep utility discount (~10× forward core EPS vs a ~9% EPS growth plan) — the</td></tr><tr class="sleeve"><td><b>GLD</b><div class="co">SPDR Gold (hedge)</div></td><td><span class="badge def">Hedge</span></td><td>Defensive</td><td class="wt">7.0%</td><td>—</td><td>—</td><td>—</td><td class="blurb">Portfolio hedge / dry powder.</td></tr><tr class="sleeve"><td><b>BIL</b><div class="co">1-3mo T-Bills (cash)</div></td><td><span class="badge def">Hedge</span></td><td>Defensive</td><td class="wt">5.0%</td><td>—</td><td>—</td><td>—</td><td class="blurb">Portfolio hedge / dry powder.</td></tr></tbody></table></div>
-<p class="note"><strong>Hypothetical &amp; honest:</strong> no real money is deployed and there is no track record. Selection = Buy-rated names with positive upside to a base-case fair value (forward EPS × a fair multiple — a scenario judgment, not a guarantee), ranked by Growth Quality + Exponential Potential with a Core bonus and a high-risk penalty, capped at 3 per sector. Equity ~88%, with a 12% gold/T-bill hedge. Educational only — not investment advice.</p>
-</div></body></html>
+<p class="retline"><b>Honest expected return:</b> base case ~<b>+8% to +14%/yr</b> nominal (bull ~+15–22% if the liquidity turn lands; bear −5% to +2% with −20–35% drawdowns possible). We do <b>not</b> promise 30% — that is Lynch-tier, and 10x/5yr (≈58%/yr) is essentially unprecedented. The published, calibrated track record is the only honest proof, and it starts now.</p>
+</section>
+<main id="main">
+<p>name: Synthos One</p>
+<p>as_of: 2026-07-04</p>
+<p>holdings: 100</p>
+<p>buckets: {core: 50.0, tactical: 30.0, strategic: 15.0, crypto: 5.0}</p>
+<p>schema: synthos-one-v1</p>
+<p>author: Fable, Chief Investment Architect</p>
+<p>sources_of_truth:</p>
+<p>  - docs/fep_active_inference.md</p>
+<p>  - docs/fep_buildout_fable.md</p>
+<p>  - results/macro/regime_2026-07-04.md</p>
+<p>  - results/flagship/2026-07-03.md</p>
+<p>  - results/crypto/flagship_portfolio.md</p>
+<p>  - results/crypto/scored.json</p>
+<p>  - docs/crypto_framework_fable.md</p>
+<p>  - results/deep_dives/*/2026-07-03.md (front matter: verdict, R/G/E scores, fair value)</p>
+
+
+
+<p><strong>100 positions · stocks + ETFs + crypto · Free-Energy-Principle-driven · core-satellite across three clocks</strong></p>
+
+<p><em>Synthos Research · 2026-07-04 · Hypothetical model portfolio. NOT a track record. NOT investment advice. Honesty is the product.</em></p>
+
+
+<h2>0. THE HONEST PREMISE — READ THIS FIRST</h2>
+
+<p><strong>What we will not promise.</strong> We will not promise 30% a year, and we will not promise 10x in five years. Sustained 30% CAGR is Peter-Lynch-at-Magellan territory — roughly the best sustained public-market record ever produced, achieved by one person, once, over 13 years. 10x in 5 years requires <strong>~58% compounded annually</strong> — for a diversified 100-position portfolio that is essentially unprecedented in recorded market history. Anyone selling you that number from a broad book is selling you a story.</p>
+
+<p><strong>What the target actually is.</strong> The exponential ambition is a <strong>north star that informs construction</strong> — it is why the satellites hunt forward &quot;next exponentials&quot; instead of trailing compounders, why the crypto tail exists, and why sectors the regime punishes get zero dedicated capital. It is a <em>design principle</em>, not a forecast.</p>
+
+<p><strong>What the proof actually is.</strong> The only honest proof is the <strong>calibrated track record</strong>: every regime posterior, tier rating, and position is logged pre-publication, graded at maturity by the same non-gameable grader that scores the pundits (<code>data/thinker_scores.json</code> — 422 matured claims graded to date, 296 correct / 126 incorrect, <strong>70.1% overall</strong>; the engine&#x27;s own calls sit in the same file under <code>synthos_self</code>: <strong>137 positions seen, 0 matured, status pending, explicitly not back-fitted</strong>). Until that record matures, Synthos One&#x27;s performance claims are exactly zero. Section 9 states the realistic return range and what would have to go right.</p>
+
+<p><strong>The breadth-vs-return tension, resolved in the open.</strong> A 100-ticker portfolio cannot 10x — breadth is beta, and beta is ~10% a year, not 58%. A 5-ticker portfolio could 10x — and could also destroy you, and its result would be luck as much as skill. Synthos One resolves the tension <strong>structurally, not rhetorically</strong>, with core-satellite:</p>
+
+<div class="tw"><table><thead><tr><th>Layer</th><th>Weight</th><th>Job</th><th>Return character</th></tr></thead><tbody>
+<tr><td>CORE</td><td>50%</td><td>Broad market representation + quality compounders</td><td>Market-like. The beta anchor. This is what makes it &quot;broadly representative.&quot;</td></tr>
+<tr><td>TACTICAL</td><td>30%</td><td>6–18mo regime tilts (the macro engine&#x27;s output)</td><td>Beta ± the regime call. Where the 0% sectors live.</td></tr>
+<tr><td>STRATEGIC</td><td>15%</td><td>3–5yr secular next-exponentials</td><td>The forward-not-trailing sleeve. Concentrated where conviction is highest.</td></tr>
+<tr><td>CRYPTO</td><td>5%</td><td>Convexity tail, BTC-anchored</td><td>The aggressive return engine. Sized so <strong>total loss costs ~5% of the book.</strong></td></tr>
+</tbody></table></div>
+
+<p>Half the book guarantees you roughly the market. The other half is where every unit of research edge is spent. If the edge is real, the satellites add points over beta; if it isn&#x27;t, the calibration log will say so in public.</p>
+
+
+<h2>1. THE REGIME CALL THAT DRIVES THE TILTS</h2>
+
+<p>From <code>results/macro/regime_2026-07-04.md</code> (v2, enriched — the belief layer&#x27;s current top-level output):</p>
+
+<blockquote><strong>Reflation tipping toward Inflation, under structural Fiscal Dominance, spined by a demographic debt supercycle.</strong></blockquote>
+
+<p>The load-bearing numbers, all cited from that report:</p>
+
+<ul>
+<li><strong>Growth firm:</strong> industrial production +1.7% YoY and accelerating; retail sales +6.9% YoY; new orders <strong>+10.4% YoY</strong> (the AI/reindustrialization capex wave in hard data). No recession in the data.</li>
+<li><strong>Inflation re-accelerating:</strong> headline CPI <strong>4.3% YoY</strong>, core PCE <strong>3.4%</strong> — six-month impulse positive on every price series. Forward Guidance: core floors near 3%, not 2%, on 5–6% deficits.</li>
+<li><strong>Fiscal dominance:</strong> debt/GDP <strong>122.6%</strong>, deficit <strong>-5.77% of GDP at full employment</strong>, interest outlays <strong>+41.5% YoY ($1,219B)</strong>. Alden&#x27;s mechanism: above ~100% debt/GDP, rate hikes inflate the deficit — the tool is broken.</li>
+<li><strong>Demographics lock it in:</strong> fertility 1.63, old-age dependency 28.5 (vs 14.7 in 1960), LFPR falling (-0.9 YoY) into job openings +3.9% — labor supply is the binding, inflationary constraint for a decade.</li>
+<li><strong>The forward vector — the liquidity turn:</strong> RRP effectively <strong>empty ($2.17B)</strong>, bank reserves <strong>-4.8% YoY</strong>, M2 already <strong>+5.6%</strong> — the mechanical setup that historically forces QT to end. Visser sizes the eventual injection at <strong>$6–8T</strong>. Direction: liquidity turns UP within 6–18 months; timing unforecastable.</li>
+<li><strong>Bond market:</strong> 30y at <strong>4.97%</strong> testing Gromen&#x27;s ~4.8% affordability ceiling; base case <strong>bear-steepener</strong>; HY spreads <strong>275bp</strong> = zero credit stress today.</li>
+</ul>
+
+<p><strong>Positioning consequence (regime report §5, verbatim logic):</strong> own real assets and pricing power; rent the front end; <strong>don&#x27;t lend long to a borrower who is demographically compelled to debase.</strong> That sentence writes the Tactical sleeve and every 0% in Section 4.</p>
+
+
+<h2>2. CONSTRUCTION — HOW THE 100 WERE CHOSEN</h2>
+
+<ul>
+<li><strong>CORE (50%, 19 positions).</strong> Broad-market ETFs (SPY, QQQ, RSP) as the representative base, plus every <strong>Buy — Core</strong> name from the equity flagship (<code>results/flagship/2026-07-03.md</code> — the 13 Buy—Core verdicts across the S&amp;P 500/Nasdaq-100 deep-dive sweep) and three Buy—Tactical mega-quality names the flagship top-weights (GOOGL, AMZN, LLY). RSP (equal-weight S&amp;P) is deliberate: Mag7 is guilty-until-proven, so the index base itself de-concentrates.</li>
+<li><strong>TACTICAL (30%, 45 positions).</strong> The regime report&#x27;s tilts, expressed in ETFs (GLD/GDX/SLV/PDBC/XLE/BIL) plus the Buy—Tactical equity roster where it aligns with the regime: energy, miners/materials, steepener-and-fee financials, pricing-power healthcare. Sectors the regime punishes get <strong>zero dedicated capital, each justified in writing</strong> (Section 4).</li>
+<li><strong>STRATEGIC (15%, 16 positions).</strong> The secular next-exponentials: AI-capex supercycle (Pal: &quot;the largest capex supercycle in human history&quot;; compute-vs-energy) and its power/space adjacencies. Names sourced from the deep-dive scores: every holding has <strong>Exponential Potential ≥ 7/10</strong> (or Buy verdict with E≥6). Honesty note: several carry <strong>Hold</strong> verdicts at spot price — the verdicts are price-disciplined, so this sleeve is <strong>tranche-entry only</strong> (Section 7); the Hold verdict is precisely why these are satellites, not core.</li>
+<li><strong>CRYPTO (5%, 20 positions).</strong> The crypto flagship (<code>results/crypto/flagship_portfolio.md</code>, built from the 73-token <code>scored.json</code>) scaled by exactly 0.05 — same names, same proportions, BTC-anchored at 30% of the sleeve. A 100% loss of the sleeve costs 5.0% of Synthos One.</li>
+</ul>
+
+<p>No ticker appears twice. GOOG (the flagship&#x27;s second Alphabet line) is consolidated into GOOGL.</p>
+
+
+<h2>3. THE FULL 100 — TICKER TABLE</h2>
+
+<p><strong>Weights sum to 100.00%.</strong> Tier/score citations: equity R/G/E = Downside Risk / Growth Quality / Exponential Potential (0–10, from deep-dive front matter, 2026-07-03); crypto = composite/tier from <code>scored.json</code> (2026-07-04).</p>
+
+<h3>Top ~15 by weight (everything ≥ 2.00%)</h3>
+
+<div class="tw"><table><thead><tr><th>#</th><th>Ticker</th><th>Bucket</th><th>Weight</th><th>Why it leads</th></tr></thead><tbody>
+<tr><td>1</td><td>SPY</td><td>Core</td><td>8.00%</td><td>The market itself — the representativeness anchor</td></tr>
+<tr><td>2</td><td>QQQ</td><td>Core</td><td>5.00%</td><td>Large-cap growth/tech beta (QQQ deep-dive: the innovation index)</td></tr>
+<tr><td>3</td><td>MSFT</td><td>Core</td><td>3.00%</td><td>Buy—Core, R4/G8/E4, FV $545 (+40%)</td></tr>
+<tr><td>4</td><td>GOOGL</td><td>Core</td><td>3.00%</td><td>Buy—Tactical, R4/G9/E6, FV $445 (+24%)</td></tr>
+<tr><td>5</td><td>RSP</td><td>Core</td><td>3.00%</td><td>Equal-weight S&amp;P — structural Mag7 de-concentration</td></tr>
+<tr><td>6</td><td>NVDA</td><td>Strategic</td><td>2.50%</td><td>Buy—Tactical, R6/G10/E8, FV $245 (+26%) — the AI-capex axis</td></tr>
+<tr><td>7</td><td>GLD</td><td>Tactical</td><td>2.50%</td><td>The debasement trade&#x27;s anchor (regime §5: &quot;own the numerator&quot;)</td></tr>
+<tr><td>8</td><td>MA</td><td>Core</td><td>2.50%</td><td>Buy—Core, R4/G9/E4 — tollbooth on nominal spending</td></tr>
+<tr><td>9</td><td>V</td><td>Core</td><td>2.50%</td><td>Buy—Core, R4/G8/E4 — same tollbooth, second lane</td></tr>
+<tr><td>10</td><td>AMZN</td><td>Core</td><td>2.50%</td><td>Buy—Tactical, R4/G8/E6, FV $300 (+24%)</td></tr>
+<tr><td>11</td><td>LLY</td><td>Core</td><td>2.50%</td><td>Buy—Tactical, R5/G9/E5, FV $1,430 — demographics in one ticker</td></tr>
+<tr><td>12</td><td>ADSK</td><td>Core</td><td>2.50%</td><td>Buy—Core, R4/G8/E4, FV $300 (+45%) — largest FV gap in the core</td></tr>
+<tr><td>13</td><td>BLK</td><td>Core</td><td>2.00%</td><td>Buy—Core, R4/G7/E4 — fee machine on all assets</td></tr>
+<tr><td>14</td><td>SPGI</td><td>Core</td><td>2.00%</td><td>Buy—Core — ratings/index tollbooth, pricing power</td></tr>
+<tr><td>15</td><td>SCHW</td><td>Core</td><td>2.00%</td><td>Buy—Core — scale broker, rate-environment beneficiary</td></tr>
+<tr><td>16</td><td>VEEV</td><td>Core</td><td>2.00%</td><td>Buy—Core, R4/G8/E4, FV $235 (+22%)</td></tr>
+<tr><td>—</td><td>BTC</td><td>Crypto</td><td>1.50%</td><td>Largest crypto line — the debasement tail&#x27;s spine</td></tr>
+</tbody></table></div>
+
+<h3>CORE — 50.00% (19 positions, multi-year clock)</h3>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Name</th><th>Class</th><th>Sector</th><th>Wt %</th><th>Tier / scores cited</th><th>One-line rationale</th></tr></thead><tbody>
+<tr><td>SPY</td><td>SPDR S&amp;P 500</td><td>ETF</td><td>Broad</td><td>8.00</td><td>—</td><td>The market: guarantees representativeness; the benchmark lives inside the book</td></tr>
+<tr><td>QQQ</td><td>Invesco QQQ</td><td>ETF</td><td>Broad growth</td><td>5.00</td><td>ETF deep-dive 2026-07-03</td><td>Large-cap innovation beta at index cost</td></tr>
+<tr><td>RSP</td><td>Invesco S&amp;P 500 Equal Weight</td><td>ETF</td><td>Broad</td><td>3.00</td><td>—</td><td>Mag7 guilty-until-proven: equal-weight dilutes cap-weight concentration</td></tr>
+<tr><td>MSFT</td><td>Microsoft</td><td>Stock</td><td>Technology</td><td>3.00</td><td>Buy—Core, 4/8/4, FV $545</td><td>Compounder with the cleanest AI monetization path; +40% to FV</td></tr>
+<tr><td>GOOGL</td><td>Alphabet</td><td>Stock</td><td>Comm. Services</td><td>3.00</td><td>Buy—Tactical, 4/9/6, FV $445</td><td>G9 with E6 at +24% to FV — quality and optionality in one line</td></tr>
+<tr><td>MA</td><td>Mastercard</td><td>Stock</td><td>Financials</td><td>2.50</td><td>Buy—Core, 4/9/4, FV $610</td><td>Nominal-GDP tollbooth — reflation flows straight through the take rate</td></tr>
+<tr><td>V</td><td>Visa</td><td>Stock</td><td>Financials</td><td>2.50</td><td>Buy—Core, 4/8/4, FV $400</td><td>Same regime logic as MA; duopoly redundancy is intentional</td></tr>
+<tr><td>AMZN</td><td>Amazon</td><td>Stock</td><td>Cons. Cyclical</td><td>2.50</td><td>Buy—Tactical, 4/8/6, FV $300</td><td>Retail + AWS: nominal spend and AI capex on one balance sheet</td></tr>
+<tr><td>LLY</td><td>Eli Lilly</td><td>Stock</td><td>Healthcare</td><td>2.50</td><td>Buy—Tactical, 5/9/5, FV $1,430</td><td>GLP-1 franchise = the aging-demographics thesis, monetized</td></tr>
+<tr><td>ADSK</td><td>Autodesk</td><td>Stock</td><td>Technology</td><td>2.50</td><td>Buy—Core, 4/8/4, FV $300</td><td>+45% to fair value — the widest margin of safety among Buy—Cores</td></tr>
+<tr><td>BLK</td><td>BlackRock</td><td>Stock</td><td>Financials</td><td>2.00</td><td>Buy—Core, 4/7/4, FV $1,175</td><td>Fee-on-AUM on every asset class the liquidity turn inflates</td></tr>
+<tr><td>SPGI</td><td>S&amp;P Global</td><td>Stock</td><td>Financials</td><td>2.00</td><td>Buy—Core</td><td>Ratings/indices/data — pricing power with no factory</td></tr>
+<tr><td>SCHW</td><td>Charles Schwab</td><td>Stock</td><td>Financials</td><td>2.00</td><td>Buy—Core</td><td>Deposit franchise + brokerage scale into a steepening curve</td></tr>
+<tr><td>VEEV</td><td>Veeva Systems</td><td>Stock</td><td>Healthcare</td><td>2.00</td><td>Buy—Core, 4/8/4, FV $235</td><td>Life-sciences software monopoly; demographics-adjacent, capital-light</td></tr>
+<tr><td>CME</td><td>CME Group</td><td>Stock</td><td>Financials</td><td>1.50</td><td>Buy—Core</td><td>Rate-volatility tollbooth — the &quot;Fed put is dead&quot; volatility regime pays it</td></tr>
+<tr><td>CBOE</td><td>Cboe Global Markets</td><td>Stock</td><td>Financials</td><td>1.50</td><td>Buy—Core</td><td>Same logic: volatility as a product, not a risk</td></tr>
+<tr><td>VRSK</td><td>Verisk Analytics</td><td>Stock</td><td>Financials/Data</td><td>1.50</td><td>Buy—Core</td><td>Insurance data monopoly; inflation reprices premiums, VRSK takes its cut</td></tr>
+<tr><td>CPRT</td><td>Copart</td><td>Stock</td><td>Industrials</td><td>1.50</td><td>Buy—Core, 3/7/3, FV $41</td><td>Lowest-risk score in the book (R3); +37% to FV</td></tr>
+<tr><td>DECK</td><td>Deckers Outdoor</td><td>Stock</td><td>Cons. Cyclical</td><td>1.50</td><td>Buy—Core, 4/7/3, FV $125</td><td>Brand pricing power, fortress balance sheet</td></tr>
+</tbody></table></div>
+
+<h3>TACTICAL — 30.00% (45 positions, 6–18mo clock — the regime sleeve)</h3>
+
+<p><em>Every line here is a consequence of Section 1. The sleeve is deliberately wide-and-shallow: the bet is the REGIME, expressed through many correlated-but-distinct lines, so no single name can invalidate the macro call&#x27;s P&amp;L.</em></p>
+
+<p><strong>Real assets / hard money / front end (6 ETFs, 8.75%):</strong></p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Name</th><th>Class</th><th>Sector</th><th>Wt %</th><th>Cited basis</th><th>One-line rationale</th></tr></thead><tbody>
+<tr><td>GLD</td><td>SPDR Gold</td><td>ETF</td><td>Prec. metals</td><td>2.50</td><td>Regime §5 FAVORED</td><td>Gromen: &quot;the ultimate reserve&quot;; the axis fiat is measured against</td></tr>
+<tr><td>GDX</td><td>VanEck Gold Miners</td><td>ETF</td><td>Prec. metals</td><td>1.25</td><td>Regime §5</td><td>Operating leverage on GLD — miners torque the debasement move</td></tr>
+<tr><td>SLV</td><td>iShares Silver</td><td>ETF</td><td>Prec. metals</td><td>0.75</td><td>Regime §5</td><td>Visser&#x27;s explicit trio: &quot;long gold/silver/Bitcoin, short bonds&quot;</td></tr>
+<tr><td>PDBC</td><td>Invesco Commodities</td><td>ETF</td><td>Commodities</td><td>0.75</td><td>Regime §5</td><td>Broad real-asset basket; reflation&#x27;s raw-materials expression</td></tr>
+<tr><td>XLE</td><td>Energy Select SPDR</td><td>ETF</td><td>Energy</td><td>1.75</td><td>Regime §5</td><td>Sector-level energy overweight; AI is energy-hungry (compute-vs-energy)</td></tr>
+<tr><td>BIL</td><td>1-3mo T-Bills</td><td>ETF</td><td>Cash</td><td>1.75</td><td>Regime §5: &quot;rent the front end&quot;</td><td>4%+ riskless carry + dry powder for the weekly triggers</td></tr>
+</tbody></table></div>
+
+<p><strong>Energy equities (7, 5.00%)</strong> — all Hold verdicts at spot; owned as a <em>sector regime tilt</em> with entry discipline, sized small per line:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Scores (R/G/E)</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>XOM</td><td>1.00</td><td>Hold, 4/4/2, FV $152</td><td>Scale + Guyana growth; the quality end of the tilt</td></tr>
+<tr><td>CVX</td><td>1.00</td><td>Hold, 5/4/2, FV $185</td><td>Dividend aristocrat energy beta (existing desk coverage)</td></tr>
+<tr><td>COP</td><td>0.75</td><td>Hold, 4/4/2, FV $118</td><td>Low-cost shale; R4 = among the safest energy lines</td></tr>
+<tr><td>EOG</td><td>0.75</td><td>Hold, 4/4/3, FV $140</td><td>Best-in-class returns discipline; R4</td></tr>
+<tr><td>SLB</td><td>0.50</td><td>Hold, 6/4/2, FV $52</td><td>Services torque if capex cycle broadens internationally</td></tr>
+<tr><td>WMB</td><td>0.50</td><td>Hold, 6/5/3, FV $76</td><td>Midstream tollbooth — gas volumes to data centers</td></tr>
+<tr><td>OKE</td><td>0.50</td><td>Hold, 6/4/2, FV $90</td><td>Second midstream toll; NGL volumes, inflation-linked tariffs</td></tr>
+</tbody></table></div>
+
+<p><strong>Miners &amp; materials (4, 3.25%):</strong></p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Scores</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>FCX</td><td>1.00</td><td>Hold, 6/5/4, FV $63</td><td>Copper = electrification + AI-power buildout in one metal</td></tr>
+<tr><td>STLD</td><td>1.00</td><td><strong>Buy—Tactical</strong>, 6/5/4, FV $255</td><td>Flagship holding; reshoring/steel with a Buy verdict</td></tr>
+<tr><td>NEM</td><td>0.75</td><td>Hold, 6/5/3, FV $108</td><td>Gold-miner single-name complement to GDX</td></tr>
+<tr><td>NUE</td><td>0.50</td><td>Hold, 6/4/3, FV $225</td><td>Second steel line; fiscal-dominance infrastructure spend</td></tr>
+</tbody></table></div>
+
+<p><strong>Financials — steepener &amp; risk-on-credit beneficiaries (9, 4.50%)</strong> — all Buy—Tactical verdicts from the sweep:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>WFC</td><td>0.75</td><td>Big-bank NIM into a bear-steepener; asset-cap era over</td></tr>
+<tr><td>C</td><td>0.75</td><td>Cheapest big bank; restructuring + steepener double lever</td></tr>
+<tr><td>USB</td><td>0.50</td><td>Quality regional at a discount</td></tr>
+<tr><td>MTB</td><td>0.50</td><td>Conservative regional; credit benign (HY 275bp)</td></tr>
+<tr><td>SYF</td><td>0.50</td><td>Consumer credit at cycle-low spreads; nominal-spend beneficiary</td></tr>
+<tr><td>AMP</td><td>0.50</td><td>Advice/AUM franchise — the liquidity turn inflates the fee base</td></tr>
+<tr><td>AIG</td><td>0.50</td><td>P&amp;C pricing power — insurance reprices with inflation</td></tr>
+<tr><td>PFG</td><td>0.25</td><td>Retirement/AUM small line, same logic as AMP</td></tr>
+<tr><td>HBAN</td><td>0.25</td><td>Third regional, smallest line — breadth not conviction</td></tr>
+</tbody></table></div>
+
+<p><strong>Healthcare with pricing power (5, 3.50%)</strong> — all Buy—Tactical:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Scores</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>UNH</td><td>1.00</td><td>5/5/3, FV $470</td><td>Managed-care repricing power; demographics tailwind</td></tr>
+<tr><td>GILD</td><td>0.75</td><td><strong>R3</strong>/5/3, FV $146</td><td>Lowest-risk stock in the whole book; cash-flow fortress</td></tr>
+<tr><td>VRTX</td><td>0.75</td><td>4/7/5, FV $585</td><td>CF franchise + pipeline optionality (flagship holding)</td></tr>
+<tr><td>ELV</td><td>0.50</td><td>5/5/3, FV $465</td><td>Second managed-care line</td></tr>
+<tr><td>CI</td><td>0.50</td><td>4/5/2, FV $330</td><td>Third; pharmacy-services cash machine</td></tr>
+</tbody></table></div>
+
+<p><strong>Regime-consistent industrials, tech &amp; consumer (11, 4.25%)</strong> — Buy—Tactical roster, small lines:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>ADP</td><td>0.50</td><td>Payroll float earns the front end; wage inflation = revenue</td></tr>
+<tr><td>MSI</td><td>0.50</td><td>Public-safety tech — fiscal spending&#x27;s most protected corner</td></tr>
+<tr><td>QCOM</td><td>0.50</td><td>Edge-AI silicon at a value multiple (5/5/4, FV $200)</td></tr>
+<tr><td>UAL</td><td>0.50</td><td>Flagship holding; travel nominal-spend, 6/5/4, FV $148</td></tr>
+<tr><td>PCG</td><td>0.50</td><td>Flagship holding; utility with wildfire discount + load growth, FV $19</td></tr>
+<tr><td>TPR</td><td>0.50</td><td>Flagship holding; brand pricing power, 5/7/4, FV $165</td></tr>
+<tr><td>RCL</td><td>0.25</td><td>Boomer-wealth spend-down — demographics as a consumer trade</td></tr>
+<tr><td>EXPE</td><td>0.25</td><td>Travel take-rate on nominal prices</td></tr>
+<tr><td>ZBRA</td><td>0.25</td><td>Supply-chain/reshoring capex picks-and-shovels</td></tr>
+<tr><td>GEN</td><td>0.25</td><td>Cyber subscription pricing power, small line</td></tr>
+<tr><td>COO</td><td>0.25</td><td>Contact-lens duopoly; aging-eye demographics, quiet compounder</td></tr>
+</tbody></table></div>
+
+<p><strong>Payments/fintech value (3, 0.75%)</strong> — Buy—Tactical trio, deliberately tiny:</p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Wt %</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>CPAY</td><td>0.25</td><td>B2B payments — inflation lifts invoice values, CPAY skims them</td></tr>
+<tr><td>GPN</td><td>0.25</td><td>Merchant acquiring at washed-out multiple</td></tr>
+<tr><td>XYZ</td><td>0.25</td><td>Block — fintech + BTC-adjacent optionality bridge to the crypto sleeve</td></tr>
+</tbody></table></div>
+
+<h3>STRATEGIC — 15.00% (16 positions, 3–5yr clock — the next-exponentials sleeve)</h3>
+
+<p><em>Selection rule: Exponential Potential ≥ 7 in the 2026-07-03 deep-dive sweep (or Buy verdict with E≥6). Pal&#x27;s frame: AI is &quot;the largest capex supercycle in human history; bottlenecks in chips and power only force MORE expenditure, not less.&quot; This sleeve owns the bottlenecks. Honesty: most carry Hold verdicts at spot — that is the price discipline talking, so this sleeve enters in tranches only (Section 7) and is sized as satellite, never core.</em></p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Name</th><th>Wt %</th><th>Verdict, R/G/E, FV</th><th>One-line rationale</th></tr></thead><tbody>
+<tr><td>NVDA</td><td>NVIDIA</td><td>2.50</td><td>Buy—Tactical, 6/10/8, $245</td><td>The axis of the supercycle; G10 is the only 10 in the book; Q1&#x27;27 rev +85% YoY</td></tr>
+<tr><td>ANET</td><td>Arista Networks</td><td>1.50</td><td>Buy—Tactical, 6/9/6, $178</td><td>AI back-end networking — the switch layer of every cluster</td></tr>
+<tr><td>VRT</td><td>Vertiv</td><td>1.25</td><td>Hold, 7/9/8, $340</td><td>Power/cooling — the compute-vs-energy trade in one ticker</td></tr>
+<tr><td>MRVL</td><td>Marvell</td><td>1.00</td><td>Hold, 7/7/8, $250</td><td>Custom AI silicon + optics; hyperscaler ASIC wave</td></tr>
+<tr><td>MU</td><td>Micron</td><td>1.00</td><td>Hold, 7/6/7, $1,150</td><td>HBM memory — the scarcest input of the training era</td></tr>
+<tr><td>LITE</td><td>Lumentum</td><td>1.00</td><td>Hold, 8/7/8, $780</td><td>Optical interconnect — bandwidth is the next bottleneck</td></tr>
+<tr><td>DELL</td><td>Dell</td><td>1.00</td><td>Buy—Tactical, 6/7/6, $440</td><td>AI-server integrator with a Buy verdict — the value entry to the theme</td></tr>
+<tr><td>ALAB</td><td>Astera Labs</td><td>0.75</td><td>Hold, 8/9/8, $300</td><td>Connectivity silicon pure-play; G9/E8</td></tr>
+<tr><td>NBIS</td><td>Nebius</td><td>0.75</td><td>Hold, 8/8/9, $235</td><td><strong>E9 — highest Exponential score in the sweep</strong>; neocloud land-grab</td></tr>
+<tr><td>CIEN</td><td>Ciena</td><td>0.75</td><td>Hold, 7/8/7, $435</td><td>Long-haul optical — data-center-interconnect demand wave</td></tr>
+<tr><td>PLTR</td><td>Palantir</td><td>0.75</td><td>Hold, 8/9/8, $140</td><td>AI-software monetization at scale; sized for its R8 valuation risk</td></tr>
+<tr><td>HPE</td><td>Hewlett Packard Ent.</td><td>0.75</td><td>Buy—Tactical, 6/7/6, $52</td><td>Second value-priced AI-server line</td></tr>
+<tr><td>CRWV</td><td>CoreWeave</td><td>0.50</td><td>Hold, 9/5/8, $125</td><td>Neocloud torque; R9 = smallest-line discipline</td></tr>
+<tr><td>TER</td><td>Teradyne</td><td>0.50</td><td>Hold, 7/7/7, $400</td><td>Test equipment — every new chip pays it once</td></tr>
+<tr><td>RKLB</td><td>Rocket Lab</td><td>0.50</td><td>Hold, 8/7/8, $92</td><td>Space launch/systems — the non-AI exponential in the sleeve</td></tr>
+<tr><td>CEG</td><td>Constellation Energy</td><td>0.50</td><td>Watch, 5/7/6, $265</td><td>Nuclear baseload for AI power demand — the energy side of compute-vs-energy</td></tr>
+</tbody></table></div>
+
+<h3>CRYPTO / CONVEXITY — 5.00% (20 positions, BTC-anchored)</h3>
+
+<p><em>The crypto flagship (<code>results/crypto/flagship_portfolio.md</code>) scaled by exactly 0.05. Full per-token theses, entry playbooks, and unlock-calendar rules live in that document — it is the governing sub-portfolio. Composite/tier from <code>scored.json</code> (73-token universe). Crypto is the purest liquidity-cycle expression (framework §4.2), and the liquidity turn is the regime report&#x27;s highest-conviction forward vector — this sleeve is that sentence, sized for total-loss survivability.</em></p>
+
+<div class="tw"><table><thead><tr><th>Ticker</th><th>Sector</th><th>Wt %</th><th>Composite / Tier</th><th>One-line rationale</th></tr></thead><tbody>
+<tr><td>BTC</td><td>Store of Value</td><td>1.50</td><td>50.0 anchor / Neutral</td><td>The debasement trade itself; −49.8% from ATH into a forward liquidity turn</td></tr>
+<tr><td>SOL</td><td>Layer 1</td><td>0.50</td><td>65.3 / Attractive</td><td>Best L1 adoption print in the universe (sA 90.9)</td></tr>
+<tr><td>ETH</td><td>Layer 1</td><td>0.40</td><td>60.4 / Neutral</td><td>Highest moat score anywhere (sM 90.6); fee-burn, full float</td></tr>
+<tr><td>AAVE</td><td>DeFi Credit</td><td>0.25</td><td>66.3 / Attractive</td><td>Top real-revenue composite; $464.9M fees, P/Fees 2.9, buybacks</td></tr>
+<tr><td>ETHFI</td><td>Liquid Staking</td><td>0.25</td><td>65.2 / Attractive</td><td>Fee-on-AUM restaking manager; no pillar below 61</td></tr>
+<tr><td>KAS</td><td>Layer 1</td><td>0.20</td><td>63.3 / Neutral</td><td>Balanced hard-money L1; float 0.998, no unlocks ever</td></tr>
+<tr><td>AERO</td><td>DeFi DEX</td><td>0.20</td><td>64.9 / Neutral</td><td>Base-ecosystem monopoly DEX; DIRECT ve-fee capture at 10.3x revenue</td></tr>
+<tr><td>LINK</td><td>Infrastructure</td><td>0.20</td><td>61.2 / Neutral</td><td>Highest cost-to-turn-off per dollar of mcap in crypto</td></tr>
+<tr><td>TIA</td><td>Layer 2</td><td>0.20</td><td>69.9 / Attractive</td><td>Highest non-meme composite; modular-DA reacceleration</td></tr>
+<tr><td>TRX</td><td>Layer 1</td><td>0.15</td><td>57.9 / Neutral</td><td>Stablecoin-settlement chain — fiscal dominance, on-chain</td></tr>
+<tr><td>HYPE</td><td>DeFi DEX</td><td>0.15</td><td>42.7 / Neutral (convexity)</td><td>Best cash flows in crypto ($907M fees) held against a 0.233 float — buy-on-drawdown only</td></tr>
+<tr><td>CAKE</td><td>DeFi DEX</td><td>0.15</td><td>61.3 / Neutral</td><td>Burn-mechanic compounder at P/Rev 12.0</td></tr>
+<tr><td>SKY</td><td>DeFi Credit</td><td>0.15</td><td>59.7 / Neutral</td><td>Cheapest real revenue in the universe (P/Rev 8.8); RWA seigniorage</td></tr>
+<tr><td>PYTH</td><td>Infrastructure</td><td>0.15</td><td>64.5 / Neutral</td><td>Next-gen oracle for the perps complex at 1/20th LINK&#x27;s cap</td></tr>
+<tr><td>GRASS</td><td>AI × Crypto</td><td>0.15</td><td>62.0 / Neutral (convexity)</td><td>Strongest AI-sector adoption (sA 90.4); real paid bandwidth demand</td></tr>
+<tr><td>JUP</td><td>DeFi DEX</td><td>0.10</td><td>55.9 / Neutral</td><td>Solana toll road; paired with SOL</td></tr>
+<tr><td>POL</td><td>Layer 2</td><td>0.10</td><td>58.3 / Neutral</td><td>The full-float exception (sT 84.5) in a dilution-cursed sector</td></tr>
+<tr><td>SPX</td><td>Meme</td><td>0.10</td><td>78.6 / Attractive (convexity)</td><td>Highest composite in the universe, on pure momentum; mechanical stops only</td></tr>
+<tr><td>AKT</td><td>AI × Crypto</td><td>0.05</td><td>56.6 / Neutral (convexity)</td><td>GPU-lease demand, full float, no story premium</td></tr>
+<tr><td>BONK</td><td>Meme</td><td>0.05</td><td>52.7 / Neutral (convexity)</td><td>Solana attention proxy; momentum rules, no averaging down. Ever.</td></tr>
+</tbody></table></div>
+
+
+<h2>4. SECTOR ALLOCATION — WITH THE ZEROS JUSTIFIED IN WRITING</h2>
+
+<p><strong>Dedicated (satellite + named-stock) capital by sector.</strong> The broad index base (SPY/QQQ/RSP = 16.0%) carries every sector at roughly market weight underneath this table — so a 0% row means <strong>zero dedicated capital and zero conviction</strong>, not a net-short. Synthos One is never net-short a sector.</p>
+
+<div class="tw"><table><thead><tr><th>Sector / sleeve</th><th>Dedicated Wt</th><th>Regime rationale (cited)</th></tr></thead><tbody>
+<tr><td>Broad index base</td><td>16.00%</td><td>Representativeness + benchmark honesty (the market lives inside the book)</td></tr>
+<tr><td>Technology &amp; AI infrastructure</td><td>21.00%</td><td>New orders +10.4% YoY = the capex wave in hard data; Pal&#x27;s supercycle; strategic sleeve lives here</td></tr>
+<tr><td>Financials (fee machines, exchanges, banks)</td><td>20.75%</td><td>Risk-on credit (HY 275bp), bear-steepener NIM, volatility-as-product (CME/CBOE), nominal-spend tollbooths (MA/V)</td></tr>
+<tr><td>Healthcare</td><td>8.25%</td><td>Demographics (65+ = 18.4% of population and rising) + pricing power; LLY/VEEV/UNH axis</td></tr>
+<tr><td>Energy</td><td>6.75%</td><td>Regime §5 FAVORED; AI is energy-hungry; real-asset cash flows with discipline</td></tr>
+<tr><td>Precious metals &amp; commodities</td><td>6.00%</td><td>The debasement trade: Visser &quot;long gold/silver/Bitcoin, short bonds&quot;; Gromen&#x27;s gold-vs-fiat axis</td></tr>
+<tr><td>Crypto</td><td>5.00%</td><td>Purest liquidity-cycle expression into a forward liquidity turn; loss-capped at 5%</td></tr>
+<tr><td>Consumer discretionary (brands/travel)</td><td>5.00%</td><td>Selective pricing power only (AMZN/DECK/TPR); consumer <em>sentiment</em> is depressed (UMCSENT 44.8) so sizing is light</td></tr>
+<tr><td>Communication services</td><td>3.00%</td><td>GOOGL only — conviction is name-specific, not sector-wide</td></tr>
+<tr><td>Industrials</td><td>3.00%</td><td>Reshoring/fiscal capex (CPRT/ADP/UAL/RKLB)</td></tr>
+<tr><td>Materials (industrial)</td><td>2.50%</td><td>Copper/steel = electrification + reshoring (FCX/STLD/NUE)</td></tr>
+<tr><td>Cash / T-bills (BIL)</td><td>1.75%</td><td>&quot;Rent the front end&quot; — 4%+ riskless carry + trigger dry powder</td></tr>
+<tr><td>Utilities / power</td><td>1.00%</td><td>Only the AI-load-growth stories (PCG, CEG); the sector is otherwise a bond proxy — see zeros below</td></tr>
+<tr><td><strong>Long-duration Treasuries</strong></td><td><strong>0.00%</strong></td><td><strong>Justified zero.</strong> Regime §5: AVOID — sticky 4%+ inflation, exploding supply, bear-steepener base case, 30y (4.97%) testing Gromen&#x27;s ~4.8% affordability ceiling. Dale&#x27;s KISS portfolio holds no bonds; Visser: &quot;no reason to own bonds with inflation on the higher side.&quot; Duration is the single asset the regime most directly punishes. Re-opens on: a credible deflationary break (HY &gt;450bp + claims &gt;300k) — at which point duration becomes the <em>first</em> buy.</td></tr>
+<tr><td><strong>REITs / listed real estate</strong></td><td><strong>0.00%</strong></td><td><strong>Justified zero.</strong> Cap-rate assets are long-duration proxies; real 10y at 2.25% (historically restrictive) + a bear-steepener repricing the long end is the direct bear case. Confirming evidence: zero REITs among the 54 Buy verdicts in the deep-dive sweep. Re-opens on: real yields breaking decisively lower (the debasement-pivot scenario) — GDX/GLD are the intended first responders to that world, not REITs.</td></tr>
+<tr><td><strong>Consumer staples (dedicated)</strong></td><td><strong>0.00%</strong></td><td><strong>Justified zero.</strong> Staples are bond-proxy multiples with input-cost squeeze: 4.3% CPI raises their COGS faster than their shelf prices in a sentiment-depressed consumer (UMCSENT 44.8, −14.2% YoY). The sweep produced zero Buy-rated staples. The pricing-power budget is spent where it actually exists: energy, healthcare, payments. Re-opens on: a defensive regime flip (deflation posterior &gt; 40%).</td></tr>
+<tr><td><strong>Crypto: DePIN + Exchange/Payments tokens</strong></td><td><strong>0.00%</strong></td><td>Inherited zeros from the crypto flagship §2, justified there in writing: DePIN&#x27;s demand/emissions coverage &lt; 1 with zero Attractive-tier names; exchange tokens carry single-enforcement-action annihilation risk and payments tokens fail value-capture (XRP&#x27;s 1B/month escrow = deterministic sell pressure).</td></tr>
+</tbody></table></div>
+
+<p><strong>Roll-up:</strong> equities ~62% named + 16% index base, real assets ~8.75% (GLD/SLV/GDX/PDBC + NEM inside materials), crypto 5%, cash 1.75%.</p>
+
+
+<h2>5. THE FEP PIPELINE — HOW BELIEFS BECOME WEIGHTS (OPERATIONAL)</h2>
+
+<p>This is the build-out I specified in <code>docs/fep_buildout_fable.md</code>, now wired to portfolio construction. The one-sentence version (framework doc): <em>maintain an explicit probabilistic world model, update it by precision-weighted Bayesian inference from the KB + data, emit calibrated distributions, and act on expected return traded off against uncertainty.</em></p>
+
+<h3>The flow</h3>
+
+<p><code>`</code></p>
+<p>KB CLAIMS (~27,800 dated, per-thinker)          FRED VECTOR z_t (growth, inflation,</p>
+<p>  precision κ_c = w_job × m_score × recency        liquidity, credit accelerations)</p>
+<p>  (thinkers.py job routing × scorecard             κ_z = 1.0 — data is the anchor;</p>
+<p>   shrinkage × recency.py decay;                   claim mass capped at Σκ_c ≤ 1.0</p>
+<p>   e.g. Dale/Steno tactical 1.9, Pal               so the commentariat can match the</p>
+<p>   strategic 1.9, Visser selection 2.0,            data&#x27;s vote but never outvote it</p>
+<p>   mgmt voices 0.5)                     </p>
+<p>        └──────────────┬───────────────────────────┘</p>
+<p>                       ▼</p>
+<p>   REGIME POSTERIOR  q(s), s ∈ {Goldilocks, Reflation, Inflation, Deflation}</p>
+<p>   log q(s) = log p̃(s) + κ_z·log N(z;μ_s,Σ) + Σ κ_c·log ℓ_c(s) − log Z</p>
+<p>   (buildout §3.5; prior drifts toward base rates, λ=0.02/wk — beliefs expect to go stale)</p>
+<p>                       ▼</p>
+<p>   SECTOR / NAME SIGNALS</p>
+<p>   • Sector tilts = posterior-weighted blend of per-regime playbooks (NOT argmax —</p>
+<p>     today&#x27;s call is Reflation→Inflation, so the book blends both playbooks)</p>
+<p>   • Names = deep-dive tiers (Buy—Core/Tactical, R/G/E) + crypto composites (V/A/T/M)</p>
+<p>   • Fragility F_t = KL(q_synthos ‖ q_market)·(1−H/log4) sizes any contrarian sleeve</p>
+<p>                       ▼</p>
+<p>   WEIGHTS</p>
+<p>   • CORE: fixed representativeness mandate (only names change, on tier migration)</p>
+<p>   • TACTICAL: regime posterior sets sector over/underweights and the zeros</p>
+<p>   • STRATEGIC: selection-job conviction (E-scores), regime-gated on gross only</p>
+<p>   • CRYPTO: composite ranks tokens; regime sizes the sleeve (&quot;the composite ranks</p>
+<p>     tokens; the regime sizes crypto&quot; — crypto framework §4.2)</p>
+<p>                       ▼</p>
+<p>   CALIBRATION LOG (the honesty proof)</p>
+<p>   Every posterior and tier logged append-only pre-publication (buildout §3.7),</p>
+<p>   graded at maturity by the same grader as the pundits. synthos_self: 137 positions</p>
+<p>   seen, 0 matured, pending, not back-fitted. No grades, no performance claims.</p>
+<p><code>`</code></p>
+
+<h3>Cadence: monthly rebalance, weekly triggers</h3>
+
+<p><strong>Monthly (scheduled):</strong> recompute the regime posterior; rebalance sleeve weights to targets; apply tier migrations; crypto rebalance per its flagship rules; log everything append-only. Quarterly: full reconstitution (universe review, taxonomy review, this document reissued).</p>
+
+<p><strong>Weekly trigger list — any ONE fires an out-of-cycle review; thresholds are pre-committed so hindsight can&#x27;t edit them:</strong></p>
+
+<div class="tw"><table><thead><tr><th>#</th><th>Trigger</th><th>Threshold (source)</th><th>Action if fired</th></tr></thead><tbody>
+<tr><td>1</td><td>HY credit spreads</td><td>&gt; 450bp (regime §5 flip-catalyst; now 275bp)</td><td>De-risk gate: tactical cyclicals cut, BIL raised, crypto convexity sub-sleeve to zero</td></tr>
+<tr><td>2</td><td>Initial claims</td><td>&gt; ~275–300k sustained (regime §5; now 215k)</td><td>Growth-crack review; deflation playbook staged</td></tr>
+<tr><td>3</td><td>Regime-posterior flip</td><td>KL(q_t‖q_{t−1}) &gt; 0.15 in one step (buildout §3.6)</td><td>Full tactical-sleeve re-derivation</td></tr>
+<tr><td>4</td><td>Model-break surprise</td><td>S_t &gt; rolling 90th percentile 2 consecutive weeks (buildout §3.6)</td><td>Cut gross exposure — the model is wrong, not the market</td></tr>
+<tr><td>5</td><td>Fragility flag</td><td>F_t &gt; 0.20 (buildout §3.6)</td><td>Contrarian-sleeve review: we are confident AND the market disagrees</td></tr>
+<tr><td>6</td><td>Tier downgrade</td><td>Any holding → Avoid: exit immediately. → Sell/Weak: halve at next rebalance</td><td>Mechanical, no discretion</td></tr>
+<tr><td>7</td><td>Major macro print</td><td>CPI/core-PCE reacceleration &gt;0.2 above path; payroll shock; FOMC balance-sheet announcement</td><td><strong>QT-end announcement = the liquidity turn confirming → deploy convexity per §7</strong></td></tr>
+<tr><td>8</td><td>Long-end dysfunction</td><td>30y decisively through ~5% with failed auctions (Gromen ceiling test)</td><td>Duration-shock protocol: trim rate-sensitive tacticals, add GLD/BIL</td></tr>
+<tr><td>9</td><td>Crypto unlock cliff</td><td>&gt; 5% of any holding&#x27;s circulating mcap within 30d (crypto flagship rule 3)</td><td>Trim to half ahead; no adds within 30d of &gt;1% cliffs</td></tr>
+</tbody></table></div>
+
+<h3>What&#x27;s live now vs. what needs the full environment — stated honestly</h3>
+
+<p><strong>Live today (this portfolio was built from it):</strong> the distilled artifacts — the enriched regime report (posterior expressed narratively as Reflation→Inflation), 200+ equity deep-dive tiers with R/G/E scores, the 73-token crypto <code>scored.json</code>, the thinker scorecard (<code>thinker_scores.json</code>: 422 graded, 70.1%), and the job-routing weights in <code>thinkers.py</code>. Everything cited in this document reconciles to those files.</p>
+
+<p><strong>Needs the full KB environment (lancedb + conda <code>biotech</code>):</strong> live belief-layer generation — <code>beliefs.py</code> weekly posterior updates from fresh FRED pulls + newly distilled claims, the market-implied posterior q_market, the fragility score F_t, EIG research routing, and the append-only <code>regime_log.jsonl</code> calibration log. <strong>Until that runs weekly, the regime posterior is refreshed manually per report cycle, triggers 3–5 are approximated by their observable proxies (regime-report reissues, Kritzman turbulence from <code>macro.py</code>), and the calibration page cannot exist.</strong> We say this plainly because claiming a live belief engine before it runs weekly would be exactly the kind of dishonesty this brand exists to kill. The Phase-2 falsification rule stands: if the FEP layer doesn&#x27;t beat the dumb baselines after 26 logged weeks, we rip it out and rename the docs (buildout §4–5).</p>
+
+
+<h2>6. THE PLAYBOOK — HOW TO THINK ABOUT THIS PORTFOLIO</h2>
+
+<h3>The three-clock philosophy</h3>
+
+<p>The book runs on three clocks because forecast skill is horizon-specific — that is the entire lesson of <code>thinkers.py</code> (Steno/Dale weighted 1.9 on <em>tactical</em>, 0.8–1.0 elsewhere; Pal 1.9 <em>strategic</em> but 0.6 tactical — &quot;don&#x27;t use him for a 3–6mo call&quot;; Visser 2.0 on <em>selection</em>). The portfolio routes capital the same way it routes voices:</p>
+
+<ul>
+<li><strong>The multi-year clock (CORE)</strong> answers: <em>is capitalism still compounding?</em> You don&#x27;t trade this clock; you feed it. Its enemy is your boredom.</li>
+<li><strong>The 6–18mo clock (TACTICAL)</strong> answers: <em>what does the current regime pay for?</em> It is wrong the most often and repriced the most often — which is why it&#x27;s 45 shallow lines, monthly rebalanced, and gated by pre-committed triggers instead of feelings.</li>
+<li><strong>The 3–5yr clock (STRATEGIC)</strong> answers: <em>what becomes 5x bigger regardless of next quarter?</em> Its enemy is entry price — hence tranches — and narrative decay — hence the E-score refresh each sweep.</li>
+<li><strong>The crypto tail</strong> is not a clock; it is <strong>convexity</strong>. It exists because the regime&#x27;s single highest-conviction forward vector (the liquidity turn) has its purest, highest-beta expression there, and it is sized so that being completely wrong costs 5 points, not the portfolio.</li>
+</ul>
+
+<h3>How to invest in it</h3>
+
+<ol>
+<li><strong>DCA the core.</strong> Equal installments over 8–12 weeks into the 19 core lines (or start with SPY/QQQ/RSP and phase the 16 stocks in). After that, automatic monthly additions. Never time this sleeve.</li>
+<li><strong>Tranche the satellites.</strong> Tactical: half position now, half on sector pullbacks. Strategic: thirds over 3–6 months, accelerating into 15–25% drawdowns of names whose E-scores hold. The deep-dive entry zones govern (e.g., NVDA $191–195, exit discipline at a close below the 200-day ~$191).</li>
+<li><strong>Crypto by its own book.</strong> The crypto flagship&#x27;s per-position styles apply verbatim: DCA BTC/ETH/LINK; tranche the quality DeFi; drawdown-only buys for HYPE; mechanical momentum stops for SPX/BONK — no averaging down in memes, ever.</li>
+<li><strong>Rebalance monthly to targets; reconstitute quarterly.</strong> Drift bands: ±20% relative per line, sector caps at target +5 points. Trim winners into strength; the log records every change.</li>
+<li><strong>The regime gate on gross exposure</strong> (generalizes the crypto flagship&#x27;s gate to the whole book):</li>
+</ol>
+
+<div class="tw"><table><thead><tr><th>Regime state</th><th>Gross posture</th></tr></thead><tbody>
+<tr><td>Liquidity expansion CONFIRMED (QT ended, injection underway)</td><td>Fully invested; crypto convexity sub-sleeve fully deployed; BIL at minimum</td></tr>
+<tr><td><strong>TODAY: turn approaching, unconfirmed</strong></td><td>Core full; tactical full; strategic tranching; convexity adds on pullback rules only — no chasing</td></tr>
+<tr><td>Liquidity drain resumes (reserves ↓ + M2 rolls over)</td><td>Convexity halved into BTC/GLD; BIL doubled; no new strategic tranches</td></tr>
+<tr><td>Deflation flip fires (triggers 1–2)</td><td>Tactical cyclicals cut hard; memes to zero; gross toward 80%; duration becomes buyable for the first time</td></tr>
+</tbody></table></div>
+
+<ol>
+<li><strong>What would change the allocation</strong> (the honest pre-commitments): a deflationary break (triggers 1–2) rewrites the Tactical sleeve and re-opens Treasuries; core PCE credibly breaking toward 2% with growth intact (Goldilocks) would trim GLD/energy toward growth; the AI-capex digestion Visser flags (~$4T IPO wave, 3–6mo pause) would slow strategic tranches but not the thesis; a fragility flag with high confidence licenses the only contrarian positioning we ever do; and any tier migration executes mechanically regardless of narrative.</li>
+</ol>
+
+<h3>Rules that protect you from us</h3>
+
+<ul>
+<li>No position except broad ETFs may exceed 8%. No single crypto line except BTC above 0.5%.</li>
+<li>Every 0% sector carries a written re-open condition (Section 4) — zeros are theses, not omissions.</li>
+<li>If the calibration record (once live) shows the regime engine underperforming the persistence baseline, the tactical sleeve&#x27;s <em>active share shrinks automatically</em> toward sector-neutral until it re-earns it. The book de-risks its own beliefs.</li>
+</ul>
+
+
+<h2>7. INVESTABLE MONDAY — ENTRY APPROACH PER BUCKET</h2>
+
+<p><em>Approach and logic, not per-line price targets. A reader with the list above can act at Monday&#x27;s open.</em></p>
+
+<p><strong>CORE (50 units of capital):</strong> Buy <strong>one-third at Monday&#x27;s open</strong> across all 19 lines — representativeness doesn&#x27;t wait, and the multi-year clock makes the entry price a rounding error. Schedule the remaining two-thirds as 8 weekly automatic buys. If the market gaps down &gt;2% intraweek, pull the next installment forward. Logic: eliminate timing regret in both directions; the core&#x27;s job is to <em>exist</em>, not to be clever.</p>
+
+<p><strong>TACTICAL (30 units):</strong> Buy <strong>half at the open</strong> for the ETF block (GLD/GDX/SLV/PDBC/XLE/BIL) and the Buy-rated equities; hold the second half for pullbacks toward each name&#x27;s nearest support band per its deep-dive entry zone (the flagship convention: nearest moving-average support up to current price). For Hold-verdict energy/materials lines, first tranche at the open is a <em>half of the half</em> — the regime justifies presence, the verdict counsels patience. Do not chase anything that gapped &gt;3% that morning; the regime is a 6–18 month thesis and will offer entries.</p>
+
+<p><strong>STRATEGIC (15 units):</strong> <strong>One-third at the open, one-third on a 15% pullback, one-third on 25% — per name, standing orders.</strong> These are Hold-at-spot names with E≥7: the thesis is bought immediately at one-third size so the supercycle can&#x27;t run away from you, and the price discipline that produced the Hold verdicts is honored with the remaining two-thirds. Exception: the Buy-verdict lines (NVDA, ANET, DELL, HPE) start at half. Every tranche cancels if the name&#x27;s next sweep drops its E-score below 6 or verdict to Sell.</p>
+
+<p><strong>CRYPTO (5 units):</strong> Execute the crypto flagship&#x27;s per-position playbook starting Monday: begin the BTC weekly DCA and ETH/LINK monthly DCA immediately; place tranche-1 orders for SOL/KAS/AAVE/SKY/PYTH/POL/CAKE/JUP per its §4 table; <strong>do not chase</strong> AERO/ETHFI/GRASS/SPX (extended — pullback rules only) and <strong>do not touch HYPE except on a −25% drawdown</strong>. All unlock-calendar rules apply from day one.</p>
+
+
+<h2>8. HONEST RISKS — WHAT KILLS THIS PORTFOLIO</h2>
+
+<ol>
+<li><strong>The regime call is the concentrated bet.</strong> Core is diversified; the satellites are one thesis worn forty ways. If the liquidity turn doesn&#x27;t come — or comes <em>after</em> a deflationary accident — the tactical sleeve (energy, miners, banks) and the entire crypto sleeve fall together. The crypto flagship says it verbatim: &quot;in a liquidity drain, every sector is one trade.&quot; Mitigations: the 50% core, the trigger table, tranche discipline. Mitigations, not cures.</li>
+<li><strong>The specific poison scenario:</strong> a deflationary bust (credit event, claims spike) in which energy, gold miners, banks, AI capex, and crypto <strong>all</strong> fall while the one asset we hold at zero — long Treasuries — rallies. Our zeros are our biggest active risk, and we accept them knowingly because the regime evidence (fiscal dominance, demographics, 4.3% CPI) says duration is the worse standing bet. The trigger table exists to buy duration <em>late but alive</em>.</li>
+<li><strong>Early ≠ right.</strong> &quot;Position ahead of the injection&quot; can mean quarters of underperformance before vindication — and in crypto, −50% before right. The 2026 tape has already cut BTC in half from ATH; it can halve again.</li>
+<li><strong>Gromen&#x27;s tail:</strong> capital-flight price action — dollar, bonds, and stocks down together. GLD/BTC are the intended hedges; in the first weeks of such a move, correlations go to one and nothing hedges.</li>
+<li><strong>Valuation risk in the strategic sleeve.</strong> Twelve of sixteen are Hold-at-spot. Paying up for E-scores is how forward investors die; the tranche rules and R-score sizing (CRWV R9 = 0.5%) are the containment.</li>
+<li><strong>Model risk, stated in our own words:</strong> the FEP layer could be &quot;plain Bayesian forecasting in a Friston costume&quot; (framework doc&#x27;s own guardrail), the regime state-space is a 4-box cartoon of macro, and per-thinker precision is regime-conditional (Gromen&#x27;s 0.500 on n=84 was earned in one dollar regime). The falsification test with a rip-out date is pre-committed (buildout §4.2).</li>
+<li><strong>Drawdown expectation, in numbers:</strong> a normal bad year for this construction is <strong>−20% to −35%</strong> peak-to-trough (equity beta ~1 with cyclical tilts, plus a crypto sleeve that can lose 80% of itself = up to −4 points on its own). If you cannot hold through that without selling the bottom, hold more BIL and less of everything else. Measured in gold — Gromen&#x27;s own yardstick (S&amp;P −35–40% vs gold since 4Q21) — even good nominal years may look pedestrian. We will report both numerators.</li>
+</ol>
+
+
+<h2>9. WHAT RETURN IS REALISTIC — AND WHAT WOULD HAVE TO GO RIGHT</h2>
+
+<p><strong>The honest expected range (nominal, full-cycle annualized):</strong></p>
+
+<div class="tw"><table><thead><tr><th>Scenario</th><th>Approx. annualized</th><th>What it requires</th></tr></thead><tbody>
+<tr><td>Bear case</td><td><strong>−5% to +2%</strong></td><td>Deflationary accident or stagflationary bear market; the zeros save nothing because we hold no duration; crypto sleeve marks toward zero</td></tr>
+<tr><td><strong>Base case</strong></td><td><strong>+8% to +14%</strong></td><td>Markets do what markets do (~10% nominal beta); the tilts and satellites add or subtract 1–4 points; inflation 3–4% means the <em>real</em> number is 4–10%</td></tr>
+<tr><td>Bull case (the regime pays)</td><td><strong>+15% to +22% for the 6–18mo window, low-to-mid teens over 5 yrs</strong></td><td>Liquidity injection arrives on schedule; gold/energy/banks re-rate; AI capex sustains; crypto cycle turns and the 5% sleeve doubles or better</td></tr>
+<tr><td>Tail (the north star)</td><td><strong>&gt;25% for a year or two — not sustained</strong></td><td>Everything above simultaneously, plus the crypto sleeve producing a 3–5x cycle, plus multiple strategic names re-rating like 2023–24 NVDA. This is the tail that construction courts and honesty refuses to promise</td></tr>
+</tbody></table></div>
+
+<p><strong>Say the quiet part out loud:</strong> 30% <em>sustained</em> is Lynch-tier — the single best sustained public record ever, and he ran it into a far less efficient market. 10x in 5 years is 58% compounded — no diversified 100-position book has a credible claim to it. Synthos One is built so that if the exponential tail arrives, the book participates meaningfully (15% strategic + 5% crypto + concentrated tactical tilts), and if it doesn&#x27;t, the 50% core keeps the result civilized. The <strong>calibrated track record</strong> — logged pre-publication, graded by the same scorer as the pundits, published including the misses — is the only performance claim we will ever make. Today that record&#x27;s honest content is: <em>pending, n=0 matured.</em></p>
+
+<p><strong>#1 risk, named once more:</strong> the macro regime call itself. Every satellite leans on Reflation→Inflation + the forward liquidity turn. If that posterior is wrong, no amount of stock-picking inside the sleeves saves the year — only the core, the triggers, and the tranches do.</p>
+
+
+<p><em>Synthos Research · Hypothetical model portfolio constructed 2026-07-04 from the cited desk artifacts. No real money is deployed in this construct; there is no track record; model-portfolio arithmetic is survivorship-inflated hindsight until the calibration log matures. Nothing here is personalized investment advice. Digital assets can go to zero. Do your own research.</em></p>
+
+</main>
+<footer class="ft"><b>Synthos Research</b> · independent, AI-native research · educational only — not investment advice · no live performance track record yet. A model portfolio expressing the Synthos framework as of 2026-07-04; not a solicitation. Digital assets and equities can lose value; do your own research.</footer>
+<script>(function(){var K='synthos-type',b=document.getElementById('tt');function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();</script>
+</body></html>
