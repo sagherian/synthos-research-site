@@ -24,7 +24,20 @@ body{background:radial-gradient(1200px 600px at 50% -200px,#12263a,#0c121c 60%) 
 .ic-range{display:flex;gap:.35rem;margin-bottom:.7rem}.ic-range button{background:#111a26;color:#a4b5c8;border:1px solid #243447;border-radius:999px;font:inherit;font-size:.82rem;font-weight:700;padding:.3rem .8rem;cursor:pointer}.ic-range button.on{background:#22d3ee;border-color:#22d3ee;color:#04222b}
 .ic-wrap{position:relative;border:1px solid #1b2a3c;border-radius:10px;background:#0f1a26;overflow:hidden}.ic-wrap svg{display:block;width:100%;height:15rem}.ic-tip{position:absolute;pointer-events:none;background:#14202e;border:1px solid #243447;border-radius:8px;padding:.35rem .6rem;font-size:.82rem;font-variant-numeric:tabular-nums}
 .ft{border-top:1px solid #1b2a3c;margin-top:1.6rem;padding-top:1.2rem}.ft p{font-size:.82rem;color:#a4b5c8;max-width:80ch}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}</style></head><body>
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:640px){
+ .hd-in,.head-in{padding:.7rem 1rem;gap:.5rem;flex-wrap:wrap}
+ .brand span{display:none}
+ .tt,.type-toggle{font-size:0;padding:.4rem .6rem;gap:0}
+ .tt .aa,.type-toggle .aa{font-size:.9rem}
+ .wrap,main{padding-left:1rem;padding-right:1rem}
+ h1{font-size:1.55rem;line-height:1.25}
+ .card{padding:1.1rem}
+ .grid,.scores,.feat-dd,.rvrow{grid-template-columns:1fr!important}
+ .htop{gap:.4rem}.pxbox{text-align:left}
+ .tw{overflow-x:auto}
+}
+</style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="hd"><div class="hd-in">
 <a class="back" href="../research.html#themes">← Research hub</a>
