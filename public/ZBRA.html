@@ -65,7 +65,29 @@ tbody tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:rgba(
 .ic-wrap{position:relative}#icSvg{width:100%;height:auto;display:block;cursor:crosshair}
 .ic-tip{position:absolute;pointer-events:none;background:#0a1420;border:1px solid var(--line);border-radius:8px;padding:5px 9px;font-size:.78rem;color:var(--ink);transform:translate(-50%,-125%);white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.55);z-index:5}
 .ic-tip b{color:#fff}.ic-cross{stroke:#7d93a8;stroke-width:1;stroke-dasharray:3 3}.ic-dot{fill:var(--cyan);stroke:#06222b;stroke-width:2}
-</style></head><body><div class="wrap">
+</style><style id="nav-menu-css">
+.synav{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:0 0 1.1rem;padding:.1rem 0;}
+.synav-back{color:var(--accent,#22d3ee);text-decoration:none;font-weight:700;font-size:.95rem;white-space:nowrap;}
+.synav-back:hover{text-decoration:underline;}
+.synav-r{position:relative;}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:10px;width:2.4rem;height:2.4rem;padding:0;cursor:pointer;flex:none;}
+.nav-toggle:hover{background:var(--panel3,#1b2a3c);}
+.nav-toggle .nav-bars{position:relative;display:block;width:1.1rem;height:.8rem;}
+.nav-toggle .nav-bars span{position:absolute;left:0;right:0;height:2px;border-radius:2px;background:var(--text,#eef4fb);transition:transform .2s,opacity .2s,top .2s,bottom .2s;}
+.nav-toggle .nav-bars span:nth-child(1){top:0;}
+.nav-toggle .nav-bars span:nth-child(2){top:50%;margin-top:-1px;}
+.nav-toggle .nav-bars span:nth-child(3){bottom:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(1){top:50%;margin-top:-1px;transform:rotate(45deg);}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(2){opacity:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(3){bottom:auto;top:50%;margin-top:-1px;transform:rotate(-45deg);}
+.nav-menu{position:absolute;top:100%;right:0;min-width:13rem;z-index:60;margin-top:.4rem;padding:.4rem;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.45);flex-direction:column;gap:.1rem;}
+.nav-menu:not([hidden]){display:flex;}
+.nav-menu a{display:block;padding:.75rem .9rem;border-radius:8px;text-decoration:none;color:var(--text,#eef4fb);font-weight:600;font-size:1rem;white-space:nowrap;}
+.nav-menu a:hover,.nav-menu a:focus-visible{background:var(--panel3,#1b2a3c);color:var(--accent,#22d3ee);}
+</style>
+</head><body><div class="wrap">
+<div class="synav"><a class="synav-back" href="research.html">← Research hub</a><div class="synav-r"><button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu"><span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span></button><nav class="nav-menu" id="navMenu" aria-label="Site navigation" hidden><a href="research.html">Research hub</a><a href="flagship.html">Synthos One</a><a href="crypto.html">Crypto</a><a href="tree.html">Knowledge Tree</a><a href="calls/index.html">Synthos Calls</a><a href="macro-summary.html">Macro regime</a></nav></div></div>
+
 <div class="banner">Synthos Research · independent, AI-native research · educational only — not investment advice · no live performance track record yet</div>
 <header class="hero"><div class="hrow"><div><h1>Zebra Technologies <span class="tkr">ZBRA</span></h1><p class="hsub">Technology · Communication Equipment · Synthos Deep Dive · 2026-07-03</p></div><div class="hpx"><div class="px">$267.18</div><div class="vb vb-tac">Buy — Tactical</div></div></div><div class="hscore"><span>Risk <b>6</b></span><span>Growth <b>6</b></span><span>Exponential <b>4</b></span><span class="fv">Fair value <b>$309 <small style="color:var(--dim);font-weight:400">$226&ndash;$370</small></b></span></div></header>
 <section class="ichart card"><div class="ic-head"><div><div class="ic-price" id="icPrice">&mdash;</div><div class="ic-chg up" id="icChg">&mdash;</div></div><div class="ic-range" id="icRange"><button data-r="1D">1D</button><button data-r="1W">1W</button><button data-r="1M">1M</button><button data-r="YTD">YTD</button><button data-r="1Y" class="on">1Y</button><button data-r="5Y">5Y</button></div></div><div class="ic-wrap"><svg id="icSvg" viewBox="0 0 920 300" role="img" aria-label="Interactive price chart with selectable time ranges from one day to five years"></svg><div class="ic-tip" id="icTip" hidden></div></div></section>
@@ -314,4 +336,13 @@ tbody tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:rgba(
   draw('1Y');
 })();
 </script>
-</div></body></html>
+</div><script>
+(function(){var t=document.getElementById('navToggle'),m=document.getElementById('navMenu');if(!t||!m)return;
+function cl(){m.hidden=true;t.setAttribute('aria-expanded','false');}
+function op(){m.hidden=false;t.setAttribute('aria-expanded','true');}
+t.addEventListener('click',function(e){e.stopPropagation();m.hidden?op():cl();});
+document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&!t.contains(e.target))cl();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){cl();t.focus();}});
+m.addEventListener('click',function(e){if(e.target.closest('a'))cl();});})();
+</script>
+</body></html>
