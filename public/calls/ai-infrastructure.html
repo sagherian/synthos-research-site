@@ -133,7 +133,7 @@ section{margin:2rem 0}h2{font-size:1.25rem;letter-spacing:-.01em;margin-bottom:.
 <section>
 <div class="track-cta">
   <div class="txt"><b>Track this call.</b><br><span class="sub">One email the moment the Synthos Score moves — with the evidence that moved it. No noise, no spam, unsubscribe anytime.</span></div>
-  <form class="track-form" onsubmit="event.preventDefault();this.innerHTML='<b style=&quot;color:#34d399&quot;>✓ Tracking — check your inbox</b>';">
+  <form class="track-form" data-call="ai-infrastructure">✓ Tracking — check your inbox</b>';">
     <label for="em" style="position:absolute;left:-9999px">Email</label>
     <input id="em" type="email" required placeholder="you@example.com">
     <button type="submit">Track</button>
@@ -166,4 +166,10 @@ document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){cl();t.focus();}});
 m.addEventListener('click',function(e){if(e.target.closest('a'))cl();});})();
 </script>
-</body></html>
+<script>(function(){var f=document.querySelector('.track-form');if(!f)return;
+f.addEventListener('submit',function(e){e.preventDefault();
+var em=f.querySelector('input[type=email]').value.trim();
+var btn=f.querySelector('button');btn.disabled=true;btn.textContent='…';
+fetch('https://www.synthosresearch.com/members/api/send-magic-link/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,emailType:'subscribe',labels:['track-ai-infrastructure'],requestSrc:'synthos-calls'})}).then(function(r){if(!r.ok)throw 0;
+f.innerHTML='<b style="color:#34d399">✓ Check your inbox — confirm the link and you’re tracking this call.</b>';}).catch(function(){
+f.innerHTML='<span style="color:#fbbf24">Couldn’t sign you up from here — <a href="https://www.synthosresearch.com/#/portal/signup" style="color:#22d3ee">join free at synthosresearch.com</a> and you’ll get call alerts in the weekly.</span>';});});})();</script></body></html>
