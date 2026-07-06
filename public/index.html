@@ -445,9 +445,6 @@ main{padding:2.25rem 1.5rem 4rem;}
       <span class="mark" aria-hidden="true"></span>
       <b>SYNTHOS</b><span>Research</span>
     </a>
-    <button class="type-toggle" id="typeToggle" aria-pressed="false">
-      <span class="aa" aria-hidden="true">A<b>A</b></span> Larger type
-    </button>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu"><span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
   </div>
 
@@ -687,7 +684,7 @@ main{padding:2.25rem 1.5rem 4rem;}
    1 · LARGE-TYPE TOGGLE — persisted, shared with article pages
    ================================================================ */
 (function(){
-  var KEY='synthos-type', btn=document.getElementById('typeToggle');
+  var KEY='synthos-type', btn=document.getElementById('typeToggle');if(!btn)return;
   function apply(on){
     document.documentElement.classList.toggle('lg',on);
     btn.setAttribute('aria-pressed',on?'true':'false');

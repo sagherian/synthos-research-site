@@ -49,11 +49,30 @@ section{margin:2rem 0}h2{font-size:1.25rem;letter-spacing:-.01em;margin-bottom:.
 .row .sc{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums;text-align:center}.sc.up{color:#34d399}.sc.dn{color:#fb7185}
 .row .st,.row .dp,.row .ev{font-size:.8rem;color:#a4b5c8}
 @media(max-width:760px){.row{grid-template-columns:1fr 3.4rem;gap:.4rem}.row .st,.row .dp,.row .ev{display:none}}</style>
+<style id="nav-menu-css">
+.hd,.site-head{position:relative;}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:10px;width:2.5rem;height:2.5rem;padding:0;cursor:pointer;flex:none;}
+.nav-toggle:hover{background:var(--panel3,#1b2a3c);}
+.nav-toggle .nav-bars{position:relative;display:block;width:1.15rem;height:.85rem;}
+.nav-toggle .nav-bars span{position:absolute;left:0;right:0;height:2px;border-radius:2px;background:var(--text,#eef4fb);transition:transform .2s,opacity .2s,top .2s,bottom .2s;}
+.nav-toggle .nav-bars span:nth-child(1){top:0;}
+.nav-toggle .nav-bars span:nth-child(2){top:50%;margin-top:-1px;}
+.nav-toggle .nav-bars span:nth-child(3){bottom:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(1){top:50%;margin-top:-1px;transform:rotate(45deg);}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(2){opacity:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(3){bottom:auto;top:50%;margin-top:-1px;transform:rotate(-45deg);}
+.nav-menu{position:absolute;top:100%;right:1rem;left:auto;min-width:13rem;z-index:60;margin-top:.4rem;padding:.4rem;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.45);flex-direction:column;gap:.1rem;}
+.nav-menu:not([hidden]){display:flex;}
+.nav-menu a{display:block;padding:.8rem .95rem;border-radius:8px;text-decoration:none;color:var(--text,#eef4fb);font-weight:600;font-size:1.02rem;white-space:nowrap;}
+.nav-menu a:hover,.nav-menu a:focus-visible{background:var(--panel3,#1b2a3c);color:var(--accent,#22d3ee);}
+</style>
 </head><body>
 <header class="hd"><div class="hd-in">
 <a class="back" href="../research.html">← Research hub</a>
 <a class="brand" href="../research.html"><span class="mark"></span><b>SYNTHOS</b><span>Calls</span></a>
-<button class="tt" id="tt" aria-pressed="false"><span class="aa">A<b>A</b></span> Larger type</button></div></header>
+<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu"><span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span></button></div>
+<nav class="nav-menu" id="navMenu" aria-label="Site navigation" hidden><a href="../research.html">Research hub</a><a href="../flagship.html">Synthos One</a><a href="../crypto.html">Crypto</a><a href="../tree.html">Knowledge Tree</a><a href="../calls/index.html">Synthos Calls</a><a href="../macro-summary.html">Macro regime</a></nav>
+</header>
 <main class="wrap">
 <p class="kick">Synthos Calls</p>
 <h1>The Conviction Board</h1>
@@ -63,5 +82,14 @@ section{margin:2rem 0}h2{font-size:1.25rem;letter-spacing:-.01em;margin-bottom:.
 <p class="meta">50 = a genuine split. High disagreement is shown, not hidden. More domains (AI, crypto, medicine, frontier tech) join the board as their organs come online.</p>
 <footer class="ft"><b>Synthos Research</b> · independent, AI-native research · educational only — not investment advice · no live performance track record yet — every call is logged and graded in public.</footer>
 </main>
-<script>(function(){var K='synthos-type',b=document.getElementById('tt');function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();</script>
+<script>(function(){var K='synthos-type',b=document.getElementById('tt');if(!b)return;function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();</script>
+<script>
+(function(){var t=document.getElementById('navToggle'),m=document.getElementById('navMenu');if(!t||!m)return;
+function cl(){m.hidden=true;t.setAttribute('aria-expanded','false');}
+function op(){m.hidden=false;t.setAttribute('aria-expanded','true');}
+t.addEventListener('click',function(e){e.stopPropagation();m.hidden?op():cl();});
+document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&!t.contains(e.target))cl();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){cl();t.focus();}});
+m.addEventListener('click',function(e){if(e.target.closest('a'))cl();});})();
+</script>
 </body></html>

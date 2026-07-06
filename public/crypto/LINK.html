@@ -37,12 +37,31 @@ body{background:radial-gradient(1200px 600px at 50% -200px,#12263a,#0c121c 60%) 
  .htop{gap:.4rem}.pxbox{text-align:left}
  .tw{overflow-x:auto}
 }
-</style></head><body>
+</style><style id="nav-menu-css">
+.hd,.site-head{position:relative;}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:10px;width:2.5rem;height:2.5rem;padding:0;cursor:pointer;flex:none;}
+.nav-toggle:hover{background:var(--panel3,#1b2a3c);}
+.nav-toggle .nav-bars{position:relative;display:block;width:1.15rem;height:.85rem;}
+.nav-toggle .nav-bars span{position:absolute;left:0;right:0;height:2px;border-radius:2px;background:var(--text,#eef4fb);transition:transform .2s,opacity .2s,top .2s,bottom .2s;}
+.nav-toggle .nav-bars span:nth-child(1){top:0;}
+.nav-toggle .nav-bars span:nth-child(2){top:50%;margin-top:-1px;}
+.nav-toggle .nav-bars span:nth-child(3){bottom:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(1){top:50%;margin-top:-1px;transform:rotate(45deg);}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(2){opacity:0;}
+.nav-toggle[aria-expanded="true"] .nav-bars span:nth-child(3){bottom:auto;top:50%;margin-top:-1px;transform:rotate(-45deg);}
+.nav-menu{position:absolute;top:100%;right:1rem;left:auto;min-width:13rem;z-index:60;margin-top:.4rem;padding:.4rem;background:var(--panel2,#111a26);border:1px solid var(--line,#243447);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.45);flex-direction:column;gap:.1rem;}
+.nav-menu:not([hidden]){display:flex;}
+.nav-menu a{display:block;padding:.8rem .95rem;border-radius:8px;text-decoration:none;color:var(--text,#eef4fb);font-weight:600;font-size:1.02rem;white-space:nowrap;}
+.nav-menu a:hover,.nav-menu a:focus-visible{background:var(--panel3,#1b2a3c);color:var(--accent,#22d3ee);}
+</style>
+</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="hd"><div class="hd-in">
 <a class="back" href="../research.html#themes">← Research hub</a>
 <a class="brand" href="../research.html"><span class="mark"></span><b>SYNTHOS</b><span>Crypto</span></a>
-<button class="tt" id="tt" aria-pressed="false"><span class="aa">A<b>A</b></span> Larger type</button></div></header>
+<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu"><span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span></button></div>
+<nav class="nav-menu" id="navMenu" aria-label="Site navigation" hidden><a href="../research.html">Research hub</a><a href="../flagship.html">Synthos One</a><a href="../crypto.html">Crypto</a><a href="../tree.html">Knowledge Tree</a><a href="../calls/index.html">Synthos Calls</a><a href="../macro-summary.html">Macro regime</a></nav>
+</header>
 <main id="main" class="wrap">
 <div class="hero">
   <p class="kick">Infrastructure & Oracles · Crypto deep dive · 2026-07-04</p>
@@ -95,5 +114,14 @@ function wire(b){var svg=b.querySelector('svg'),tip=b.querySelector('.ic-tip'),r
 svg.addEventListener('mousemove',function(e){if(!b._d)return;var r=svg.getBoundingClientRect(),xv=(e.clientX-r.left)/r.width*900,g=b._g,i=Math.round((xv-g[0])/(g[1]-g[0])*(b._d.length-1));i=Math.max(0,Math.min(b._d.length-1,i));var cr=svg.querySelector('.cr'),dt=svg.querySelector('.dt');cr.setAttribute('x1',b._xs[i].toFixed(1));cr.setAttribute('x2',b._xs[i].toFixed(1));cr.style.display='';dt.setAttribute('cx',b._xs[i].toFixed(1));dt.setAttribute('cy',b._ys[i].toFixed(1));dt.style.display='';tip.hidden=false;tip.style.left=(b._xs[i]/900*r.width)+'px';tip.style.top=(b._ys[i]/220*r.height)+'px';var D=P(b._d[i][0]);tip.innerHTML='<b>'+fmt(b._d[i][1])+'</b> · '+M[D.getMonth()]+' '+D.getDate()+', '+D.getFullYear();});
 svg.addEventListener('mouseleave',function(){tip.hidden=true;var cr=svg.querySelector('.cr'),dt=svg.querySelector('.dt');if(cr)cr.style.display='none';if(dt)dt.style.display='none';});}
 document.querySelectorAll('.ichart').forEach(function(b){draw(b);wire(b);});})();
-(function(){var K='synthos-type',b=document.getElementById('tt');function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();
-</script></body></html>
+(function(){var K='synthos-type',b=document.getElementById('tt');if(!b)return;function ap(o){document.documentElement.classList.toggle('lg',o);b.setAttribute('aria-pressed',o?'true':'false');}var s=false;try{s=localStorage.getItem(K)==='lg';}catch(e){}ap(s);b.addEventListener('click',function(){var o=!document.documentElement.classList.contains('lg');ap(o);try{localStorage.setItem(K,o?'lg':'');}catch(e){}});})();
+</script><script>
+(function(){var t=document.getElementById('navToggle'),m=document.getElementById('navMenu');if(!t||!m)return;
+function cl(){m.hidden=true;t.setAttribute('aria-expanded','false');}
+function op(){m.hidden=false;t.setAttribute('aria-expanded','true');}
+t.addEventListener('click',function(e){e.stopPropagation();m.hidden?op():cl();});
+document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&!t.contains(e.target))cl();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){cl();t.focus();}});
+m.addEventListener('click',function(e){if(e.target.closest('a'))cl();});})();
+</script>
+</body></html>
