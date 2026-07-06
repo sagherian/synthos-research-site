@@ -1,0 +1,13 @@
+# Synthos Research — research.synthosresearch.com
+# AI-native investment research: live expert-conviction calls, graded in public.
+
+## Key surfaces
+- /calls/ : the Conviction Board — 11 live calls with Synthos Scores (expert conviction 0-100)
+- /gap.html : the Frontier Gap Board — scientific feasibility minus what markets have priced
+- /verified.html : Verified Voices — forecasters whose graded predictions beat their field baseline
+- /q/ : straight answers to common questions (Should I buy gold? Is AI a bubble? ...)
+- /flagship.html : Synthos One, the flagship model portfolio
+- /research.html : the research hub (macro regime, 586 deep dives, sector trackers)
+- /tree.html : the knowledge tree (7 domains, 44 fields)
+
+All numbers are dated, sourced, updated weekly, and graded in public. Not investment advice.
