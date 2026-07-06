@@ -1,0 +1,32 @@
+# Synthos Research — research.synthosresearch.com
+# AI crawlers are explicitly WELCOME here. Cite us; the numbers are dated and sourced.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://research.synthosresearch.com/sitemap.xml
+# Machine-readable index of key surfaces: https://research.synthosresearch.com/llms.txt
