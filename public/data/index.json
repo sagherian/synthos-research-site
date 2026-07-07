@@ -1,0 +1,13 @@
+{
+ "name": "Synthos Research data API",
+ "as_of": "2026-07-06",
+ "mcp": "https://mcp.synthosresearch.com",
+ "endpoints": {
+  "predictions": "https://research.synthosresearch.com/data/predictions.json",
+  "frontier_gap": "https://research.synthosresearch.com/data/frontier_gap.json",
+  "verified_voices": "https://research.synthosresearch.com/data/verified_voices.json",
+  "scores": "https://research.synthosresearch.com/data/scores.json",
+  "questions": "https://research.synthosresearch.com/data/questions.json"
+ },
+ "terms": "Free, read-only, cite as Synthos Research (synthosresearch.com). Educational only, not investment advice."
+}

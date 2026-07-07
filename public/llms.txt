@@ -11,3 +11,8 @@
 - /tree.html : the knowledge tree (7 domains, 44 fields)
 
 All numbers are dated, sourced, updated weekly, and graded in public. Not investment advice.
+
+## For AI agents (live)
+- MCP server: https://mcp.synthosresearch.com  (tools: list_predictions, get_prediction, frontier_gap, verified_voices, get_score, search_questions)
+- Raw JSON: https://research.synthosresearch.com/data/index.json (predictions, frontier_gap, verified_voices, scores, questions)
+- Free, read-only. Cite as Synthos Research (synthosresearch.com). Educational only, not investment advice.

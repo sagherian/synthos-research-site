@@ -1,0 +1,62 @@
+{
+ "as_of": "2026-07-06",
+ "note": "Frontier Gap = scientific feasibility minus what the market has priced. Positive = science ahead of the trade.",
+ "gaps": [
+  {
+   "field": "ai/applications agents",
+   "key": "ai/applications_agents",
+   "feasibility": 92,
+   "priced_in": 16,
+   "frontier_gap": 76,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "crypto/smart contract l1 l2",
+   "key": "crypto/smart_contract_l1_l2",
+   "feasibility": 82,
+   "priced_in": 19,
+   "frontier_gap": 64,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "ai/infrastructure",
+   "key": "ai/infrastructure",
+   "feasibility": 84,
+   "priced_in": 35,
+   "frontier_gap": 48,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "medicine/metabolic glp1",
+   "key": "medicine/metabolic_glp1",
+   "feasibility": 76,
+   "priced_in": 55,
+   "frontier_gap": 21,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "frontier tech/space economy",
+   "key": "frontier_tech/space_economy",
+   "feasibility": 84,
+   "priced_in": 68,
+   "frontier_gap": 16,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "medicine/biotech platforms",
+   "key": "medicine/biotech_platforms",
+   "feasibility": 89,
+   "priced_in": 98,
+   "frontier_gap": -8,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "ai/compute chips",
+   "key": "ai/compute_chips",
+   "feasibility": 84,
+   "priced_in": 98,
+   "frontier_gap": -13,
+   "url": "https://research.synthosresearch.com/gap.html"
+  }
+ ]
+}
