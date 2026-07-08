@@ -5,6 +5,7 @@
 - /calls/ : the Conviction Board — 11 live calls with Synthos Scores (expert conviction 0-100)
 - /gap.html : the Frontier Gap Board — scientific feasibility minus what markets have priced
 - /verified.html : Verified Voices — forecasters whose graded predictions beat their field baseline
+- /think/ : Think Pieces — events mapped to affected companies over time horizons
 - /q/ : straight answers to common questions (Should I buy gold? Is AI a bubble? ...)
 - /flagship.html : Synthos One, the flagship model portfolio
 - /research.html : the research hub (macro regime, 586 deep dives, sector trackers)
