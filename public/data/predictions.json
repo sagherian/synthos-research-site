@@ -85,7 +85,15 @@
    "trend": "cooling",
    "disagreement_pct": 10,
    "evidence_claims": 2738,
-   "url": "https://research.synthosresearch.com/calls/hard-assets.html"
+   "url": "https://research.synthosresearch.com/calls/hard-assets.html",
+   "crowd_market": {
+    "source": "Polymarket",
+    "outcome": "\u2191 $4,300",
+    "crowd_prob_pct": 31.0,
+    "crowd_gap": 59.0,
+    "url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-july-2026",
+    "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
+   }
   },
   {
    "topic": "btc store of value",
@@ -421,7 +429,15 @@
    "trend": "rising",
    "disagreement_pct": 52,
    "evidence_claims": 3630,
-   "url": "https://research.synthosresearch.com/calls/rates-fed.html"
+   "url": "https://research.synthosresearch.com/calls/rates-fed.html",
+   "crowd_market": {
+    "source": "Polymarket",
+    "outcome": "At least one Fed rate cut in 2026",
+    "crowd_prob_pct": 22.6,
+    "crowd_gap": 25.4,
+    "url": "https://polymarket.com/event/how-many-fed-rate-cuts-in-2026",
+    "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
+   }
   },
   {
    "topic": "bonds curve",
