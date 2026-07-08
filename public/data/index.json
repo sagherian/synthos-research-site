@@ -4,7 +4,7 @@
  "mcp": "https://mcp.synthosresearch.com",
  "endpoints": {
   "predictions": "https://research.synthosresearch.com/data/predictions.json",
-  "frontier_gap": "https://research.synthosresearch.com/data/frontier_gap.json",
+  "science_gap": "https://research.synthosresearch.com/data/science_gap.json",
   "verified_voices": "https://research.synthosresearch.com/data/verified_voices.json",
   "scores": "https://research.synthosresearch.com/data/scores.json",
   "questions": "https://research.synthosresearch.com/data/questions.json"

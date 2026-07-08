@@ -4,7 +4,7 @@
  "questions": [
   {
    "question": "Are AI agents the next big thing?",
-   "answer": "This is the widest Frontier Gap on our entire board: the science panel rates agent feasibility 91/100 while the software proxy sits at its 16th percentile \u2014 a Gap of +76. Expert conviction: 93/100, rising. High feasibility, unpriced trade \u2014 exactly the profile our system exists to find.",
+   "answer": "This is the widest Science Gap on our entire board: the science panel rates agent feasibility 91/100 while the software proxy sits at its 16th percentile \u2014 a Gap of +76. Expert conviction: 93/100, rising. High feasibility, unpriced trade \u2014 exactly the profile our system exists to find.",
    "url": "https://research.synthosresearch.com/q/are-ai-agents-the-next-big-thing.html"
   },
   {
@@ -19,7 +19,7 @@
   },
   {
    "question": "Are GLP-1 stocks still a buy?",
-   "answer": "The science panel rates the GLP-1 story 76/100 (durable, expanding indications) while the trade sits at the 55th percentile \u2014 a Frontier Gap of +21: still half-priced by our measure. Expert conviction: 91/100. Our LLY and NVO deep dives carry the per-name verdicts.",
+   "answer": "The science panel rates the GLP-1 story 76/100 (durable, expanding indications) while the trade sits at the 55th percentile \u2014 a Science Gap of +21: still half-priced by our measure. Expert conviction: 91/100. Our LLY and NVO deep dives carry the per-name verdicts.",
    "url": "https://research.synthosresearch.com/q/are-glp1-stocks-still-a-buy.html"
   },
   {
@@ -64,7 +64,7 @@
   },
   {
    "question": "Is AI a bubble?",
-   "answer": "Not uniformly \u2014 and the nuance is measurable. Our science panel rates AI feasibility 84/100, yet the power/datacenter trade sits at only the 35th percentile of its own price history (Frontier Gap +48). The crowding is concentrated in chips: the semiconductor basket trades at its 98th percentile (Gap -13). Translation: the buildout is real; the bubble risk lives in its most crowded expression.",
+   "answer": "Not uniformly \u2014 and the nuance is measurable. Our science panel rates AI feasibility 84/100, yet the power/datacenter trade sits at only the 35th percentile of its own price history (Science Gap +48). The crowding is concentrated in chips: the semiconductor basket trades at its 98th percentile (Gap -13). Translation: the buildout is real; the bubble risk lives in its most crowded expression.",
    "url": "https://research.synthosresearch.com/q/is-ai-a-bubble.html"
   },
   {
@@ -119,7 +119,7 @@
   },
   {
    "question": "Is Nvidia still a buy?",
-   "answer": "Field-level honesty first: expert conviction on AI compute is 86/100 \u2014 the science is real \u2014 but the chip trade sits at its 98th percentile of 10-year price history (Frontier Gap -13): the most crowded expression of a true story. Our full NVDA deep dive (fair-value range, scores, verdict) is linked below.",
+   "answer": "Field-level honesty first: expert conviction on AI compute is 86/100 \u2014 the science is real \u2014 but the chip trade sits at its 98th percentile of 10-year price history (Science Gap -13): the most crowded expression of a true story. Our full NVDA deep dive (fair-value range, scores, verdict) is linked below.",
    "url": "https://research.synthosresearch.com/q/is-nvidia-still-a-buy.html"
   },
   {
@@ -139,7 +139,7 @@
   },
   {
    "question": "Is the AI trade over?",
-   "answer": "The distilled expert view: the first chapter (chips) is fully priced \u2014 that basket is at its 98th percentile. The next chapters (power, applications) are not: infrastructure carries a Frontier Gap of +48. Trades rotate; the buildout continues.",
+   "answer": "The distilled expert view: the first chapter (chips) is fully priced \u2014 that basket is at its 98th percentile. The next chapters (power, applications) are not: infrastructure carries a Science Gap of +48. Trades rotate; the buildout continues.",
    "url": "https://research.synthosresearch.com/q/is-the-ai-trade-over.html"
   },
   {
@@ -169,7 +169,7 @@
   },
   {
    "question": "Are Ethereum and Solana good investments now?",
-   "answer": "Tracked-expert conviction on the smart-contract layer: 89/100, cooling \u2014 and the trade is washed out, sitting near the 19th percentile of its price history (Frontier Gap +64: high feasibility, low pricing).",
+   "answer": "Tracked-expert conviction on the smart-contract layer: 89/100, cooling \u2014 and the trade is washed out, sitting near the 19th percentile of its price history (Science Gap +64: high feasibility, low pricing).",
    "url": "https://research.synthosresearch.com/q/should-i-buy-ethereum-or-solana.html"
   },
   {
@@ -179,12 +179,12 @@
   },
   {
    "question": "Should I invest in AI infrastructure stocks?",
-   "answer": "The expert case is strong \u2014 Synthos Score 82/100, rising \u2014 because power, not chips, is the binding constraint on AI. And unlike semis (at their 98th pctile), the infrastructure basket sits at just its 35th percentile \u2014 real science, un-run trade (Frontier Gap +48).",
+   "answer": "The expert case is strong \u2014 Synthos Score 82/100, rising \u2014 because power, not chips, is the binding constraint on AI. And unlike semis (at their 98th pctile), the infrastructure basket sits at just its 35th percentile \u2014 real science, un-run trade (Science Gap +48).",
    "url": "https://research.synthosresearch.com/q/should-i-invest-in-ai-infrastructure.html"
   },
   {
    "question": "Should I invest in space stocks?",
-   "answer": "The science panel rates the space economy 84/100 (launch costs collapsing, real satellite economics) with the trade at its 68th percentile \u2014 a Frontier Gap of +16. Expert conviction: 87/100, rising. Thin public universe (launch + defense-adjacent names) means concentration risk is the price of entry.",
+   "answer": "The science panel rates the space economy 84/100 (launch costs collapsing, real satellite economics) with the trade at its 68th percentile \u2014 a Science Gap of +16. Expert conviction: 87/100, rising. Thin public universe (launch + defense-adjacent names) means concentration risk is the price of entry.",
    "url": "https://research.synthosresearch.com/q/should-i-invest-in-space-stocks.html"
   },
   {
