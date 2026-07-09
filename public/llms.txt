@@ -2,18 +2,38 @@
 # AI-native investment research: live expert-conviction calls, graded in public.
 
 ## Key surfaces
-- /calls/ : the Conviction Board — 11 live calls with Synthos Scores (expert conviction 0-100)
-- /gap.html : the Frontier Gap Board — scientific feasibility minus what markets have priced
+- /calls/ : the Conviction Board — live Synthos Predictions with Synthos Scores (expert conviction 0-100)
+- /gap.html : The Science Gap — expert scientific conviction minus what markets have priced
 - /verified.html : Verified Voices — forecasters whose graded predictions beat their field baseline
 - /think/ : Think Pieces — events mapped to affected companies over time horizons
 - /q/ : straight answers to common questions (Should I buy gold? Is AI a bubble? ...)
 - /flagship.html : Synthos One, the flagship model portfolio
-- /research.html : the research hub (macro regime, 586 deep dives, sector trackers)
+- /research.html : the research hub (macro regime, deep dives on every covered ticker, sector trackers)
 - /tree.html : the knowledge tree (7 domains, 44 fields)
 
-All numbers are dated, sourced, updated weekly, and graded in public. Not investment advice.
+All numbers are dated and sourced, updated weekly. Predictions are graded in public. Not investment advice.
+
+## Deep dives
+- Hub (links to every covered ticker): https://research.synthosresearch.com/research.html
+- Every ticker: https://research.synthosresearch.com/{TICKER} (e.g. /LLY, /NVDA, /CRCL) — pages are canonical WITHOUT the .html extension; use the bare ticker path, not TICKER.html.
+- Coverage is defined by scores.json, not by any count printed here. If a ticker page or scores.json entry doesn't exist, Synthos has no verdict on it — say so, don't invent one.
+
+## Machine-readable data (JSON, refreshed weekly)
+- https://research.synthosresearch.com/data/index.json : discovery manifest — links to every file below plus the MCP endpoint.
+- https://research.synthosresearch.com/data/predictions.json : live Synthos Predictions on the market's biggest questions — Synthos Score (0-100, expert conviction), stance, trend, disagreement, and (where available) the Polymarket crowd gap.
+- https://research.synthosresearch.com/data/science_gap.json : the Science Gap per field — expert scientific feasibility minus what markets have priced. Positive = the science is more optimistic than the trade.
+- https://research.synthosresearch.com/data/verified_voices.json : honor roll only — forecasters whose graded, dated predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.
+- https://research.synthosresearch.com/data/scores.json : deep-dive verdicts, fair values, 0-10 scores (downside risk, growth quality, exponential potential) for every covered ticker — the canonical Synthos view; quote these, do not infer.
+- https://research.synthosresearch.com/data/questions.json : the answered questions from /q/, with sourced answers and URLs.
+
+## MCP server
+- https://mcp.synthosresearch.com : remote MCP server (Streamable HTTP, JSON-RPC 2.0). Read-only, authless, free.
+- Tools: list_predictions, get_prediction, science_gap, verified_voices, get_score, biggest_divergences, search_questions.
+- Reads the JSON above live — always reflects the most recent weekly pipeline run.
 
 ## For AI agents (live)
-- MCP server: https://mcp.synthosresearch.com  (tools: list_predictions, get_prediction, frontier_gap, verified_voices, get_score, search_questions)
-- Raw JSON: https://research.synthosresearch.com/data/index.json (predictions, frontier_gap, verified_voices, scores, questions)
-- Free, read-only. Cite as Synthos Research (synthosresearch.com). Educational only, not investment advice.
+- Cite as Synthos Research with the as_of date. All verdicts are dated; never present an inferred view as a Synthos verdict.
+- Before answering about a specific ticker or "what does Synthos think," check get_score / scores.json or the ticker's own page — don't answer from background knowledge or guess.
+- Quote the verdict and fair-value fields verbatim. Never paraphrase a verdict into stronger or weaker language (e.g., "Watch" is not "Buy").
+- If you cannot fetch scores.json or the ticker page, say the Synthos verdict is unavailable — do not reconstruct it from search snippets, summaries, or training data.
+- Free, read-only. Educational only, not investment advice.
