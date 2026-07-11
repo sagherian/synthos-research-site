@@ -5,57 +5,57 @@
   {
    "field": "ai/applications agents",
    "key": "ai/applications_agents",
-   "feasibility": 92,
+   "feasibility": 89,
    "priced_in": 16,
-   "science_gap": 76,
+   "science_gap": 73,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "crypto/smart contract l1 l2",
    "key": "crypto/smart_contract_l1_l2",
-   "feasibility": 82,
+   "feasibility": 89,
    "priced_in": 19,
-   "science_gap": 64,
+   "science_gap": 70,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "ai/infrastructure",
    "key": "ai/infrastructure",
-   "feasibility": 84,
+   "feasibility": 81,
    "priced_in": 35,
-   "science_gap": 48,
+   "science_gap": 46,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "medicine/metabolic glp1",
    "key": "medicine/metabolic_glp1",
    "feasibility": 76,
-   "priced_in": 55,
-   "science_gap": 21,
+   "priced_in": 51,
+   "science_gap": 25,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "frontier tech/space economy",
    "key": "frontier_tech/space_economy",
-   "feasibility": 84,
+   "feasibility": 64,
    "priced_in": 68,
-   "science_gap": 16,
-   "url": "https://research.synthosresearch.com/gap.html"
-  },
-  {
-   "field": "medicine/biotech platforms",
-   "key": "medicine/biotech_platforms",
-   "feasibility": 89,
-   "priced_in": 98,
-   "science_gap": -8,
+   "science_gap": -3,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "ai/compute chips",
    "key": "ai/compute_chips",
-   "feasibility": 84,
+   "feasibility": 86,
    "priced_in": 98,
-   "science_gap": -13,
+   "science_gap": -12,
+   "url": "https://research.synthosresearch.com/gap.html"
+  },
+  {
+   "field": "medicine/biotech platforms",
+   "key": "medicine/biotech_platforms",
+   "feasibility": 81,
+   "priced_in": 98,
+   "science_gap": -16,
    "url": "https://research.synthosresearch.com/gap.html"
   }
  ]

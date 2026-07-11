@@ -1,28 +1,18 @@
 {
  "as_of": "2026-07-06",
- "graded_predictions_total": 2183,
+ "graded_predictions_total": 6106,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
-   "name": "Jensen Huang",
-   "graded_predictions": 387,
+   "name": "Latent Space",
+   "graded_predictions": 43,
    "strongest_fields": [
-    "AI",
-    "Equities"
-   ]
-  },
-  {
-   "name": "Raoul Pal",
-   "graded_predictions": 142,
-   "strongest_fields": [
-    "AI",
-    "Crypto",
-    "Equities"
+    "AI"
    ]
   },
   {
    "name": "Business Breakdowns",
-   "graded_predictions": 97,
+   "graded_predictions": 133,
    "strongest_fields": [
     "AI",
     "Equities",
@@ -30,10 +20,31 @@
    ]
   },
   {
-   "name": "Real Vision",
-   "graded_predictions": 44,
+   "name": "Luke Gromen",
+   "graded_predictions": 993,
    "strongest_fields": [
-    "Crypto"
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
+   "name": "Raoul Pal",
+   "graded_predictions": 583,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
+   "name": "Jensen Huang",
+   "graded_predictions": 586,
+   "strongest_fields": [
+    "AI",
+    "Equities"
    ]
   }
  ]
