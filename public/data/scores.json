@@ -1,6 +1,6 @@
 {
  "as_of": "2026-07-06",
- "count": 557,
+ "count": 564,
  "note": "Deep-dive verdicts. Scores are 0-10. Educational only, not investment advice.",
  "scores": {
   "A": {
@@ -282,6 +282,20 @@
    "exponential_potential_0_10": "4",
    "strategic_line": "AJG is a business we want at a price we don't have \u2014 it becomes a Buy below ~$236; until then, do nothing.",
    "url": "https://research.synthosresearch.com/AJG.html"
+  },
+  "AJINY": {
+   "company": "Ajinomoto Co., Inc. (ADR)",
+   "verdict": "Hold",
+   "fair_value": "32",
+   "fair_value_range": [
+    24,
+    42
+   ],
+   "downside_risk_0_10": "4",
+   "growth_quality_0_10": "6",
+   "exponential_potential_0_10": "3",
+   "strategic_line": "AJINY is a defensive Japanese food-and-amino-acid compounder that quietly owns the near-monopoly dielectric film (ABF) inside every high-end AI/CPU chip package \u2014 a real crown jewel, but a small one diluted by a slow-growth food core, wrapped in a thinly-traded, stale-priced ADR; own it for the quality and the ABF optionality, don't expect the stock to reprice quickly.",
+   "url": "https://research.synthosresearch.com/AJINY.html"
   },
   "AKAM": {
    "company": "Akamai Technologies, Inc.",
@@ -3055,6 +3069,20 @@
    "strategic_line": "FOXA is a solid business largely reflected at ~$63 \u2014 fine to keep, no reason to chase; it gets interesting again below ~$54.",
    "url": "https://research.synthosresearch.com/FOXA.html"
   },
+  "FRMI": {
+   "company": "Fermi Inc.",
+   "verdict": "Avoid",
+   "fair_value": "5",
+   "fair_value_range": [
+    1.5,
+    18
+   ],
+   "downside_risk_0_10": "9",
+   "growth_quality_0_10": "2",
+   "exponential_potential_0_10": "7",
+   "strategic_line": "FRMI is a pre-revenue, IPO-fresh bet on building the \"world's largest\" nuclear-plus-gas-powered AI-datacenter campus \u2014 a genuinely bold vision, but at a ~$4B market cap on $408M cash against a multi-ten-billion-dollar buildout that needs nuclear it won't have until ~2032, the stock still prices in far more than today's de-risked value even after an 80% crash; a venture-stage lottery ticket, not an investable fair-value gap.",
+   "url": "https://research.synthosresearch.com/FRMI.html"
+  },
   "FRT": {
    "company": "Federal Realty Investment Trust",
    "verdict": "Hold",
@@ -5253,6 +5281,20 @@
    "strategic_line": "NVR is a solid business largely reflected at ~$6,900 \u2014 fine to keep, no reason to chase; it gets interesting again below ~$5,865.",
    "url": "https://research.synthosresearch.com/NVR.html"
   },
+  "NVTS": {
+   "company": "Navitas Semiconductor Corp",
+   "verdict": "Avoid",
+   "fair_value": "7.5",
+   "fair_value_range": [
+    5,
+    16
+   ],
+   "downside_risk_0_10": "8",
+   "growth_quality_0_10": "1",
+   "exponential_potential_0_10": "5",
+   "strategic_line": "NVTS is a real GaN/SiC technology company wearing an NVIDIA-story valuation it has not earned \u2014 revenue nearly halved to $45.9M in 2025, gross profit went negative in two of the last three quarters, the Street models 2026 revenue BELOW 2025, and yet the stock still trades at ~60-80\u00d7 annualized sales after already round-tripping from $34 to $11; avoid until 800V revenue is real, and treat any bounce as an attention trade, not an investment.",
+   "url": "https://research.synthosresearch.com/NVTS.html"
+  },
   "NWS": {
    "company": "News Corporation",
    "verdict": "Hold",
@@ -5294,6 +5336,20 @@
    "exponential_potential_0_10": "4",
    "strategic_line": "NXPI is a solid business largely reflected at ~$285 \u2014 fine to keep, no reason to chase; it gets interesting again below ~$242.",
    "url": "https://research.synthosresearch.com/NXPI.html"
+  },
+  "NXT": {
+   "company": "Nextracker Inc.",
+   "verdict": "Buy \u2014 Tactical",
+   "fair_value": "140",
+   "fair_value_range": [
+    92,
+    185
+   ],
+   "downside_risk_0_10": "5",
+   "growth_quality_0_10": "7",
+   "exponential_potential_0_10": "4",
+   "strategic_line": "NXT is a profitable, net-cash, ~20%-growth solar-tracker leader trading at ~23\u00d7 forward EPS with the Street ~45% above spot \u2014 cheap because IRA 45X credits and U.S. solar policy are the binary overhang; buy the policy discount toward ~$140 fair value, but size it for the tail risk that Washington changes the rules.",
+   "url": "https://research.synthosresearch.com/NXT.html"
   },
   "O": {
    "company": "Realty Income Corporation",
@@ -5897,6 +5953,20 @@
    "strategic_line": "QCOM offers ~13% upside to fair value (~$200) with the trend confirming \u2014 buy $168\u2013$176, take profits toward $200, and exit on a close below the 200-day (~$168).",
    "url": "https://research.synthosresearch.com/QCOM.html"
   },
+  "QS": {
+   "company": "QuantumScape Corporation",
+   "verdict": "Hold",
+   "fair_value": "6",
+   "fair_value_range": [
+    2.5,
+    16
+   ],
+   "downside_risk_0_10": "8",
+   "growth_quality_0_10": "3",
+   "exponential_potential_0_10": "7",
+   "strategic_line": "QS is a pre-revenue solid-state-battery bet where the technology is genuinely de-risking (Cobra separator in baseline production, QSE-5 samples shipping, a capital-light PowerCo/VW licensing model) but real revenue is a 2028\u201329 story, the Street itself sits at Hold/Sell, and ~$1B of cash buys ~3.5 years of runway \u2014 a milestone-gated hold near fair value, not a fresh buy.",
+   "url": "https://research.synthosresearch.com/QS.html"
+  },
   "RCL": {
    "company": "Royal Caribbean Cruises Ltd.",
    "verdict": "Buy \u2014 Tactical",
@@ -6261,6 +6331,20 @@
    "strategic_line": "SLB is a solid business largely reflected at ~$52 \u2014 fine to keep, no reason to chase; it gets interesting again below ~$44.",
    "url": "https://research.synthosresearch.com/SLB.html"
   },
+  "SLDP": {
+   "company": "Solid Power, Inc.",
+   "verdict": "Hold",
+   "fair_value": "2.75",
+   "fair_value_range": [
+    1.2,
+    6.5
+   ],
+   "downside_risk_0_10": "7",
+   "growth_quality_0_10": "3",
+   "exponential_potential_0_10": "6",
+   "strategic_line": "SLDP is a pre-commercial solid-state-battery micro-cap that has pivoted to the smarter, capital-lighter role of sulfide solid-electrolyte supplier to BMW/Ford/SK On \u2014 and trades at only ~$191M enterprise value because more than half its market cap is net cash (~$243M); a cheap, real option on the solid-state thesis, but revenue is tiny and years out, so it's a constructive Hold, not a buy.",
+   "url": "https://research.synthosresearch.com/SLDP.html"
+  },
   "SM": {
    "company": "SM Energy Company",
    "verdict": "Watch",
@@ -6456,6 +6540,20 @@
    "exponential_potential_0_10": "4",
    "strategic_line": "STLD offers ~16% upside to fair value (~$255) with the trend confirming \u2014 buy $189\u2013$220, take profits toward $255, and exit on a close below the 200-day (~$189).",
    "url": "https://research.synthosresearch.com/STLD.html"
+  },
+  "STM": {
+   "company": "STMicroelectronics N.V.",
+   "verdict": "Hold",
+   "fair_value": "65",
+   "fair_value_range": [
+    36,
+    95
+   ],
+   "downside_risk_0_10": "6",
+   "growth_quality_0_10": "4",
+   "exponential_potential_0_10": "3",
+   "strategic_line": "STM is a real-revenue way to own the 800 VDC power-semi theme \u2014 a named NVIDIA silicon partner with a top-tier SiC/power franchise and the STM32 MCU cash engine \u2014 but the market found it first; the stock has nearly tripled off its $21 low to $62, trades ~48\u00d7 2026E and ~24\u00d7 2027E on a GAAP earnings base that is barely positive, FCF has been negative two straight years, and China is undercutting exactly the trailing-edge power/analog base that funds the story. Hold, don't chase.",
+   "url": "https://research.synthosresearch.com/STM.html"
   },
   "STRL": {
    "company": "Sterling Infrastructure, Inc.",

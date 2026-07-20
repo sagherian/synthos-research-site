@@ -1,18 +1,136 @@
 {
- "as_of": "2026-07-06",
- "graded_predictions_total": 6106,
+ "as_of": "2026-07-20",
+ "graded_predictions_total": 7939,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
+   "name": "Real Vision",
+   "graded_predictions": 629,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Biotech Hangout",
+   "graded_predictions": 63,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "Medicine",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Arthur Hayes",
+   "graded_predictions": 539,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Macrovoices",
+   "graded_predictions": 303,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Latent Space",
-   "graded_predictions": 43,
+   "graded_predictions": 52,
    "strongest_fields": [
     "AI"
    ]
   },
   {
+   "name": "Jordi Visser",
+   "graded_predictions": 349,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Compound And Friends",
+   "graded_predictions": 81,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Business Breakdowns",
-   "graded_predictions": 133,
+   "graded_predictions": 212,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Mikkel Rosenvold",
+   "graded_predictions": 40,
+   "strongest_fields": [
+    "Equities"
+   ]
+  },
+  {
+   "name": "Mike Green",
+   "graded_predictions": 66,
+   "strongest_fields": [
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
+   "name": "Jensen Huang",
+   "graded_predictions": 424,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Doomberg",
+   "graded_predictions": 62,
+   "strongest_fields": [
+    "Macro"
+   ]
+  },
+  {
+   "name": "Warren Pies",
+   "graded_predictions": 129,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Ml Street Talk",
+   "graded_predictions": 84,
+   "strongest_fields": [
+    "AI"
+   ]
+  },
+  {
+   "name": "Brent Johnson",
+   "graded_predictions": 75,
    "strongest_fields": [
     "AI",
     "Equities",
@@ -21,30 +139,107 @@
   },
   {
    "name": "Luke Gromen",
-   "graded_predictions": 993,
+   "graded_predictions": 708,
    "strongest_fields": [
     "AI",
     "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "We Study Billionaires",
+   "graded_predictions": 80,
+   "strongest_fields": [
+    "AI",
     "Equities",
     "Macro"
    ]
   },
   {
-   "name": "Raoul Pal",
-   "graded_predictions": 583,
+   "name": "Lyn Alden",
+   "graded_predictions": 528,
    "strongest_fields": [
     "AI",
     "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Sam Altman Mgmt",
+   "graded_predictions": 30,
+   "strongest_fields": [
+    "AI"
+   ]
+  },
+  {
+   "name": "Bill Gurley",
+   "graded_predictions": 85,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Jacob Shapiro",
+   "graded_predictions": 30,
+   "strongest_fields": [
+    "Macro"
+   ]
+  },
+  {
+   "name": "Andy Jassy Mgmt",
+   "graded_predictions": 39,
+   "strongest_fields": [
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Marko Papic",
+   "graded_predictions": 37,
+   "strongest_fields": [
     "Equities",
     "Macro"
    ]
   },
   {
-   "name": "Jensen Huang",
-   "graded_predictions": 586,
+   "name": "Empire",
+   "graded_predictions": 171,
+   "strongest_fields": [
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Geopolitical Cousins",
+   "graded_predictions": 70,
    "strongest_fields": [
     "AI",
-    "Equities"
+    "Macro"
+   ]
+  },
+  {
+   "name": "Lisa Su Mgmt",
+   "graded_predictions": 63,
+   "strongest_fields": [
+    "AI",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Invest Like The Best",
+   "graded_predictions": 154,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "Macro",
+    "unassigned"
    ]
   }
  ]

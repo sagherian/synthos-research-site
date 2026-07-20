@@ -14,16 +14,16 @@
    "field": "crypto/smart contract l1 l2",
    "key": "crypto/smart_contract_l1_l2",
    "feasibility": 89,
-   "priced_in": 19,
-   "science_gap": 70,
+   "priced_in": 20,
+   "science_gap": 69,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "ai/infrastructure",
    "key": "ai/infrastructure",
-   "feasibility": 81,
-   "priced_in": 35,
-   "science_gap": 46,
+   "feasibility": 78,
+   "priced_in": 37,
+   "science_gap": 41,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
@@ -37,7 +37,7 @@
   {
    "field": "frontier tech/space economy",
    "key": "frontier_tech/space_economy",
-   "feasibility": 64,
+   "feasibility": 65,
    "priced_in": 68,
    "science_gap": -3,
    "url": "https://research.synthosresearch.com/gap.html"
@@ -45,17 +45,17 @@
   {
    "field": "ai/compute chips",
    "key": "ai/compute_chips",
-   "feasibility": 86,
+   "feasibility": 85,
    "priced_in": 98,
-   "science_gap": -12,
+   "science_gap": -13,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "medicine/biotech platforms",
    "key": "medicine/biotech_platforms",
-   "feasibility": 81,
-   "priced_in": 98,
-   "science_gap": -16,
+   "feasibility": 82,
+   "priced_in": 97,
+   "science_gap": -15,
    "url": "https://research.synthosresearch.com/gap.html"
   }
  ]
