@@ -1,6 +1,6 @@
 {
  "as_of": "2026-07-06",
- "count": 564,
+ "count": 565,
  "note": "Deep-dive verdicts. Scores are 0-10. Educational only, not investment advice.",
  "scores": {
   "A": {
@@ -1304,6 +1304,20 @@
    "exponential_potential_0_10": "3",
    "strategic_line": "CBRE is a business we want at a price we don't have \u2014 it becomes a Buy below ~$150; until then, do nothing.",
    "url": "https://research.synthosresearch.com/CBRE.html"
+  },
+  "CBRS": {
+   "company": "Cerebras Systems Inc.",
+   "verdict": "Watch \u2014 Asymmetric Only Lower",
+   "fair_value": "115",
+   "fair_value_range": [
+    35,
+    240
+   ],
+   "downside_risk_0_10": "8",
+   "growth_quality_0_10": "6",
+   "exponential_potential_0_10": "9",
+   "strategic_line": "Cerebras is a real wafer-scale inference franchise with a company-disclosed $25.0B backlog against ~$604M TTM revenue \u2014 but at ~$39B basic / ~$52B fully diluted the payoff skew is negative, ~86% of current revenue is two UAE customers, and a phased IPO-lockup supply wave lands Aug\u2013Nov 2026; the bet turns genuinely asymmetric only below ~$110, and becomes a table-pound only under ~$70.",
+   "url": "https://research.synthosresearch.com/CBRS.html"
   },
   "CCEP": {
    "company": "Coca-Cola Europacific Partners PLC",
@@ -5432,7 +5446,7 @@
    "downside_risk_0_10": "6",
    "growth_quality_0_10": "5",
    "exponential_potential_0_10": "5",
-   "strategic_line": "ON is a solid business largely reflected at ~$95 \u2014 fine to keep, no reason to chase; it gets interesting again below ~$81.",
+   "strategic_line": "ON at ~$88 is a confirming cyclical recovery with a genuinely unpriced 800V/NVIDIA option, but ~8% upside to our $95 base against a \u221240% fundamental bear is not a Buy \u2014 hold, and buy the zone; below ~$81 (ideally $73\u201378) the 2.5\u20133:1 asymmetry the bulls cite becomes real, or an unambiguous 2026-08-03 print flips it sooner.",
    "url": "https://research.synthosresearch.com/ON.html"
   },
   "ORCL": {

@@ -12,7 +12,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 4,
-   "evidence_claims": 538,
+   "evidence_claims": 539,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -36,7 +36,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 6,
-   "evidence_claims": 875,
+   "evidence_claims": 880,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -84,13 +84,13 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 9,
-   "evidence_claims": 2010,
+   "evidence_claims": 2019,
    "url": "https://research.synthosresearch.com/calls/hard-assets.html",
    "crowd_market": {
     "source": "Polymarket",
     "outcome": "\u2191 $4,300",
-    "crowd_prob_pct": 7.0,
-    "crowd_gap": 84.0,
+    "crowd_prob_pct": 6.1,
+    "crowd_gap": 84.9,
     "url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-july-2026",
     "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
    }
@@ -140,7 +140,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 12,
-   "evidence_claims": 233,
+   "evidence_claims": 235,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -152,7 +152,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 13,
-   "evidence_claims": 1107,
+   "evidence_claims": 1108,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -176,7 +176,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 15,
-   "evidence_claims": 3732,
+   "evidence_claims": 3743,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -224,7 +224,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 19,
-   "evidence_claims": 206,
+   "evidence_claims": 207,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -284,7 +284,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 24,
-   "evidence_claims": 733,
+   "evidence_claims": 736,
    "url": "https://research.synthosresearch.com/calls/ai-infrastructure.html"
   },
   {
@@ -296,7 +296,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 28,
-   "evidence_claims": 1173,
+   "evidence_claims": 1197,
    "url": "https://research.synthosresearch.com/calls/energy-commodities.html"
   },
   {
@@ -308,7 +308,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 30,
-   "evidence_claims": 857,
+   "evidence_claims": 859,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -320,7 +320,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 31,
-   "evidence_claims": 1411,
+   "evidence_claims": 1414,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -332,7 +332,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 35,
-   "evidence_claims": 2893,
+   "evidence_claims": 2902,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -340,11 +340,11 @@
    "domain": "macro",
    "key": "macro/geopolitics_trade",
    "question": "priced-in vs room-to-run: geopolitics, tariffs, reshoring, supply chains?",
-   "synthos_score": 62,
+   "synthos_score": 61,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 38,
-   "evidence_claims": 3617,
+   "disagreement_pct": 39,
+   "evidence_claims": 3630,
    "url": "https://research.synthosresearch.com/calls/geopolitics-trade.html"
   },
   {
@@ -356,7 +356,7 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 42,
-   "evidence_claims": 1087,
+   "evidence_claims": 1101,
    "url": "https://research.synthosresearch.com/calls/index.html"
   },
   {
@@ -380,7 +380,7 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 44,
-   "evidence_claims": 1385,
+   "evidence_claims": 1393,
    "url": "https://research.synthosresearch.com/calls/currency-dollar.html"
   },
   {
@@ -392,7 +392,7 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 46,
-   "evidence_claims": 745,
+   "evidence_claims": 747,
    "url": "https://research.synthosresearch.com/calls/demographics-labor.html"
   },
   {
@@ -416,7 +416,7 @@
    "stance": "split",
    "trend": "rising",
    "disagreement_pct": 50,
-   "evidence_claims": 799,
+   "evidence_claims": 807,
    "url": "https://research.synthosresearch.com/calls/inflation.html"
   },
   {
@@ -428,13 +428,13 @@
    "stance": "split",
    "trend": "rising",
    "disagreement_pct": 52,
-   "evidence_claims": 2817,
+   "evidence_claims": 2836,
    "url": "https://research.synthosresearch.com/calls/rates-fed.html",
    "crowd_market": {
     "source": "Polymarket",
     "outcome": "At least one Fed rate cut in 2026",
-    "crowd_prob_pct": 15.4,
-    "crowd_gap": 32.6,
+    "crowd_prob_pct": 15.5,
+    "crowd_gap": 32.5,
     "url": "https://polymarket.com/event/how-many-fed-rate-cuts-in-2026",
     "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
    }
@@ -448,7 +448,7 @@
    "stance": "bearish",
    "trend": "cooling",
    "disagreement_pct": 67,
-   "evidence_claims": 1034,
+   "evidence_claims": 1039,
    "url": "https://research.synthosresearch.com/calls/bonds-curve.html"
   },
   {

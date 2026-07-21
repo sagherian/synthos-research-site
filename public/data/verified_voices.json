@@ -1,6 +1,6 @@
 {
  "as_of": "2026-07-20",
- "graded_predictions_total": 7939,
+ "graded_predictions_total": 7991,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
@@ -37,7 +37,7 @@
   },
   {
    "name": "Macrovoices",
-   "graded_predictions": 303,
+   "graded_predictions": 316,
    "strongest_fields": [
     "Equities",
     "Macro",
@@ -82,18 +82,18 @@
    ]
   },
   {
+   "name": "Mike Green",
+   "graded_predictions": 70,
+   "strongest_fields": [
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
    "name": "Mikkel Rosenvold",
    "graded_predictions": 40,
    "strongest_fields": [
     "Equities"
-   ]
-  },
-  {
-   "name": "Mike Green",
-   "graded_predictions": 66,
-   "strongest_fields": [
-    "Equities",
-    "Macro"
    ]
   },
   {
@@ -103,13 +103,6 @@
     "AI",
     "Equities",
     "unassigned"
-   ]
-  },
-  {
-   "name": "Doomberg",
-   "graded_predictions": 62,
-   "strongest_fields": [
-    "Macro"
    ]
   },
   {
@@ -124,6 +117,22 @@
   {
    "name": "Ml Street Talk",
    "graded_predictions": 84,
+   "strongest_fields": [
+    "AI"
+   ]
+  },
+  {
+   "name": "We Study Billionaires",
+   "graded_predictions": 80,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
+   "name": "Sam Altman Mgmt",
+   "graded_predictions": 34,
    "strongest_fields": [
     "AI"
    ]
@@ -149,15 +158,6 @@
    ]
   },
   {
-   "name": "We Study Billionaires",
-   "graded_predictions": 80,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "Macro"
-   ]
-  },
-  {
    "name": "Lyn Alden",
    "graded_predictions": 528,
    "strongest_fields": [
@@ -166,13 +166,6 @@
     "Equities",
     "Macro",
     "unassigned"
-   ]
-  },
-  {
-   "name": "Sam Altman Mgmt",
-   "graded_predictions": 30,
-   "strongest_fields": [
-    "AI"
    ]
   },
   {
@@ -185,8 +178,8 @@
    ]
   },
   {
-   "name": "Jacob Shapiro",
-   "graded_predictions": 30,
+   "name": "Doomberg",
+   "graded_predictions": 78,
    "strongest_fields": [
     "Macro"
    ]
@@ -207,6 +200,13 @@
    ]
   },
   {
+   "name": "Jacob Shapiro",
+   "graded_predictions": 30,
+   "strongest_fields": [
+    "Macro"
+   ]
+  },
+  {
    "name": "Empire",
    "graded_predictions": 171,
    "strongest_fields": [
@@ -217,19 +217,19 @@
    ]
   },
   {
-   "name": "Geopolitical Cousins",
-   "graded_predictions": 70,
-   "strongest_fields": [
-    "AI",
-    "Macro"
-   ]
-  },
-  {
    "name": "Lisa Su Mgmt",
    "graded_predictions": 63,
    "strongest_fields": [
     "AI",
     "unassigned"
+   ]
+  },
+  {
+   "name": "Geopolitical Cousins",
+   "graded_predictions": 70,
+   "strongest_fields": [
+    "AI",
+    "Macro"
    ]
   },
   {
