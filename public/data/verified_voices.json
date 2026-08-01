@@ -1,11 +1,11 @@
 {
- "as_of": "2026-07-25",
- "graded_predictions_total": 8153,
+ "as_of": "2026-08-01",
+ "graded_predictions_total": 9448,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
    "name": "Real Vision",
-   "graded_predictions": 502,
+   "graded_predictions": 509,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -16,7 +16,7 @@
   },
   {
    "name": "Biotech Hangout",
-   "graded_predictions": 64,
+   "graded_predictions": 66,
    "strongest_fields": [
     "Equities",
     "Macro",
@@ -25,8 +25,17 @@
    ]
   },
   {
+   "name": "Macrovoices",
+   "graded_predictions": 352,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Arthur Hayes",
-   "graded_predictions": 539,
+   "graded_predictions": 542,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -36,9 +45,10 @@
    ]
   },
   {
-   "name": "Macrovoices",
-   "graded_predictions": 321,
+   "name": "Darius Dale",
+   "graded_predictions": 367,
    "strongest_fields": [
+    "Crypto",
     "Equities",
     "Macro",
     "unassigned"
@@ -52,14 +62,20 @@
    ]
   },
   {
-   "name": "Jordi Visser",
-   "graded_predictions": 351,
+   "name": "Business Breakdowns",
+   "graded_predictions": 234,
    "strongest_fields": [
     "AI",
-    "Crypto",
     "Equities",
     "Macro",
     "unassigned"
+   ]
+  },
+  {
+   "name": "Nassim Taleb",
+   "graded_predictions": 35,
+   "strongest_fields": [
+    "Macro"
    ]
   },
   {
@@ -71,17 +87,8 @@
    ]
   },
   {
-   "name": "Compound And Friends",
-   "graded_predictions": 81,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "unassigned"
-   ]
-  },
-  {
-   "name": "Business Breakdowns",
-   "graded_predictions": 216,
+   "name": "We Study Billionaires",
+   "graded_predictions": 95,
    "strongest_fields": [
     "AI",
     "Equities",
@@ -90,8 +97,37 @@
    ]
   },
   {
+   "name": "Ray Dalio",
+   "graded_predictions": 86,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Compound And Friends",
+   "graded_predictions": 92,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Jordi Visser",
+   "graded_predictions": 546,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Mike Green",
-   "graded_predictions": 70,
+   "graded_predictions": 81,
    "strongest_fields": [
     "Equities",
     "Macro"
@@ -99,10 +135,11 @@
   },
   {
    "name": "Jensen Huang",
-   "graded_predictions": 441,
+   "graded_predictions": 447,
    "strongest_fields": [
     "AI",
     "Equities",
+    "Macro",
     "unassigned"
    ]
   },
@@ -117,12 +154,45 @@
    ]
   },
   {
+   "name": "Doomberg",
+   "graded_predictions": 134,
+   "strongest_fields": [
+    "Macro"
+   ]
+  },
+  {
+   "name": "Bill Gurley",
+   "graded_predictions": 127,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Marko Papic",
+   "graded_predictions": 72,
+   "strongest_fields": [
+    "Equities",
+    "Macro"
+   ]
+  },
+  {
    "name": "Warren Pies",
    "graded_predictions": 129,
    "strongest_fields": [
     "Equities",
     "Macro",
     "unassigned"
+   ]
+  },
+  {
+   "name": "Brent Johnson",
+   "graded_predictions": 77,
+   "strongest_fields": [
+    "AI",
+    "Equities",
+    "Macro"
    ]
   },
   {
@@ -133,35 +203,30 @@
    ]
   },
   {
-   "name": "We Study Billionaires",
-   "graded_predictions": 80,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "Macro"
-   ]
-  },
-  {
    "name": "Sam Altman Mgmt",
-   "graded_predictions": 37,
+   "graded_predictions": 42,
    "strongest_fields": [
     "AI"
    ]
   },
   {
-   "name": "Lyn Alden",
-   "graded_predictions": 530,
+   "name": "Mark Zuckerberg Mgmt",
+   "graded_predictions": 32,
    "strongest_fields": [
     "AI",
-    "Crypto",
-    "Equities",
-    "Macro",
     "unassigned"
+   ]
+  },
+  {
+   "name": "Jacob Shapiro",
+   "graded_predictions": 50,
+   "strongest_fields": [
+    "Macro"
    ]
   },
   {
    "name": "Luke Gromen",
-   "graded_predictions": 712,
+   "graded_predictions": 716,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -171,24 +236,29 @@
    ]
   },
   {
-   "name": "Brent Johnson",
-   "graded_predictions": 75,
+   "name": "Lyn Alden",
+   "graded_predictions": 540,
    "strongest_fields": [
     "AI",
+    "Crypto",
     "Equities",
-    "Macro"
+    "Macro",
+    "unassigned"
    ]
   },
   {
-   "name": "Doomberg",
-   "graded_predictions": 87,
+   "name": "Andreas Steno",
+   "graded_predictions": 239,
    "strongest_fields": [
-    "Macro"
+    "AI",
+    "Equities",
+    "Macro",
+    "unassigned"
    ]
   },
   {
    "name": "Empire",
-   "graded_predictions": 171,
+   "graded_predictions": 177,
    "strongest_fields": [
     "Crypto",
     "Equities",
@@ -197,11 +267,12 @@
    ]
   },
   {
-   "name": "Marko Papic",
-   "graded_predictions": 64,
+   "name": "Quarantine Misattributed",
+   "graded_predictions": 66,
    "strongest_fields": [
-    "Equities",
-    "Macro"
+    "AI",
+    "Crypto",
+    "Equities"
    ]
   },
   {
@@ -212,45 +283,11 @@
    ]
   },
   {
-   "name": "Andreas Steno",
-   "graded_predictions": 238,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "Macro",
-    "unassigned"
-   ]
-  },
-  {
-   "name": "Jacob Shapiro",
-   "graded_predictions": 34,
-   "strongest_fields": [
-    "Macro"
-   ]
-  },
-  {
-   "name": "Bill Gurley",
-   "graded_predictions": 85,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "unassigned"
-   ]
-  },
-  {
-   "name": "Mark Zuckerberg Mgmt",
-   "graded_predictions": 31,
+   "name": "Lisa Su Mgmt",
+   "graded_predictions": 76,
    "strongest_fields": [
     "AI",
     "unassigned"
-   ]
-  },
-  {
-   "name": "Geopolitical Cousins",
-   "graded_predictions": 71,
-   "strongest_fields": [
-    "AI",
-    "Macro"
    ]
   }
  ]
