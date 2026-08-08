@@ -22,16 +22,16 @@
    "field": "ai/infrastructure",
    "key": "ai/infrastructure",
    "feasibility": 78,
-   "priced_in": 39,
-   "science_gap": 39,
+   "priced_in": 36,
+   "science_gap": 42,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {
    "field": "medicine/metabolic glp1",
    "key": "medicine/metabolic_glp1",
    "feasibility": 76,
-   "priced_in": 50,
-   "science_gap": 27,
+   "priced_in": 46,
+   "science_gap": 30,
    "url": "https://research.synthosresearch.com/gap.html"
   },
   {

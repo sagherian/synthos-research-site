@@ -4,18 +4,6 @@
  "note": "Synthos Score = expert conviction (0-100) weighted by verified track record, graded in public. Not investment advice.",
  "predictions": [
   {
-   "topic": "robotics physical",
-   "domain": "ai",
-   "key": "ai/robotics_physical",
-   "question": "priced-in vs room-to-run: physical AI, robotics, autonomy (adjacent)?",
-   "synthos_score": 95,
-   "stance": "bullish",
-   "trend": "rising",
-   "disagreement_pct": 5,
-   "evidence_claims": 613,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
    "topic": "applications agents",
    "domain": "ai",
    "key": "ai/applications_agents",
@@ -24,19 +12,19 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 6,
-   "evidence_claims": 996,
+   "evidence_claims": 1037,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
-   "topic": "longevity aging",
-   "domain": "medicine",
-   "key": "medicine/longevity_aging",
-   "question": "priced-in vs room-to-run + is-it-real: longevity / aging biology?",
-   "synthos_score": 93,
+   "topic": "robotics physical",
+   "domain": "ai",
+   "key": "ai/robotics_physical",
+   "question": "priced-in vs room-to-run: physical AI, robotics, autonomy (adjacent)?",
+   "synthos_score": 94,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 7,
-   "evidence_claims": 795,
+   "disagreement_pct": 6,
+   "evidence_claims": 640,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -60,7 +48,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 8,
-   "evidence_claims": 420,
+   "evidence_claims": 421,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -72,7 +60,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 8,
-   "evidence_claims": 156,
+   "evidence_claims": 157,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -84,27 +72,27 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 10,
-   "evidence_claims": 2495,
+   "evidence_claims": 2588,
    "url": "https://research.synthosresearch.com/research.html",
    "crowd_market": {
     "source": "Polymarket",
-    "outcome": "\u2191 $4,200",
-    "crowd_prob_pct": 65.0,
-    "crowd_gap": 25.0,
+    "outcome": "\u2191 $4,500",
+    "crowd_prob_pct": 51.3,
+    "crowd_gap": 38.7,
     "url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-august-2026",
     "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
    }
   },
   {
-   "topic": "space economy",
-   "domain": "frontier_tech",
-   "key": "frontier_tech/space_economy",
-   "question": "priced-in vs room-to-run: the space economy?",
-   "synthos_score": 89,
+   "topic": "longevity aging",
+   "domain": "medicine",
+   "key": "medicine/longevity_aging",
+   "question": "priced-in vs room-to-run + is-it-real: longevity / aging biology?",
+   "synthos_score": 90,
    "stance": "bullish",
-   "trend": "rising",
-   "disagreement_pct": 11,
-   "evidence_claims": 163,
+   "trend": "cooling",
+   "disagreement_pct": 10,
+   "evidence_claims": 798,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -112,11 +100,11 @@
    "domain": "medicine",
    "key": "medicine/drug_discovery",
    "question": "priced-in vs room-to-run: drug discovery & the clinical pipeline?",
-   "synthos_score": 88,
+   "synthos_score": 90,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 12,
-   "evidence_claims": 246,
+   "disagreement_pct": 10,
+   "evidence_claims": 266,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -128,7 +116,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 13,
-   "evidence_claims": 1002,
+   "evidence_claims": 1057,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -140,7 +128,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 13,
-   "evidence_claims": 1151,
+   "evidence_claims": 1171,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -152,7 +140,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 13,
-   "evidence_claims": 453,
+   "evidence_claims": 466,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -164,7 +152,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 14,
-   "evidence_claims": 4355,
+   "evidence_claims": 4600,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -176,31 +164,19 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 14,
-   "evidence_claims": 133,
+   "evidence_claims": 146,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
-   "topic": "crypto regulation",
-   "domain": "crypto",
-   "key": "crypto/crypto_regulation",
-   "question": "how does regulation reshape crypto's opportunity set?",
-   "synthos_score": 83,
-   "stance": "bullish",
-   "trend": "cooling",
-   "disagreement_pct": 17,
-   "evidence_claims": 115,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "biotech platforms",
-   "domain": "medicine",
-   "key": "medicine/biotech_platforms",
-   "question": "priced-in vs room-to-run: platform biotech & the financing window?",
-   "synthos_score": 83,
+   "topic": "space economy",
+   "domain": "frontier_tech",
+   "key": "frontier_tech/space_economy",
+   "question": "priced-in vs room-to-run: the space economy?",
+   "synthos_score": 85,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 17,
-   "evidence_claims": 354,
+   "disagreement_pct": 15,
+   "evidence_claims": 187,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -208,11 +184,35 @@
    "domain": "ai",
    "key": "ai/energy_power",
    "question": "priced-in vs room-to-run: AI energy layer (datacenter power, grid, nuclear/SMR)?",
-   "synthos_score": 82,
+   "synthos_score": 84,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 18,
-   "evidence_claims": 229,
+   "disagreement_pct": 16,
+   "evidence_claims": 239,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "crypto regulation",
+   "domain": "crypto",
+   "key": "crypto/crypto_regulation",
+   "question": "how does regulation reshape crypto's opportunity set?",
+   "synthos_score": 84,
+   "stance": "bullish",
+   "trend": "cooling",
+   "disagreement_pct": 16,
+   "evidence_claims": 116,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "biotech platforms",
+   "domain": "medicine",
+   "key": "medicine/biotech_platforms",
+   "question": "priced-in vs room-to-run: platform biotech & the financing window?",
+   "synthos_score": 84,
+   "stance": "bullish",
+   "trend": "rising",
+   "disagreement_pct": 16,
+   "evidence_claims": 370,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -224,7 +224,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 19,
-   "evidence_claims": 288,
+   "evidence_claims": 298,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -232,11 +232,23 @@
    "domain": "medicine",
    "key": "medicine/elite_performance",
    "question": "what performance/health protocols are validated & investable (wearables, supplements)?",
-   "synthos_score": 77,
+   "synthos_score": 78,
    "stance": "bullish",
    "trend": "cooling",
-   "disagreement_pct": 23,
+   "disagreement_pct": 22,
    "evidence_claims": 241,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "private markets",
+   "domain": "investing",
+   "key": "investing/private_markets",
+   "question": "priced-in vs room-to-run: private credit / PE / VC?",
+   "synthos_score": 77,
+   "stance": "bullish",
+   "trend": "rising",
+   "disagreement_pct": 23,
+   "evidence_claims": 479,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -248,19 +260,31 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 24,
-   "evidence_claims": 695,
+   "evidence_claims": 729,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
-   "topic": "private markets",
-   "domain": "investing",
-   "key": "investing/private_markets",
-   "question": "priced-in vs room-to-run: private credit / PE / VC?",
-   "synthos_score": 76,
+   "topic": "liquidity",
+   "domain": "macro",
+   "key": "macro/liquidity",
+   "question": "priced-in vs room-to-run: global liquidity direction?",
+   "synthos_score": 74,
+   "stance": "bullish",
+   "trend": "cooling",
+   "disagreement_pct": 26,
+   "evidence_claims": 693,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "energy commodities",
+   "domain": "macro",
+   "key": "macro/energy_commodities",
+   "question": "priced-in vs room-to-run: energy & critical commodities?",
+   "synthos_score": 74,
    "stance": "bullish",
    "trend": "rising",
-   "disagreement_pct": 24,
-   "evidence_claims": 449,
+   "disagreement_pct": 26,
+   "evidence_claims": 1565,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -272,31 +296,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 26,
-   "evidence_claims": 943,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "liquidity",
-   "domain": "macro",
-   "key": "macro/liquidity",
-   "question": "priced-in vs room-to-run: global liquidity direction?",
-   "synthos_score": 73,
-   "stance": "bullish",
-   "trend": "cooling",
-   "disagreement_pct": 27,
-   "evidence_claims": 676,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "energy commodities",
-   "domain": "macro",
-   "key": "macro/energy_commodities",
-   "question": "priced-in vs room-to-run: energy & critical commodities?",
-   "synthos_score": 73,
-   "stance": "bullish",
-   "trend": "rising",
-   "disagreement_pct": 27,
-   "evidence_claims": 1452,
+   "evidence_claims": 1032,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -304,11 +304,11 @@
    "domain": "investing",
    "key": "investing/factors_style",
    "question": "which factors/styles are favored in the regime?",
-   "synthos_score": 70,
+   "synthos_score": 69,
    "stance": "bullish",
    "trend": "cooling",
-   "disagreement_pct": 30,
-   "evidence_claims": 1007,
+   "disagreement_pct": 31,
+   "evidence_claims": 1053,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -320,7 +320,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 32,
-   "evidence_claims": 1543,
+   "evidence_claims": 1597,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -328,11 +328,11 @@
    "domain": "investing",
    "key": "investing/equities_sectors",
    "question": "priced-in vs room-to-run: equity sectors & mega-cap tech?",
-   "synthos_score": 64,
+   "synthos_score": 65,
    "stance": "bullish",
    "trend": "cooling",
-   "disagreement_pct": 36,
-   "evidence_claims": 3402,
+   "disagreement_pct": 35,
+   "evidence_claims": 3508,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -344,7 +344,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 37,
-   "evidence_claims": 4075,
+   "evidence_claims": 4226,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -352,23 +352,11 @@
    "domain": "investing",
    "key": "investing/market_structure_flows",
    "question": "how do passive flows / market structure shape fragility & opportunity?",
-   "synthos_score": 57,
+   "synthos_score": 59,
    "stance": "split",
    "trend": "cooling",
-   "disagreement_pct": 43,
-   "evidence_claims": 1212,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "quantum",
-   "domain": "frontier_tech",
-   "key": "frontier_tech/quantum",
-   "question": "priced-in vs room-to-run: quantum computing & post-quantum security?",
-   "synthos_score": 56,
-   "stance": "split",
-   "trend": "cooling",
-   "disagreement_pct": 44,
-   "evidence_claims": 88,
+   "disagreement_pct": 41,
+   "evidence_claims": 1269,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -380,7 +368,7 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 45,
-   "evidence_claims": 826,
+   "evidence_claims": 861,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -392,7 +380,19 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 46,
-   "evidence_claims": 1762,
+   "evidence_claims": 1817,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "quantum",
+   "domain": "frontier_tech",
+   "key": "frontier_tech/quantum",
+   "question": "priced-in vs room-to-run: quantum computing & post-quantum security?",
+   "synthos_score": 54,
+   "stance": "split",
+   "trend": "cooling",
+   "disagreement_pct": 46,
+   "evidence_claims": 89,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -400,11 +400,11 @@
    "domain": "macro",
    "key": "macro/inflation",
    "question": "priced-in vs room-to-run: the inflation path (reflation/deflation)?",
-   "synthos_score": 52,
+   "synthos_score": 51,
    "stance": "split",
    "trend": "rising",
-   "disagreement_pct": 48,
-   "evidence_claims": 1252,
+   "disagreement_pct": 49,
+   "evidence_claims": 1307,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -412,11 +412,11 @@
    "domain": "ai",
    "key": "ai/safety_regulation",
    "question": "how do AI safety & regulation reshape the opportunity set (adjacent)?",
-   "synthos_score": 50,
+   "synthos_score": 51,
    "stance": "split",
    "trend": "rising",
-   "disagreement_pct": 50,
-   "evidence_claims": 327,
+   "disagreement_pct": 49,
+   "evidence_claims": 337,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -424,17 +424,17 @@
    "domain": "macro",
    "key": "macro/rates_fed",
    "question": "priced-in vs room-to-run: the path of policy rates & the Fed reaction function?",
-   "synthos_score": 46,
+   "synthos_score": 47,
    "stance": "split",
    "trend": "rising",
-   "disagreement_pct": 54,
-   "evidence_claims": 3530,
+   "disagreement_pct": 53,
+   "evidence_claims": 3649,
    "url": "https://research.synthosresearch.com/research.html",
    "crowd_market": {
     "source": "Polymarket",
     "outcome": "At least one Fed rate cut in 2026",
-    "crowd_prob_pct": 11.6,
-    "crowd_gap": 34.4,
+    "crowd_prob_pct": 14.5,
+    "crowd_gap": 32.5,
     "url": "https://polymarket.com/event/how-many-fed-rate-cuts-in-2026",
     "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
    }
@@ -444,11 +444,11 @@
    "domain": "macro",
    "key": "macro/bonds_curve",
    "question": "priced-in vs room-to-run: duration, the curve, and term premium?",
-   "synthos_score": 32,
+   "synthos_score": 34,
    "stance": "bearish",
    "trend": "cooling",
-   "disagreement_pct": 68,
-   "evidence_claims": 1352,
+   "disagreement_pct": 66,
+   "evidence_claims": 1417,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -456,11 +456,11 @@
    "domain": "macro",
    "key": "macro/debt_fiscal",
    "question": "priced-in vs room-to-run: fiscal dominance, sovereign debt sustainability?",
-   "synthos_score": 29,
+   "synthos_score": 30,
    "stance": "bearish",
    "trend": "rising",
-   "disagreement_pct": 71,
-   "evidence_claims": 526,
+   "disagreement_pct": 70,
+   "evidence_claims": 550,
    "url": "https://research.synthosresearch.com/research.html"
   }
  ]
