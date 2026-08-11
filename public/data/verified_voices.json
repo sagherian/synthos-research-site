@@ -1,6 +1,6 @@
 {
- "as_of": "2026-08-08",
- "graded_predictions_total": 9843,
+ "as_of": "2026-08-10",
+ "graded_predictions_total": 9896,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
@@ -37,7 +37,7 @@
   },
   {
    "name": "Darius Dale",
-   "graded_predictions": 414,
+   "graded_predictions": 417,
    "strongest_fields": [
     "Crypto",
     "Equities",
@@ -133,7 +133,7 @@
   },
   {
    "name": "Ray Dalio",
-   "graded_predictions": 94,
+   "graded_predictions": 96,
    "strongest_fields": [
     "Equities",
     "Macro",
@@ -142,12 +142,20 @@
   },
   {
    "name": "Jordi Visser",
-   "graded_predictions": 563,
+   "graded_predictions": 569,
    "strongest_fields": [
     "AI",
     "Crypto",
     "Equities",
     "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Mark Zuckerberg Mgmt",
+   "graded_predictions": 36,
+   "strongest_fields": [
+    "AI",
     "unassigned"
    ]
   },
@@ -158,13 +166,6 @@
     "AI",
     "Equities",
     "unassigned"
-   ]
-  },
-  {
-   "name": "Sam Altman Mgmt",
-   "graded_predictions": 53,
-   "strongest_fields": [
-    "AI"
    ]
   },
   {
@@ -179,18 +180,16 @@
   },
   {
    "name": "Doomberg",
-   "graded_predictions": 143,
+   "graded_predictions": 145,
    "strongest_fields": [
     "Macro"
    ]
   },
   {
-   "name": "Warren Pies",
-   "graded_predictions": 129,
+   "name": "Sam Altman Mgmt",
+   "graded_predictions": 55,
    "strongest_fields": [
-    "Equities",
-    "Macro",
-    "unassigned"
+    "AI"
    ]
   },
   {
@@ -218,42 +217,32 @@
    ]
   },
   {
+   "name": "Lyn Alden",
+   "graded_predictions": 542,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
+   "name": "Warren Pies",
+   "graded_predictions": 129,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Quarantine Misattributed",
-   "graded_predictions": 66,
+   "graded_predictions": 67,
    "strongest_fields": [
     "AI",
     "Crypto",
     "Equities"
-   ]
-  },
-  {
-   "name": "Mark Zuckerberg Mgmt",
-   "graded_predictions": 32,
-   "strongest_fields": [
-    "AI",
-    "unassigned"
-   ]
-  },
-  {
-   "name": "Lyn Alden",
-   "graded_predictions": 540,
-   "strongest_fields": [
-    "AI",
-    "Crypto",
-    "Equities",
-    "Macro",
-    "unassigned"
-   ]
-  },
-  {
-   "name": "Luke Gromen",
-   "graded_predictions": 723,
-   "strongest_fields": [
-    "AI",
-    "Crypto",
-    "Equities",
-    "Macro",
-    "unassigned"
    ]
   },
   {
@@ -267,8 +256,19 @@
    ]
   },
   {
+   "name": "Luke Gromen",
+   "graded_predictions": 726,
+   "strongest_fields": [
+    "AI",
+    "Crypto",
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Empire",
-   "graded_predictions": 193,
+   "graded_predictions": 196,
    "strongest_fields": [
     "Crypto",
     "Equities",
@@ -285,17 +285,17 @@
    ]
   },
   {
-   "name": "Andy Jassy Mgmt",
-   "graded_predictions": 68,
+   "name": "Lisa Su Mgmt",
+   "graded_predictions": 101,
    "strongest_fields": [
+    "AI",
     "unassigned"
    ]
   },
   {
-   "name": "Lisa Su Mgmt",
-   "graded_predictions": 98,
+   "name": "Andy Jassy Mgmt",
+   "graded_predictions": 68,
    "strongest_fields": [
-    "AI",
     "unassigned"
    ]
   }

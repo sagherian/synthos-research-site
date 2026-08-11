@@ -12,7 +12,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 6,
-   "evidence_claims": 1037,
+   "evidence_claims": 1047,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -24,7 +24,19 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 6,
-   "evidence_claims": 640,
+   "evidence_claims": 644,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "metabolic glp1",
+   "domain": "medicine",
+   "key": "medicine/metabolic_glp1",
+   "question": "priced-in vs room-to-run: GLP-1 / obesity / metabolic?",
+   "synthos_score": 93,
+   "stance": "bullish",
+   "trend": "rising",
+   "disagreement_pct": 7,
+   "evidence_claims": 425,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -36,19 +48,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 8,
-   "evidence_claims": 104,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "metabolic glp1",
-   "domain": "medicine",
-   "key": "medicine/metabolic_glp1",
-   "question": "priced-in vs room-to-run: GLP-1 / obesity / metabolic?",
-   "synthos_score": 92,
-   "stance": "bullish",
-   "trend": "rising",
-   "disagreement_pct": 8,
-   "evidence_claims": 421,
+   "evidence_claims": 105,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -72,13 +72,13 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 10,
-   "evidence_claims": 2588,
+   "evidence_claims": 2603,
    "url": "https://research.synthosresearch.com/research.html",
    "crowd_market": {
     "source": "Polymarket",
-    "outcome": "\u2191 $4,500",
-    "crowd_prob_pct": 51.3,
-    "crowd_gap": 38.7,
+    "outcome": "\u2191 $4,600",
+    "crowd_prob_pct": 33.6,
+    "crowd_gap": 56.4,
     "url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-august-2026",
     "note": "Synthos Score is expert conviction, not a calibrated probability; gap is directional signal, not arithmetic truth. Ungraded to date."
    }
@@ -92,7 +92,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 10,
-   "evidence_claims": 798,
+   "evidence_claims": 799,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -108,18 +108,6 @@
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
-   "topic": "btc store of value",
-   "domain": "crypto",
-   "key": "crypto/btc_store_of_value",
-   "question": "priced-in vs room-to-run: BTC as monetary/debasement asset?",
-   "synthos_score": 87,
-   "stance": "bullish",
-   "trend": "cooling",
-   "disagreement_pct": 13,
-   "evidence_claims": 1057,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
    "topic": "smart contract l1 l2",
    "domain": "crypto",
    "key": "crypto/smart_contract_l1_l2",
@@ -128,7 +116,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 13,
-   "evidence_claims": 1171,
+   "evidence_claims": 1181,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -138,9 +126,9 @@
    "question": "priced-in vs room-to-run: stablecoins, tokenization, RWA?",
    "synthos_score": 87,
    "stance": "bullish",
-   "trend": "cooling",
+   "trend": "rising",
    "disagreement_pct": 13,
-   "evidence_claims": 466,
+   "evidence_claims": 471,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -152,7 +140,19 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 14,
-   "evidence_claims": 4600,
+   "evidence_claims": 4672,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "btc store of value",
+   "domain": "crypto",
+   "key": "crypto/btc_store_of_value",
+   "question": "priced-in vs room-to-run: BTC as monetary/debasement asset?",
+   "synthos_score": 86,
+   "stance": "bullish",
+   "trend": "cooling",
+   "disagreement_pct": 14,
+   "evidence_claims": 1065,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -188,7 +188,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 16,
-   "evidence_claims": 239,
+   "evidence_claims": 244,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -224,7 +224,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 19,
-   "evidence_claims": 298,
+   "evidence_claims": 299,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -260,7 +260,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 24,
-   "evidence_claims": 729,
+   "evidence_claims": 735,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -284,7 +284,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 26,
-   "evidence_claims": 1565,
+   "evidence_claims": 1572,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -296,7 +296,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 26,
-   "evidence_claims": 1032,
+   "evidence_claims": 1058,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -308,7 +308,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 31,
-   "evidence_claims": 1053,
+   "evidence_claims": 1058,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -320,7 +320,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 32,
-   "evidence_claims": 1597,
+   "evidence_claims": 1610,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -332,7 +332,7 @@
    "stance": "bullish",
    "trend": "cooling",
    "disagreement_pct": 35,
-   "evidence_claims": 3508,
+   "evidence_claims": 3523,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -344,7 +344,7 @@
    "stance": "bullish",
    "trend": "rising",
    "disagreement_pct": 37,
-   "evidence_claims": 4226,
+   "evidence_claims": 4250,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -356,19 +356,7 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 41,
-   "evidence_claims": 1269,
-   "url": "https://research.synthosresearch.com/research.html"
-  },
-  {
-   "topic": "demographics labor",
-   "domain": "macro",
-   "key": "macro/demographics_labor",
-   "question": "priced-in vs room-to-run: demographics, LFPR, labor structure?",
-   "synthos_score": 55,
-   "stance": "split",
-   "trend": "cooling",
-   "disagreement_pct": 45,
-   "evidence_claims": 861,
+   "evidence_claims": 1271,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -380,7 +368,19 @@
    "stance": "split",
    "trend": "cooling",
    "disagreement_pct": 46,
-   "evidence_claims": 1817,
+   "evidence_claims": 1830,
+   "url": "https://research.synthosresearch.com/research.html"
+  },
+  {
+   "topic": "demographics labor",
+   "domain": "macro",
+   "key": "macro/demographics_labor",
+   "question": "priced-in vs room-to-run: demographics, LFPR, labor structure?",
+   "synthos_score": 54,
+   "stance": "split",
+   "trend": "cooling",
+   "disagreement_pct": 46,
+   "evidence_claims": 868,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -404,7 +404,7 @@
    "stance": "split",
    "trend": "rising",
    "disagreement_pct": 49,
-   "evidence_claims": 1307,
+   "evidence_claims": 1311,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -416,7 +416,7 @@
    "stance": "split",
    "trend": "rising",
    "disagreement_pct": 49,
-   "evidence_claims": 337,
+   "evidence_claims": 338,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -428,7 +428,7 @@
    "stance": "split",
    "trend": "rising",
    "disagreement_pct": 53,
-   "evidence_claims": 3649,
+   "evidence_claims": 3671,
    "url": "https://research.synthosresearch.com/research.html",
    "crowd_market": {
     "source": "Polymarket",
@@ -448,7 +448,7 @@
    "stance": "bearish",
    "trend": "cooling",
    "disagreement_pct": 66,
-   "evidence_claims": 1417,
+   "evidence_claims": 1422,
    "url": "https://research.synthosresearch.com/research.html"
   },
   {
@@ -456,11 +456,11 @@
    "domain": "macro",
    "key": "macro/debt_fiscal",
    "question": "priced-in vs room-to-run: fiscal dominance, sovereign debt sustainability?",
-   "synthos_score": 30,
+   "synthos_score": 29,
    "stance": "bearish",
    "trend": "rising",
-   "disagreement_pct": 70,
-   "evidence_claims": 550,
+   "disagreement_pct": 71,
+   "evidence_claims": 556,
    "url": "https://research.synthosresearch.com/research.html"
   }
  ]
