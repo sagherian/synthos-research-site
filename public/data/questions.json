@@ -9,7 +9,7 @@
   },
   {
    "question": "Are datacenter stocks overvalued?",
-   "answer": "By trade extension, no: the power/datacenter basket sits at the 36th percentile of its 10-year history while our science panel rates the underlying demand story 78/100. Compare the chip complex at its 98th percentile \u2014 that's where the froth concentrated.",
+   "answer": "By trade extension, no: the power/datacenter basket sits at the 38th percentile of its 10-year history while our science panel rates the underlying demand story 78/100. Compare the chip complex at its 98th percentile \u2014 that's where the froth concentrated.",
    "url": "https://research.synthosresearch.com/q/are-datacenter-stocks-overvalued.html"
   },
   {
@@ -19,7 +19,7 @@
   },
   {
    "question": "Are GLP-1 stocks still a buy?",
-   "answer": "The science panel rates the GLP-1 story 77/100 (durable, expanding indications) while the trade sits at the 56th percentile \u2014 a Science Gap of +21: still half-priced by our measure. Expert conviction: 92/100. Our LLY and NVO deep dives carry the per-name verdicts.",
+   "answer": "The science panel rates the GLP-1 story 77/100 (durable, expanding indications) while the trade sits at the 50th percentile \u2014 a Science Gap of +27: still half-priced by our measure. Expert conviction: 92/100. Our LLY and NVO deep dives carry the per-name verdicts.",
    "url": "https://research.synthosresearch.com/q/are-glp1-stocks-still-a-buy.html"
   },
   {
@@ -49,22 +49,22 @@
   },
   {
    "question": "How do I invest in longevity?",
-   "answer": "The most honest answer on this page: the science is rated 87/100 by our panel (808 claims \u2014 the deepest health cluster we track), but there is no clean public-market vehicle yet. It leads our 'frontier with no vehicle' list. Adjacent exposure today: GLP-1 franchises (Gap +21), biotech platforms, and diagnostics \u2014 when a pure vehicle appears, the Gap will be born wide.",
+   "answer": "The most honest answer on this page: the science is rated 87/100 by our panel (809 claims \u2014 the deepest health cluster we track), but there is no clean public-market vehicle yet. It leads our 'frontier with no vehicle' list. Adjacent exposure today: GLP-1 franchises (Gap +27), biotech platforms, and diagnostics \u2014 when a pure vehicle appears, the Gap will be born wide.",
    "url": "https://research.synthosresearch.com/q/how-do-i-invest-in-longevity.html"
   },
   {
    "question": "How do I get AI exposure without buying chip stocks?",
-   "answer": "The expert answer: own the constraint, not the crowd. Power and datacenter infrastructure (75/100, Gap +42) and the application/agent layer (Gap +76) express the same buildout at a fraction of the chip trade's 98th-percentile extension. Energy & commodities (74/100) is the second-derivative play.",
+   "answer": "The expert answer: own the constraint, not the crowd. Power and datacenter infrastructure (75/100, Gap +40) and the application/agent layer (Gap +76) express the same buildout at a fraction of the chip trade's 98th-percentile extension. Energy & commodities (74/100) is the second-derivative play.",
    "url": "https://research.synthosresearch.com/q/how-invest-in-ai-without-chips.html"
   },
   {
    "question": "How are the experts positioned for 2026?",
-   "answer": "The board in one line: long scarcity (hard assets 90), long the AI buildout's unpriced layers (infrastructure Gap +42), skeptical of duration (bonds 34) \u2014 with equities constructive but selective (65/100). Our model portfolios translate exactly this into holdings, fully public.",
+   "answer": "The board in one line: long scarcity (hard assets 90), long the AI buildout's unpriced layers (infrastructure Gap +40), skeptical of duration (bonds 34) \u2014 with equities constructive but selective (65/100). Our model portfolios translate exactly this into holdings, fully public.",
    "url": "https://research.synthosresearch.com/q/how-should-i-position-for-2026.html"
   },
   {
    "question": "Is AI a bubble?",
-   "answer": "Not uniformly \u2014 and the nuance is measurable. Our science panel rates AI feasibility 78/100, yet the power/datacenter trade sits at only the 36th percentile of its own price history (Science Gap +42). The crowding is concentrated in chips: the semiconductor basket trades at its 98th percentile (Gap -13). Translation: the buildout is real; the bubble risk lives in its most crowded expression.",
+   "answer": "Not uniformly \u2014 and the nuance is measurable. Our science panel rates AI feasibility 78/100, yet the power/datacenter trade sits at only the 38th percentile of its own price history (Science Gap +40). The crowding is concentrated in chips: the semiconductor basket trades at its 98th percentile (Gap -13). Translation: the buildout is real; the bubble risk lives in its most crowded expression.",
    "url": "https://research.synthosresearch.com/q/is-ai-a-bubble.html"
   },
   {
@@ -89,7 +89,7 @@
   },
   {
    "question": "Is the GLP-1 hype justified by the science?",
-   "answer": "Per our frontier-science panel: largely yes \u2014 feasibility 77/100 across 433 claims, with expanding evidence beyond weight loss (cardiovascular, kidney, addiction pathways under study). The open questions the panel flags: long-term adherence, muscle-loss management, and payer economics.",
+   "answer": "Per our frontier-science panel: largely yes \u2014 feasibility 77/100 across 434 claims, with expanding evidence beyond weight loss (cardiovascular, kidney, addiction pathways under study). The open questions the panel flags: long-term adherence, muscle-loss management, and payer economics.",
    "url": "https://research.synthosresearch.com/q/is-glp1-hype-justified.html"
   },
   {
@@ -104,7 +104,7 @@
   },
   {
    "question": "Is labor scarcity permanent?",
-   "answer": "Leaning yes but contested (54/100): fertility collapse and boomer retirement are already locked into the worker pipeline. The live counterargument \u2014 AI obsoleting white-collar work fast enough to flip scarcity into surplus \u2014 is the main reason this isn't 80+.",
+   "answer": "Leaning yes but contested (55/100): fertility collapse and boomer retirement are already locked into the worker pipeline. The live counterargument \u2014 AI obsoleting white-collar work fast enough to flip scarcity into surplus \u2014 is the main reason this isn't 80+.",
    "url": "https://research.synthosresearch.com/q/is-labor-scarcity-permanent.html"
   },
   {
@@ -124,12 +124,12 @@
   },
   {
    "question": "Is passive investing distorting the market?",
-   "answer": "A genuine cluster in our KB (1,282 claims on market structure): the flows-driven view holds that passive bid-and-forget flows amplify concentration and momentum \u2014 one reason mega-cap dominance persists beyond fundamentals. Conviction on the structural-distortion thesis runs 59/100; the practical takeaway the experts draw is that flows, not fundamentals, set short-run prices.",
+   "answer": "A genuine cluster in our KB (1,285 claims on market structure): the flows-driven view holds that passive bid-and-forget flows amplify concentration and momentum \u2014 one reason mega-cap dominance persists beyond fundamentals. Conviction on the structural-distortion thesis runs 59/100; the practical takeaway the experts draw is that flows, not fundamentals, set short-run prices.",
    "url": "https://research.synthosresearch.com/q/is-passive-investing-distorting-markets.html"
   },
   {
    "question": "Is quantum computing investable yet?",
-   "answer": "Here's our honesty policy in action: expert conviction runs 53/100, but our science panel has only a handful of graded quantum claims \u2014 below our 15-claim minimum, so we publish no feasibility number and no Gap. What the thin sample suggests: real physics, unclear timelines, extremely volatile pure-plays. It's on the watch list, not the board.",
+   "answer": "Here's our honesty policy in action: expert conviction runs 54/100, but our science panel has only a handful of graded quantum claims \u2014 below our 15-claim minimum, so we publish no feasibility number and no Gap. What the thin sample suggests: real physics, unclear timelines, extremely volatile pure-plays. It's on the watch list, not the board.",
    "url": "https://research.synthosresearch.com/q/is-quantum-computing-investable.html"
   },
   {
@@ -139,7 +139,7 @@
   },
   {
    "question": "Is the AI trade over?",
-   "answer": "The distilled expert view: the first chapter (chips) is fully priced \u2014 that basket is at its 98th percentile. The next chapters (power, applications) are not: infrastructure carries a Science Gap of +42. Trades rotate; the buildout continues.",
+   "answer": "The distilled expert view: the first chapter (chips) is fully priced \u2014 that basket is at its 98th percentile. The next chapters (power, applications) are not: infrastructure carries a Science Gap of +40. Trades rotate; the buildout continues.",
    "url": "https://research.synthosresearch.com/q/is-the-ai-trade-over.html"
   },
   {
@@ -179,7 +179,7 @@
   },
   {
    "question": "Should I invest in AI infrastructure stocks?",
-   "answer": "The expert case is strong \u2014 Synthos Score 75/100, cooling \u2014 because power, not chips, is the binding constraint on AI. And unlike semis (at their 98th pctile), the infrastructure basket sits at just its 36th percentile \u2014 real science, un-run trade (Science Gap +42).",
+   "answer": "The expert case is strong \u2014 Synthos Score 75/100, cooling \u2014 because power, not chips, is the binding constraint on AI. And unlike semis (at their 98th pctile), the infrastructure basket sits at just its 38th percentile \u2014 real science, un-run trade (Science Gap +40).",
    "url": "https://research.synthosresearch.com/q/should-i-invest-in-ai-infrastructure.html"
   },
   {
@@ -189,7 +189,7 @@
   },
   {
    "question": "Should investors worry about US\u2013China decoupling?",
-   "answer": "It's the single most-debated topic in our knowledge base (4,331 expert claims). Conviction that fragmentation is structural: 63/100. The investable translation: an inflation floor, a reshoring capex supercycle, and supply-chain risk premia \u2014 a regime to position for, not a headline to trade.",
+   "answer": "It's the single most-debated topic in our knowledge base (4,338 expert claims). Conviction that fragmentation is structural: 63/100. The investable translation: an inflation floor, a reshoring capex supercycle, and supply-chain risk premia \u2014 a regime to position for, not a headline to trade.",
    "url": "https://research.synthosresearch.com/q/should-investors-worry-us-china-decoupling.html"
   },
   {
@@ -204,7 +204,7 @@
   },
   {
    "question": "What do longevity scientists actually agree on?",
-   "answer": "From 808 distilled claims, the consensus core is unglamorous: VO2max, muscle mass and strength, sleep, and metabolic health dominate lifespan outcomes \u2014 the panel's conviction concentrates on exercise as the single largest lever, with GLP-1s as the biggest pharmacological shift. The frontier (senolytics, reprogramming) rates promising-but-early. Not medical advice; it is, however, where the invest",
+   "answer": "From 809 distilled claims, the consensus core is unglamorous: VO2max, muscle mass and strength, sleep, and metabolic health dominate lifespan outcomes \u2014 the panel's conviction concentrates on exercise as the single largest lever, with GLP-1s as the biggest pharmacological shift. The frontier (senolytics, reprogramming) rates promising-but-early. Not medical advice; it is, however, where the invest",
    "url": "https://research.synthosresearch.com/q/what-do-longevity-scientists-agree-on.html"
   },
   {
@@ -244,7 +244,7 @@
   },
   {
    "question": "Where is expert conviction highest in AI?",
-   "answer": "Measured, not vibes: compute/chips carries the most discussion (4,769 claims, 86/100) but trades at its 98th percentile \u2014 while infrastructure & power (75/100, 36th percentile, Gap +42) and applications/agents (Gap +76) offer the same story with far less crowding. The 586 deep dives carry per-name verdicts.",
+   "answer": "Measured, not vibes: compute/chips carries the most discussion (4,796 claims, 86/100) but trades at its 98th percentile \u2014 while infrastructure & power (75/100, 38th percentile, Gap +40) and applications/agents (Gap +76) offer the same story with far less crowding. The 586 deep dives carry per-name verdicts.",
    "url": "https://research.synthosresearch.com/q/which-ai-stocks-do-experts-like.html"
   },
   {

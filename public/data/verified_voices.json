@@ -1,11 +1,11 @@
 {
- "as_of": "2026-08-17",
- "graded_predictions_total": 10016,
+ "as_of": "2026-08-18",
+ "graded_predictions_total": 10036,
  "note": "Honor roll only: forecasters whose matured predictions beat their field's baseline. We grade claims, never persons; everyone else is unlisted.",
  "voices": [
   {
    "name": "Real Vision",
-   "graded_predictions": 527,
+   "graded_predictions": 528,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -72,14 +72,6 @@
    ]
   },
   {
-   "name": "Gavin Baker",
-   "graded_predictions": 67,
-   "strongest_fields": [
-    "AI",
-    "Equities"
-   ]
-  },
-  {
    "name": "Business Breakdowns",
    "graded_predictions": 257,
    "strongest_fields": [
@@ -88,6 +80,14 @@
     "Frontier tech",
     "Macro",
     "unassigned"
+   ]
+  },
+  {
+   "name": "Gavin Baker",
+   "graded_predictions": 67,
+   "strongest_fields": [
+    "AI",
+    "Equities"
    ]
   },
   {
@@ -176,7 +176,7 @@
   },
   {
    "name": "Jordi Visser",
-   "graded_predictions": 582,
+   "graded_predictions": 583,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -186,17 +186,17 @@
    ]
   },
   {
-   "name": "Sam Altman Mgmt",
-   "graded_predictions": 55,
-   "strongest_fields": [
-    "AI"
-   ]
-  },
-  {
    "name": "Doomberg",
    "graded_predictions": 148,
    "strongest_fields": [
     "Macro"
+   ]
+  },
+  {
+   "name": "Sam Altman Mgmt",
+   "graded_predictions": 55,
+   "strongest_fields": [
+    "AI"
    ]
   },
   {
@@ -208,8 +208,17 @@
    ]
   },
   {
+   "name": "Warren Pies",
+   "graded_predictions": 129,
+   "strongest_fields": [
+    "Equities",
+    "Macro",
+    "unassigned"
+   ]
+  },
+  {
    "name": "Lyn Alden",
-   "graded_predictions": 544,
+   "graded_predictions": 546,
    "strongest_fields": [
     "AI",
     "Crypto",
@@ -219,9 +228,10 @@
    ]
   },
   {
-   "name": "Warren Pies",
-   "graded_predictions": 129,
+   "name": "Andreas Steno",
+   "graded_predictions": 246,
    "strongest_fields": [
+    "AI",
     "Equities",
     "Macro",
     "unassigned"
@@ -243,16 +253,6 @@
     "AI",
     "Crypto",
     "Equities"
-   ]
-  },
-  {
-   "name": "Andreas Steno",
-   "graded_predictions": 243,
-   "strongest_fields": [
-    "AI",
-    "Equities",
-    "Macro",
-    "unassigned"
    ]
   },
   {
@@ -278,7 +278,7 @@
   },
   {
    "name": "Andy Jassy Mgmt",
-   "graded_predictions": 68,
+   "graded_predictions": 69,
    "strongest_fields": [
     "unassigned"
    ]
