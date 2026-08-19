@@ -1,5 +1,17 @@
 {
   "name": "synthos-research-site",
   "compatibility_date": "2026-07-04",
-  "assets": { "directory": "./public" }
+  "main": "worker/redirects.js",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    // Worker sees every request: canonical https/apex + Ghost-era 301s (2026-08-19
+    // Ghost exit). Static serving is otherwise unchanged.
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "synthosresearch.com", "custom_domain": true },
+    { "pattern": "www.synthosresearch.com", "custom_domain": true },
+    { "pattern": "research.synthosresearch.com", "custom_domain": true }
+  ]
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>About — Why I built Synthos | Synthos Research</title>
+<meta name="description" content="Ari Sagherian's story: from a pre-med path ended by blindness to AI engineering — and why Synthos exists to make professional-grade investment research accessible to everyone.">
+<style>
+:root{
+  --bg0:#0c121c; --bg-hero:#12263a; --panel:#0f1a26; --panel3:#14202e;
+  --line:#243447; --line-soft:#1b2a3c; --text:#eef4fb; --muted:#a4b5c8;
+  --accent:#22d3ee; --teal:#5eead4; --r:14px; --wrap:780px; --ease:cubic-bezier(.2,.7,.2,1);
+}
+html{font-size:106.25%;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:radial-gradient(1200px 600px at 50% -200px,var(--bg-hero),var(--bg0) 60%) fixed var(--bg0);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px;}
+::selection{background:#155e75;color:#fff;}
+a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px;}
+a:hover{color:var(--text);}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 1.5rem;}
+.head-wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem;}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--accent);color:#04222b;font-weight:700;padding:.7rem 1.1rem;border-radius:8px;transition:top .15s var(--ease);}
+.skip:focus{top:1rem;}
+.site-head{border-bottom:1px solid var(--line-soft);}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0;flex-wrap:wrap;}
+.brand{display:flex;align-items:baseline;gap:.6rem;text-decoration:none;}
+.brand .mark{width:1.05rem;height:1.05rem;border-radius:3px;align-self:center;background:linear-gradient(135deg,var(--accent),var(--teal));}
+.brand b{font-size:1.05rem;letter-spacing:.18em;font-weight:800;color:var(--text);}
+.brand span{font-size:.95rem;color:var(--muted);letter-spacing:.02em;}
+nav.top a{color:var(--muted);text-decoration:none;font-size:.98rem;font-weight:600;margin-left:1.3rem;}
+nav.top a:hover{color:var(--text);}
+article{padding:4.5rem 0 3rem;}
+.kicker{display:inline-block;font-size:.85rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
+h1{font-size:clamp(1.9rem,4.2vw,2.6rem);line-height:1.18;font-weight:800;letter-spacing:-.01em;margin-bottom:.6rem;}
+.byline{color:var(--muted);margin-bottom:2rem;}
+h2{font-size:1.35rem;font-weight:800;margin:2.6rem 0 .8rem;letter-spacing:-.01em;}
+p{margin-bottom:1.1rem;}
+.pull{border-left:3px solid var(--accent);background:var(--panel);border-radius:0 var(--r) var(--r) 0;padding:1.3rem 1.5rem;margin:2rem 0;font-size:1.06rem;font-weight:600;}
+.levers{list-style:none;counter-reset:l;margin:1.4rem 0;}
+.levers li{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1.4rem;margin-bottom:.8rem;}
+.levers li::before{counter-increment:l;content:counter(l);display:inline-flex;align-items:center;justify-content:center;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--panel3);color:var(--accent);font-weight:800;margin-right:.7rem;border:1px solid var(--line);}
+.levers b{font-size:1.03rem;}
+.levers p{color:var(--muted);margin:.5rem 0 0;font-size:.97rem;}
+.cta-block{margin:3rem 0 1rem;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem 2rem;}
+.cta-block p{color:var(--muted);margin-bottom:.4rem;}
+footer{padding:2.8rem 0;border-top:1px solid var(--line-soft);color:var(--muted);font-size:.95rem;}
+footer .head-wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="head-wrap head-in">
+    <a class="brand" href="/" aria-label="Synthos Research home">
+      <span class="mark" aria-hidden="true"></span><b>SYNTHOS</b><span>Research</span>
+    </a>
+    <nav class="top" aria-label="Main">
+      <a href="/">Hub</a>
+      <a href="/research.html">Research</a>
+      <a href="/flagship.html">Flagship</a>
+      <a href="/about.html" aria-current="page">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <article class="wrap">
+    <span class="kicker">About</span>
+    <h1>Why I built Synthos</h1>
+    <p class="byline">Ari Sagherian, founder · <a href="https://www.linkedin.com/in/ari-sagherian-738756b2/" rel="noopener" target="_blank">Connect on LinkedIn</a></p>
+
+    <p>I'm Ari Sagherian, an AI engineer dedicated to bringing professional-grade investment research to everyone.</p>
+
+    <h2>The path I planned</h2>
+    <p>I grew up in Michigan in a family of immigrants who worked tirelessly for every dollar they earned and instilled in me the drive to pursue my education and build a better life. At 17, I was diagnosed with retinitis pigmentosa, a degenerative vision condition that was expected to leave me blind by 40–50. With that long timeline expected — and hopes for a cure in the meantime — I began studying neuroscience at the University of Michigan on a pre-med track. I studied, graduated, and applied to medical school in 2017, with the goal of becoming a doctor finally in sight.</p>
+
+    <h2>The path that changed</h2>
+    <p>In between applying and ultimately getting accepted to medical school, I had an appointment that changed my path forever. My RP had progressed much faster than expected, classifying me as legally blind at 21 — leaving me with a hard truth to face: I was going blind, all the work I'd done to get to this point felt wasted, and becoming a doctor was no longer an option. I turned down my acceptance to medical school and applied the main lesson biology ever taught me: survivors adapt.</p>
+    <p>So I looked for the overlap — things I could still do well with limited vision, work I was genuinely interested in, and a career that could provide the financial security to support a family. It came down to AI engineering (neuroscience to neural nets) and investing. I pursued the AI path: a master's in data science, then a role at General Motors as an AI engineer on their autonomous-vehicle project. Finance never let go of me either, so I earned an MBA to deepen it. And as my technical skills grew from writing professional, production-ready code, the advances in AI went exponential. For years I used LLMs to do my own research, guide my own investments, and manage my family's wealth — combining ideas from podcasts, interviews, and articles with some quantitative analysis, hoping to beat the market. It worked alright, but it always felt incomplete — like there was a better way that combined the strengths of humans and AI into something that could truly be a paradigm shift.</p>
+    <p>That's where Synthos comes in.</p>
+
+    <h2>Why Synthos exists</h2>
+    <p>There's a paradox at the heart of building wealth. The families who start from nothing and work hardest for every dollar are often the most afraid to risk that dollar in the markets — which traps them in the "just enough to get by" bucket that never quite reaches financial freedom. Meanwhile, those who already have wealth feel free to take risks and grow it further.</p>
+    <p>At the core of that fear is the unknown: "I don't know what to invest in," so I don't invest at all. That's the problem Synthos exists to solve — replacing the fear of the unknown with in-depth research that gives you the conviction to invest intelligently, freely available to anyone.</p>
+
+    <h2>The simple math I want everyone to have</h2>
+    <p>Building wealth by compounding really comes down to three levers:</p>
+    <ul class="levers">
+      <li><b>How much you start with</b><p>Your beginning balance — and, just as much, how steadily you keep adding to it.</p></li>
+      <li><b>Your rate of return</b><p>How well your money grows each year — and how much of that growth you keep instead of losing it to fees.</p></li>
+      <li><b>How long you stay invested</b><p>Time is the quiet giant. The years are what turn steady growth into something life-changing.</p></li>
+    </ul>
+    <p>Here's the encouraging part: for most people the biggest wins come from the levers you fully control — starting early, keeping fees low, and staying invested. A modest amount, left to grow patiently and undisturbed for decades, does remarkable work on its own. (No specific return is promised here — markets rise and fall, and Synthos is research, not a guarantee.)</p>
+    <p>The hardest lever for most people is the second one: making confident, well-researched decisions without a finance background or an expensive advisor. That's the exact job Synthos is built to do — better, steadier decisions, made accessible — so compounding and time can do the rest.</p>
+
+    <h2>What financial freedom actually looks like</h2>
+    <p>Let me make it concrete. Say your household spends about $100,000 a year. Over the last three decades, the S&amp;P&nbsp;500 has returned roughly 10% a year on average with dividends reinvested — before inflation, and as an <em>average</em>, not a promise (some years are up 30%, others down 20%).</p>
+    <p>The simple version — about $1,000,000. At that ~10% average, roughly $1,000,000 invested would generate about $100,000 a year — your expenses, covered by your returns alone. And the moment your investments earn your living for you, work becomes a <em>choice</em> instead of a requirement — the freedom to stay in a job or career because you want to, not because you have to.</p>
+    <p>But it's more than freedom — it's protection. When your money can cover your life, you're steadier when the unexpected hits: a job lost, an illness, or — in my case — an appointment where you find out you're going blind. Life rolls a lot of dice, and some come up bad through no fault of your own: a chronic diagnosis, something unfair you never chose. You still have to play that roll. Building real wealth is how you protect the people you love from the bad rolls — and how you make sure that if one lands on you, you're not a burden to the people around you.</p>
+    <p>If I'm honest with myself, that is what set me down this path in the first place, and it's the deepest reason Synthos exists.</p>
+
+    <div class="pull">The goal isn't to promise returns. It's to give you the research and the confidence to invest intelligently — and to reach that security sooner.</div>
+
+    <div class="cta-block">
+      <p><b>Many sources. One thesis.</b></p>
+      <p>Synthos reads thousands of hours of expert research across biotech, AI, crypto, energy, and commodities, extracts every falsifiable claim, and grades the results in public. Start at the <a href="/">hub</a>, see whose calls held up on <a href="/verified.html">Verified Voices</a>, or read the latest <a href="/think/">think pieces</a>.</p>
+      <p style="margin-top:.8rem">Synthos is also the flagship build of <a href="https://synthosconsulting.com">Synthos Consulting</a> — personal AI engineering for small businesses.</p>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="head-wrap">
+    <span>© 2026 Synthos Research · Not investment advice</span>
+    <span><a href="https://synthosconsulting.com">Synthos Consulting</a></span>
+  </div>
+</footer>
+</body>
+</html>
