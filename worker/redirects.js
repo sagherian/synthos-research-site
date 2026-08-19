@@ -10,16 +10,16 @@ const APEX = "synthosresearch.com";
 
 // Ghost page/post slugs -> static paths. Trailing slashes handled before lookup.
 const LEGACY = {
-  "/the-synthos-flagship": "/flagship.html",
-  "/research": "/research.html",
+  "/the-synthos-flagship": "/flagship",
+  "/research": "/research",
   "/portfolios": "/",
-  "/scorecard": "/verified.html",
-  "/methodology": "/research.html",
-  "/how-synthos-posts": "/research.html",
+  "/scorecard": "/verified",
+  "/methodology": "/research",
+  "/how-synthos-posts": "/research",
   "/pricing": "/",
   "/coming-soon": "/",
-  "/eli-lilly-lly-a-magnificent-business-priced-for-it": "/LLY.html",
-  "/circle-crcl-a-real-theme-a-questionable-vehicle": "/CRCL.html",
+  "/eli-lilly-lly-a-magnificent-business-priced-for-it": "/LLY",
+  "/circle-crcl-a-real-theme-a-questionable-vehicle": "/CRCL",
   "/sector-breakdown-where-the-cheap-growth-is-hiding-and-where-it-isnt": "/",
   "/market-status-no-landing-sticky-inflation-and-a-tape-that-wont-quit": "/",
 };
@@ -46,7 +46,7 @@ export default {
     const dd = bare.match(/^\/deep-dive-([a-z0-9-]+)$/i);
     if (dd) {
       return Response.redirect(
-        `https://${APEX}/${dd[1].replace(/-/g, "").toUpperCase()}.html`, 301);
+        `https://${APEX}/${dd[1].replace(/-/g, "").toUpperCase()}`, 301);
     }
 
     return env.ASSETS.fetch(request);
