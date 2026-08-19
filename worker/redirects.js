@@ -11,7 +11,6 @@ const APEX = "synthosresearch.com";
 // Ghost page/post slugs -> static paths. Trailing slashes handled before lookup.
 const LEGACY = {
   "/the-synthos-flagship": "/flagship",
-  "/research": "/research",
   "/portfolios": "/",
   "/scorecard": "/verified",
   "/methodology": "/research",
