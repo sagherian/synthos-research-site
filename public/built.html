@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>How Synthos Builds Itself | Synthos Research</title>
+<meta name="description" content="One engineer, zero staff: how a complete AI research platform ingests 12,700+ transcripts, distills 54,000+ claims, and publishes itself. The flagship build of Synthos Consulting.">
+<style>
+:root{
+  --bg0:#0c121c; --bg-hero:#12263a; --panel:#0f1a26; --panel3:#14202e;
+  --line:#243447; --line-soft:#1b2a3c; --text:#eef4fb; --muted:#a4b5c8;
+  --accent:#22d3ee; --teal:#5eead4; --gold:#fbbf24; --r:14px; --wrap:880px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+html{font-size:106.25%;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:radial-gradient(1200px 600px at 50% -200px,var(--bg-hero),var(--bg0) 60%) fixed var(--bg0);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1rem;line-height:1.68;-webkit-font-smoothing:antialiased;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px;}
+::selection{background:#155e75;color:#fff;}
+a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px;}
+a:hover{color:var(--text);}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 1.5rem;}
+.head-wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem;}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--accent);color:#04222b;font-weight:700;padding:.7rem 1.1rem;border-radius:8px;transition:top .15s var(--ease);}
+.skip:focus{top:1rem;}
+.site-head{border-bottom:1px solid var(--line-soft);}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0;flex-wrap:wrap;}
+.brand{display:flex;align-items:baseline;gap:.6rem;text-decoration:none;}
+.brand .mark{width:1.05rem;height:1.05rem;border-radius:3px;align-self:center;background:linear-gradient(135deg,var(--accent),var(--teal));}
+.brand b{font-size:1.05rem;letter-spacing:.18em;font-weight:800;color:var(--text);}
+.brand span{font-size:.95rem;color:var(--muted);letter-spacing:.02em;}
+nav.top a{color:var(--muted);text-decoration:none;font-size:.98rem;font-weight:600;margin-left:1.3rem;}
+nav.top a:hover{color:var(--text);}
+
+article{padding:4.5rem 0 3rem;}
+.kicker{display:inline-block;font-size:.85rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
+h1{font-size:clamp(1.9rem,4.4vw,2.8rem);line-height:1.16;font-weight:800;letter-spacing:-.01em;margin-bottom:1rem;}
+p.lede{font-size:1.15rem;color:var(--muted);max-width:42em;margin-bottom:2.5rem;}
+h2{font-size:1.4rem;font-weight:800;margin:3rem 0 .9rem;letter-spacing:-.01em;}
+p{margin-bottom:1.1rem;}
+p.dim,li{color:var(--muted);}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;margin:2.2rem 0;}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.2rem;}
+.stat b{display:block;font-size:1.45rem;font-weight:800;color:var(--teal);}
+.stat span{font-size:.88rem;color:var(--muted);}
+
+.pipe{counter-reset:st;list-style:none;margin:1.6rem 0;}
+.pipe li{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem 1.6rem;margin-bottom:.9rem;position:relative;}
+.pipe li::before{counter-increment:st;content:counter(st);position:absolute;top:1.3rem;left:1.4rem;display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--panel3);color:var(--accent);font-weight:800;border:1px solid var(--line);}
+.pipe h3{font-size:1.1rem;font-weight:800;margin:0 0 .45rem 3rem;}
+.pipe p{margin:0 0 0 3rem;color:var(--muted);font-size:.99rem;}
+.pipe .n{color:var(--teal);font-weight:700;}
+
+ul.plain{list-style:none;margin:0 0 1.2rem;}
+ul.plain li{padding-left:1.4rem;position:relative;margin-bottom:.55rem;font-size:1rem;}
+ul.plain li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700;}
+
+.pull{border-left:3px solid var(--accent);background:var(--panel);border-radius:0 var(--r) var(--r) 0;padding:1.3rem 1.5rem;margin:2rem 0;font-size:1.07rem;font-weight:600;}
+
+.cta-block{margin:3rem 0 1rem;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:2rem;}
+.cta-block h2{margin-top:0;}
+.cta-block p{color:var(--muted);}
+.btn{display:inline-block;padding:.9rem 1.6rem;border-radius:11px;font-weight:800;text-decoration:none;font-size:1.03rem;background:linear-gradient(135deg,var(--accent),var(--teal));color:#04222b;margin-top:.6rem;}
+.btn:hover{filter:brightness(1.1);}
+.price{color:var(--gold);font-weight:800;}
+
+footer{padding:2.8rem 0;border-top:1px solid var(--line-soft);color:var(--muted);font-size:.95rem;}
+footer .head-wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="head-wrap head-in">
+    <a class="brand" href="/" aria-label="Synthos Research home">
+      <span class="mark" aria-hidden="true"></span><b>SYNTHOS</b><span>Research</span>
+    </a>
+    <nav class="top" aria-label="Main">
+      <a href="/">Hub</a>
+      <a href="/research.html">Research</a>
+      <a href="/about.html">About</a>
+      <a href="/built.html" aria-current="page">How it's built</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <article class="wrap">
+    <span class="kicker">Case study · The flagship build</span>
+    <h1>One engineer. Zero staff.<br>This entire platform runs itself.</h1>
+    <p class="lede">Everything on this site — the deep dives, the frameworks, the graded scorecard, the weekly letters — is produced by an autonomous AI research system designed, built, and operated by one person. This page explains how, because the system itself is the product demonstration.</p>
+
+    <div class="stats" role="list" aria-label="System statistics">
+      <div class="stat" role="listitem"><b>54,764</b><span>structured claims in the knowledge base</span></div>
+      <div class="stat" role="listitem"><b>12,700+</b><span>transcripts ingested and indexed</span></div>
+      <div class="stat" role="listitem"><b>105</b><span>curated shows &amp; expert voices tracked</span></div>
+      <div class="stat" role="listitem"><b>619</b><span>company pages generated &amp; maintained</span></div>
+      <div class="stat" role="listitem"><b>606</b><span>scored deep-dive verdicts, graded in public</span></div>
+      <div class="stat" role="listitem"><b>17</b><span>long-form think pieces</span></div>
+    </div>
+
+    <h2>The pipeline</h2>
+    <ol class="pipe">
+      <li>
+        <h3>Ingest — every morning, unattended</h3>
+        <p>A scheduled job wakes at 5:15am, checks <span class="n">105 shows and expert channels</span>, pulls new transcripts, and falls back to local GPU speech-to-text when captions aren't available. Company fundamentals, prices, filings, and macro series flow in from market-data pipelines the same way. Nobody presses a button.</p>
+      </li>
+      <li>
+        <h3>Distill — from talk to testable claims</h3>
+        <p>Frontier language models read each transcript and extract every <em>falsifiable</em> claim — who said it, about what, with what conviction, on what horizon. The result is a knowledge base of <span class="n">54,764 structured claims</span>, every one carrying its source, date, and speaker, so any conclusion can be traced back to who actually said what, when.</p>
+      </li>
+      <li>
+        <h3>Analyze — where humans and models meet</h3>
+        <p>Custom scoring models weigh each voice by track record and each claim by age and type. Quantitative screens rank companies on forward growth and acceleration, not hindsight. The two streams fuse into conviction scores, expert frameworks, and the <span class="n">619 company pages</span> across the site.</p>
+      </li>
+      <li>
+        <h3>Publish — the system writes, charts, and ships</h3>
+        <p>Weekly letters draft themselves from the week's new claims, build their own data-backed charts, pass editorial gates that verify every quote against its transcript, and deploy to this site on a git push — served from a global edge network with <span class="n">no servers to maintain and hosting costs near zero</span>.</p>
+      </li>
+      <li>
+        <h3>Grade — in public, against its own record</h3>
+        <p>Predictions get resolution dates. When they come due, the system grades them — hit or miss, on the record — and the <span class="n">606 scored verdicts</span> stay published either way. Discipline isn't a promise here; it's a table anyone can read.</p>
+      </li>
+    </ol>
+
+    <div class="pull">The point isn't any single feature. It's that a research operation which would traditionally need a team of analysts, an editor, a data engineer, and a webmaster — runs as software, end to end.</div>
+
+    <h2>What it took to build</h2>
+    <ul class="plain">
+      <li>LLM extraction pipelines with provenance on every record — claims that cite their source, not a black box</li>
+      <li>A local GPU for embeddings and speech-to-text — fast, private, and free at the margin</li>
+      <li>A vector database for semantic retrieval across everything ever ingested</li>
+      <li>Custom scoring and screening models over market and fundamentals data</li>
+      <li>Automated chart generation where every datapoint traces to a dated, attributed claim</li>
+      <li>Editorial gate systems that verify quotes verbatim before anything publishes</li>
+      <li>Static edge hosting with push-to-deploy — no servers, no maintenance window, no monthly platform bill</li>
+    </ul>
+
+    <h2>Why this matters if you run a business</h2>
+    <p class="dim">Swap the nouns. Instead of podcasts, your industry's trade publications and filings. Instead of stock research, your competitive landscape, your compliance monitoring, your client reporting. The architecture — ingest, distill, analyze, publish, all unattended — applies to any operation that turns information into decisions and documents. That's what a complete AI workflow means, and this site is the working proof.</p>
+
+    <div class="cta-block">
+      <h2>The flagship tier at Synthos Consulting</h2>
+      <p>Synthos Research is the reference build for <a href="https://synthosconsulting.com">Synthos Consulting</a>'s complete AI-workflow engagements — systems of this scope typically run <span class="price">$20–30k+</span>, scoped and priced flat before work begins. Smaller automations and custom sites start far below that.</p>
+      <a class="btn" href="https://synthosconsulting.com/#contact">Book a free consultation</a>
+    </div>
+
+    <p class="dim" style="font-size:.9rem">Synthos Research publishes educational analysis, not investment advice.</p>
+  </article>
+</main>
+
+<footer>
+  <div class="head-wrap">
+    <span>© 2026 Synthos Research · Not investment advice</span>
+    <span>Built &amp; operated by <a href="https://synthosconsulting.com">Synthos Consulting</a></span>
+  </div>
+</footer>
+</body>
+</html>
