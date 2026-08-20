@@ -11,11 +11,11 @@ const APEX = "synthosresearch.com";
 // Ghost page/post slugs -> static paths. Trailing slashes handled before lookup.
 const LEGACY = {
   "/the-synthos-flagship": "/flagship",
-  "/portfolios": "/",
+  "/portfolios": "/flagship",
   "/scorecard": "/verified",
   "/methodology": "/research",
   "/how-synthos-posts": "/research",
-  "/pricing": "/",
+  "/tag/newsletter": "/newsletter",
   "/coming-soon": "/",
   "/eli-lilly-lly-a-magnificent-business-priced-for-it": "/LLY",
   "/circle-crcl-a-real-theme-a-questionable-vehicle": "/CRCL",
